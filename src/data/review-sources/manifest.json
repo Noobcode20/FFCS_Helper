@@ -1,0 +1,83 @@
+[
+  {
+    "id": "attachment-01",
+    "name": "3.pdf",
+    "kind": "pdf",
+    "pages": 39,
+    "sha256": "bac0940eae08bc24c2710234af2fdf5359f3465cf6b2033294b95e5c3f37188a"
+  },
+  {
+    "id": "attachment-02",
+    "name": "56a2ec12-8397-4591-b17a-8cb9b3334dbc.pdf",
+    "kind": "pdf",
+    "pages": 21,
+    "sha256": "883f3869b86e2d77c652aece17eb2531f2b51020f48e46fa50755dea0fe1ec85"
+  },
+  {
+    "id": "attachment-03",
+    "name": "BLACKLISTED FACULTY LIST Winter.pdf",
+    "kind": "pdf",
+    "pages": 8,
+    "sha256": "29dc7afe254ab9b7e1f56bb2979969b65a97a32c4ffb9d877a5e98d9b2e503b5"
+  },
+  {
+    "id": "attachment-04",
+    "name": "BLACKLISTED FACULTY LIST.pdf",
+    "kind": "pdf",
+    "pages": 8,
+    "sha256": "5fbcaf7a0bc787f4ef014d4cccdd0c2e60719cefc6a3cc521b68d8a3d223bcce"
+  },
+  {
+    "id": "attachment-05",
+    "name": "Faculty List .pdf",
+    "kind": "pdf",
+    "pages": 4,
+    "sha256": "b6af12efcfcf31a43306019d38bfe9ddb711ee7175c2b963790decaa2d009ea5"
+  },
+  {
+    "id": "attachment-06",
+    "name": "FACULTY REVIEW 1.pdf",
+    "kind": "pdf",
+    "pages": 7,
+    "sha256": "720b8a215a619e7a6e9243829f23eb138f492190e8490e174ba0ed2b7b281952"
+  },
+  {
+    "id": "attachment-07",
+    "name": "ffcs sem 3.xlsx",
+    "kind": "xlsx",
+    "sha256": "0cc71b59cdd6b3b9560bf70cfe6af8d379505a5d1b850f09f070285c1baa5fdd"
+  },
+  {
+    "id": "attachment-08",
+    "name": "ffcs.pdf",
+    "kind": "pdf",
+    "pages": 29,
+    "sha256": "9fac58665cd25241988f537ad5d61c0015926ce7f089c62a15698a30163b63a6"
+  },
+  {
+    "id": "attachment-09",
+    "name": "FFCS.xlsx",
+    "kind": "xlsx",
+    "sha256": "dbb9ee61b1b37d76390a04c5ccbf16c4b42cb3646fb2177589d2834e2580d782"
+  },
+  {
+    "id": "attachment-10",
+    "name": "SMEC list.pdf",
+    "kind": "pdf",
+    "pages": 8,
+    "sha256": "95ee50b25ecb1f9a016e441555b96622d771872d7bba9c3847c2a1cba28c48ce"
+  },
+  {
+    "id": "attachment-11",
+    "name": "Teacher list.docx",
+    "kind": "docx",
+    "sha256": "f1601785f5958da57cad0ab137f21ffdd0955660bbeb5b3d963c8ebebf6ae87b"
+  },
+  {
+    "id": "attachment-12",
+    "name": "VIT_Faculty_Ratings_Clean.pdf",
+    "kind": "pdf",
+    "pages": 19,
+    "sha256": "e7dc1ec27e5952103840a9b960748ac6e71d55a5fe61976e77446a0755f8a11a"
+  }
+]

@@ -1,0 +1,127 @@
+{
+  "repository": "https://github.com/CodeChefVIT/ffcs",
+  "commit": "b2bafadec44c8cdbf55a7b61292c779ef9b521fc",
+  "commitDate": "2026-10-25T11:50:23Z",
+  "importedAt": "2026-10-27T14:57:04.090792Z",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "29408a46ca470a9a833d7bdcee14fc2afd9d299ced812fa454d5ad36860c8433",
+      "bytes": 1069,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/LICENSE",
+      "localPath": "src/data/upstream/codechef/LICENSE.txt"
+    },
+    {
+      "path": "src/lib/slots.ts",
+      "sha256": "722108b7055b575d8f6a79fdc4ad544fbb63ac0778d348249afefe8703b0e489",
+      "bytes": 8476,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/lib/slots.ts",
+      "localPath": "src/data/upstream/codechef/src/lib/slots.ts.txt"
+    },
+    {
+      "path": "src/components/ui/TimeTable.tsx",
+      "sha256": "dd5e9fed21104022055e79f923491538e4287e6ad03c3d5facc553b1d5929944",
+      "bytes": 9062,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/components/ui/TimeTable.tsx",
+      "localPath": "src/data/upstream/codechef/src/components/ui/TimeTable.tsx.txt"
+    },
+    {
+      "path": "src/data/faq.ts",
+      "sha256": "67466b72a2f96a3b79104a5e71f9d95617d863b1a16f880d2fcbc5ef9062f34d",
+      "bytes": 1638,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/faq.ts",
+      "localPath": "src/data/upstream/codechef/src/data/faq.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/DisciplineElective.ts",
+      "sha256": "3f28d5a041610135f876565e3243177a2969b193d429d9a0c88a2f4e6a0cd757",
+      "bytes": 5586,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/DisciplineElective.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/DisciplineElective.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/DisciplineLinked.ts",
+      "sha256": "b62d3021f9dd4a132b25cfe9fe0c78e3658bc3584a1f5bc317f54e813d6df33a",
+      "bytes": 1249,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/DisciplineLinked.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/DisciplineLinked.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/DiscliplineCore.ts",
+      "sha256": "03c5ba4946df3a8f78da2ccc673ae7b1e1cbbe78bb5854385739f10afb8b2ebb",
+      "bytes": 32223,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/DiscliplineCore.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/DiscliplineCore.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/FoundationCore.ts",
+      "sha256": "570b3c8fb7690ede1ba88ec433d06e41dcf7d7bbe69f14744a94931dc236ffb2",
+      "bytes": 7708,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/FoundationCore.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/FoundationCore.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/OpenElective.ts",
+      "sha256": "c225a2675c0ac6754be7fd7bf7d33c948ef94e05e316a1b056696d587ba87d41",
+      "bytes": 10750,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/OpenElective.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/OpenElective.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/SE_AIML.ts",
+      "sha256": "7dc484688119ac96f35b274e511c938cd6dcbc61315a1099b0115b5dbc140ef2",
+      "bytes": 1820,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/SE_AIML.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/SE_AIML.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/SE_BCB.ts",
+      "sha256": "79639635e2d1013c854149d8bd53f06835b96a3af186920fb725635b06a55bce",
+      "bytes": 1420,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/SE_BCB.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/SE_BCB.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/SE_Blockchain.ts",
+      "sha256": "7c8e0dcda8feb1e146ca03b50ad2d3587ca79e585eaf7b836d5da1604fe08bc3",
+      "bytes": 1331,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/SE_Blockchain.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/SE_Blockchain.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/SE_DS.ts",
+      "sha256": "1d2aea9f82f5a32a773eae920380549ba7ec31b22c3ace1410287159b983ac88",
+      "bytes": 3134,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/SE_DS.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/SE_DS.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/SE_IOT.ts",
+      "sha256": "b7381124ef218569c7e56d05b170558920e877ddc0c396387e1288b41acfd0f8",
+      "bytes": 2131,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/SE_IOT.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/SE_IOT.ts.txt"
+    },
+    {
+      "path": "src/data/SCOPE/SE_IS.ts",
+      "sha256": "ffe679cb792ea7b953b99dea15fa95cfb94c2425e7537f8fe875578757c87e47",
+      "bytes": 2406,
+      "url": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/data/SCOPE/SE_IS.ts",
+      "localPath": "src/data/upstream/codechef/src/data/SCOPE/SE_IS.ts.txt"
+    }
+  ],
+  "expectedCounts": {
+    "sourceFiles": 15,
+    "scopeCourseCodes": 119,
+    "sourceRows": 939,
+    "courses": 114,
+    "faculty": 328,
+    "offerings": 913,
+    "reviews": 0,
+    "duplicateRows": 2,
+    "omittedCourses": 5,
+    "omittedRows": 24,
+    "slotLabels": 64
+  }
+}

@@ -1,0 +1,604 @@
+{
+  "source": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/lib/slots.ts",
+  "clockSource": "https://raw.githubusercontent.com/CodeChefVIT/ffcs/b2bafadec44c8cdbf55a7b61292c779ef9b521fc/src/components/ui/TimeTable.tsx",
+  "warning": "TIMING WARNING: minutes are decoded from CodeChef grid (hourly theory starts), which differs from Ultimate FFCS Vellore (55-minute spacing). Confirm the official semester slot chart before use; these intervals are not verified current times.",
+  "dayConvention": "Monday=0 through Friday=4",
+  "slots": {
+    "A1": [
+      {
+        "day": 0,
+        "start": 480,
+        "end": 530,
+        "slot": "A1"
+      },
+      {
+        "day": 2,
+        "start": 540,
+        "end": 590,
+        "slot": "A1"
+      }
+    ],
+    "TA1": [
+      {
+        "day": 4,
+        "start": 600,
+        "end": 650,
+        "slot": "TA1"
+      }
+    ],
+    "TAA1": [
+      {
+        "day": 1,
+        "start": 720,
+        "end": 770,
+        "slot": "TAA1"
+      }
+    ],
+    "B1": [
+      {
+        "day": 1,
+        "start": 480,
+        "end": 530,
+        "slot": "B1"
+      },
+      {
+        "day": 3,
+        "start": 540,
+        "end": 590,
+        "slot": "B1"
+      }
+    ],
+    "TB1": [
+      {
+        "day": 0,
+        "start": 660,
+        "end": 710,
+        "slot": "TB1"
+      }
+    ],
+    "C1": [
+      {
+        "day": 2,
+        "start": 480,
+        "end": 530,
+        "slot": "C1"
+      },
+      {
+        "day": 4,
+        "start": 540,
+        "end": 590,
+        "slot": "C1"
+      }
+    ],
+    "TC1": [
+      {
+        "day": 1,
+        "start": 660,
+        "end": 710,
+        "slot": "TC1"
+      }
+    ],
+    "TCC1": [
+      {
+        "day": 3,
+        "start": 720,
+        "end": 770,
+        "slot": "TCC1"
+      }
+    ],
+    "D1": [
+      {
+        "day": 3,
+        "start": 480,
+        "end": 530,
+        "slot": "D1"
+      },
+      {
+        "day": 0,
+        "start": 600,
+        "end": 650,
+        "slot": "D1"
+      }
+    ],
+    "TD1": [
+      {
+        "day": 4,
+        "start": 720,
+        "end": 770,
+        "slot": "TD1"
+      }
+    ],
+    "E1": [
+      {
+        "day": 4,
+        "start": 480,
+        "end": 530,
+        "slot": "E1"
+      },
+      {
+        "day": 1,
+        "start": 600,
+        "end": 650,
+        "slot": "E1"
+      }
+    ],
+    "TE1": [
+      {
+        "day": 3,
+        "start": 660,
+        "end": 710,
+        "slot": "TE1"
+      }
+    ],
+    "F1": [
+      {
+        "day": 0,
+        "start": 540,
+        "end": 590,
+        "slot": "F1"
+      },
+      {
+        "day": 2,
+        "start": 600,
+        "end": 650,
+        "slot": "F1"
+      }
+    ],
+    "TF1": [
+      {
+        "day": 4,
+        "start": 660,
+        "end": 710,
+        "slot": "TF1"
+      }
+    ],
+    "G1": [
+      {
+        "day": 1,
+        "start": 540,
+        "end": 590,
+        "slot": "G1"
+      },
+      {
+        "day": 3,
+        "start": 600,
+        "end": 650,
+        "slot": "G1"
+      }
+    ],
+    "TG1": [
+      {
+        "day": 0,
+        "start": 720,
+        "end": 770,
+        "slot": "TG1"
+      }
+    ],
+    "A2": [
+      {
+        "day": 0,
+        "start": 840,
+        "end": 890,
+        "slot": "A2"
+      },
+      {
+        "day": 2,
+        "start": 900,
+        "end": 950,
+        "slot": "A2"
+      }
+    ],
+    "TA2": [
+      {
+        "day": 4,
+        "start": 960,
+        "end": 1010,
+        "slot": "TA2"
+      }
+    ],
+    "TAA2": [
+      {
+        "day": 1,
+        "start": 1080,
+        "end": 1130,
+        "slot": "TAA2"
+      }
+    ],
+    "B2": [
+      {
+        "day": 1,
+        "start": 840,
+        "end": 890,
+        "slot": "B2"
+      },
+      {
+        "day": 3,
+        "start": 900,
+        "end": 950,
+        "slot": "B2"
+      }
+    ],
+    "TB2": [
+      {
+        "day": 0,
+        "start": 1020,
+        "end": 1070,
+        "slot": "TB2"
+      }
+    ],
+    "TBB2": [
+      {
+        "day": 2,
+        "start": 1080,
+        "end": 1130,
+        "slot": "TBB2"
+      }
+    ],
+    "C2": [
+      {
+        "day": 2,
+        "start": 840,
+        "end": 890,
+        "slot": "C2"
+      },
+      {
+        "day": 4,
+        "start": 900,
+        "end": 950,
+        "slot": "C2"
+      }
+    ],
+    "TC2": [
+      {
+        "day": 1,
+        "start": 1020,
+        "end": 1070,
+        "slot": "TC2"
+      }
+    ],
+    "TCC2": [
+      {
+        "day": 3,
+        "start": 1080,
+        "end": 1130,
+        "slot": "TCC2"
+      }
+    ],
+    "D2": [
+      {
+        "day": 3,
+        "start": 840,
+        "end": 890,
+        "slot": "D2"
+      },
+      {
+        "day": 0,
+        "start": 960,
+        "end": 1010,
+        "slot": "D2"
+      }
+    ],
+    "TD2": [
+      {
+        "day": 2,
+        "start": 1020,
+        "end": 1070,
+        "slot": "TD2"
+      }
+    ],
+    "TDD2": [
+      {
+        "day": 4,
+        "start": 1080,
+        "end": 1130,
+        "slot": "TDD2"
+      }
+    ],
+    "E2": [
+      {
+        "day": 4,
+        "start": 840,
+        "end": 890,
+        "slot": "E2"
+      },
+      {
+        "day": 1,
+        "start": 960,
+        "end": 1010,
+        "slot": "E2"
+      }
+    ],
+    "TE2": [
+      {
+        "day": 3,
+        "start": 1020,
+        "end": 1070,
+        "slot": "TE2"
+      }
+    ],
+    "F2": [
+      {
+        "day": 0,
+        "start": 900,
+        "end": 950,
+        "slot": "F2"
+      },
+      {
+        "day": 2,
+        "start": 960,
+        "end": 1010,
+        "slot": "F2"
+      }
+    ],
+    "TF2": [
+      {
+        "day": 4,
+        "start": 1020,
+        "end": 1070,
+        "slot": "TF2"
+      }
+    ],
+    "G2": [
+      {
+        "day": 1,
+        "start": 900,
+        "end": 950,
+        "slot": "G2"
+      },
+      {
+        "day": 3,
+        "start": 960,
+        "end": 1010,
+        "slot": "G2"
+      }
+    ],
+    "TG2": [
+      {
+        "day": 0,
+        "start": 1080,
+        "end": 1130,
+        "slot": "TG2"
+      }
+    ],
+    "L1+L2": [
+      {
+        "day": 0,
+        "start": 480,
+        "end": 580,
+        "slot": "L1+L2"
+      }
+    ],
+    "L3+L4": [
+      {
+        "day": 0,
+        "start": 590,
+        "end": 690,
+        "slot": "L3+L4"
+      }
+    ],
+    "L5+L6": [
+      {
+        "day": 0,
+        "start": 700,
+        "end": 800,
+        "slot": "L5+L6"
+      }
+    ],
+    "L7+L8": [
+      {
+        "day": 1,
+        "start": 480,
+        "end": 580,
+        "slot": "L7+L8"
+      }
+    ],
+    "L9+L10": [
+      {
+        "day": 1,
+        "start": 590,
+        "end": 690,
+        "slot": "L9+L10"
+      }
+    ],
+    "L11+L12": [
+      {
+        "day": 1,
+        "start": 700,
+        "end": 800,
+        "slot": "L11+L12"
+      }
+    ],
+    "L13+L14": [
+      {
+        "day": 2,
+        "start": 480,
+        "end": 580,
+        "slot": "L13+L14"
+      }
+    ],
+    "L15+L16": [
+      {
+        "day": 2,
+        "start": 590,
+        "end": 690,
+        "slot": "L15+L16"
+      }
+    ],
+    "L17+L18": [
+      {
+        "day": 2,
+        "start": 700,
+        "end": 800,
+        "slot": "L17+L18"
+      }
+    ],
+    "L19+L20": [
+      {
+        "day": 3,
+        "start": 480,
+        "end": 580,
+        "slot": "L19+L20"
+      }
+    ],
+    "L21+L22": [
+      {
+        "day": 3,
+        "start": 590,
+        "end": 690,
+        "slot": "L21+L22"
+      }
+    ],
+    "L23+L24": [
+      {
+        "day": 3,
+        "start": 700,
+        "end": 800,
+        "slot": "L23+L24"
+      }
+    ],
+    "L25+L26": [
+      {
+        "day": 4,
+        "start": 480,
+        "end": 580,
+        "slot": "L25+L26"
+      }
+    ],
+    "L27+L28": [
+      {
+        "day": 4,
+        "start": 590,
+        "end": 690,
+        "slot": "L27+L28"
+      }
+    ],
+    "L29+L30": [
+      {
+        "day": 4,
+        "start": 700,
+        "end": 800,
+        "slot": "L29+L30"
+      }
+    ],
+    "L31+L32": [
+      {
+        "day": 0,
+        "start": 840,
+        "end": 940,
+        "slot": "L31+L32"
+      }
+    ],
+    "L33+L34": [
+      {
+        "day": 0,
+        "start": 950,
+        "end": 1050,
+        "slot": "L33+L34"
+      }
+    ],
+    "L35+L36": [
+      {
+        "day": 0,
+        "start": 1060,
+        "end": 1160,
+        "slot": "L35+L36"
+      }
+    ],
+    "L37+L38": [
+      {
+        "day": 1,
+        "start": 840,
+        "end": 940,
+        "slot": "L37+L38"
+      }
+    ],
+    "L39+L40": [
+      {
+        "day": 1,
+        "start": 950,
+        "end": 1050,
+        "slot": "L39+L40"
+      }
+    ],
+    "L41+L42": [
+      {
+        "day": 1,
+        "start": 1060,
+        "end": 1160,
+        "slot": "L41+L42"
+      }
+    ],
+    "L43+L44": [
+      {
+        "day": 2,
+        "start": 840,
+        "end": 940,
+        "slot": "L43+L44"
+      }
+    ],
+    "L45+L46": [
+      {
+        "day": 2,
+        "start": 950,
+        "end": 1050,
+        "slot": "L45+L46"
+      }
+    ],
+    "L47+L48": [
+      {
+        "day": 2,
+        "start": 1060,
+        "end": 1160,
+        "slot": "L47+L48"
+      }
+    ],
+    "L49+L50": [
+      {
+        "day": 3,
+        "start": 840,
+        "end": 940,
+        "slot": "L49+L50"
+      }
+    ],
+    "L51+L52": [
+      {
+        "day": 3,
+        "start": 950,
+        "end": 1050,
+        "slot": "L51+L52"
+      }
+    ],
+    "L53+L54": [
+      {
+        "day": 3,
+        "start": 1060,
+        "end": 1160,
+        "slot": "L53+L54"
+      }
+    ],
+    "L55+L56": [
+      {
+        "day": 4,
+        "start": 840,
+        "end": 940,
+        "slot": "L55+L56"
+      }
+    ],
+    "L57+L58": [
+      {
+        "day": 4,
+        "start": 950,
+        "end": 1050,
+        "slot": "L57+L58"
+      }
+    ],
+    "L59+L60": [
+      {
+        "day": 4,
+        "start": 1060,
+        "end": 1160,
+        "slot": "L59+L60"
+      }
+    ]
+  }
+}

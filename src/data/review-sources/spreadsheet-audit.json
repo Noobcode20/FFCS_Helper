@@ -1,0 +1,92 @@
+[
+  {
+    "id": "attachment-07",
+    "name": "ffcs sem 3.xlsx",
+    "sha256": "0cc71b59cdd6b3b9560bf70cfe6af8d379505a5d1b850f09f070285c1baa5fdd",
+    "records": 10,
+    "sheets": [
+      {
+        "name": "Sheet1",
+        "rows": 37,
+        "columns": 11
+      }
+    ],
+    "note": "Only written evaluations included. Slot, venue and name listings and unlabelled cell colors are not ratings."
+  },
+  {
+    "id": "attachment-09",
+    "name": "FFCS.xlsx",
+    "sha256": "dbb9ee61b1b37d76390a04c5ccbf16c4b42cb3646fb2177589d2834e2580d782",
+    "records": 0,
+    "sheets": [
+      {
+        "name": "Cao",
+        "rows": 51,
+        "columns": 4
+      },
+      {
+        "name": "Prob",
+        "rows": 100,
+        "columns": 4
+      },
+      {
+        "name": "Prob lab",
+        "rows": 105,
+        "columns": 4
+      },
+      {
+        "name": "Mpmc",
+        "rows": 51,
+        "columns": 4
+      },
+      {
+        "name": "Mpmc lab",
+        "rows": 51,
+        "columns": 4
+      },
+      {
+        "name": "Soft skills",
+        "rows": 100,
+        "columns": 4
+      },
+      {
+        "name": "Toc",
+        "rows": 50,
+        "columns": 4
+      },
+      {
+        "name": "Daa",
+        "rows": 55,
+        "columns": 6
+      },
+      {
+        "name": "Daa lab",
+        "rows": 50,
+        "columns": 4
+      },
+      {
+        "name": "Language",
+        "rows": 62,
+        "columns": 6
+      },
+      {
+        "name": "Web prog",
+        "rows": 50,
+        "columns": 6
+      },
+      {
+        "name": "Web prog lab",
+        "rows": 50,
+        "columns": 4
+      }
+    ],
+    "note": "Only written evaluations included. Slot, venue and name listings and unlabelled cell colors are not ratings."
+  },
+  {
+    "id": "attachment-11",
+    "name": "Teacher list.docx",
+    "sha256": "f1601785f5958da57cad0ab137f21ffdd0955660bbeb5b3d963c8ebebf6ae87b",
+    "records": 0,
+    "note": "Teacher list contains names, slots and course choices but no explicit faculty evaluation; no rating records created."
+  }
+]

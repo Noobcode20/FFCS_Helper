@@ -1,0 +1,2 @@
+import type {Catalog} from './types';
+export const fixture=():Catalog=>({version:1,campus:'Vellore',semester:'test fixture',provenance:{source:'Automated test only',importedAt:'2026-01-01T00:00:00Z',status:'imported'},courses:[{id:'c',code:'TEST1',title:'Test only',credits:3}],faculty:[{id:'f',name:'Fixture faculty'}],offerings:[{id:'o',courseId:'c',facultyId:'f',section:'s',components:[{type:'theory',slots:['A'],meetings:[{day:0,start:480,end:530,slot:'A'}]}]}],reviews:[]});

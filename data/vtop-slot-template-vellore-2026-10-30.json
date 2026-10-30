@@ -1,0 +1,1038 @@
+{
+  "source": "VTOP > Academics > Time Table > generic slot template",
+  "sourceUrl": "https://vtop.vit.ac.in/vtop/content",
+  "displayedSemester": "Fall Semester 2026-27",
+  "capturedAt": "2026-10-30T14:23:04.543Z",
+  "note": "Generic template displayed with registered Fall semester. This does not establish Winter course registrations or availability.",
+  "days": [
+    {
+      "day": "MON",
+      "theory": [
+        {
+          "slot": "A1",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "F1",
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "slot": "D1",
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "slot": "TB1",
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "slot": "TG1",
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "A2",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "F2",
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "slot": "D2",
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "slot": "TB2",
+          "start": "17:00",
+          "end": "17:50"
+        },
+        {
+          "slot": "TG2",
+          "start": "18:00",
+          "end": "18:50"
+        },
+        {
+          "slot": null,
+          "start": "18:51",
+          "end": "19:00"
+        },
+        {
+          "slot": "V3",
+          "start": "19:01",
+          "end": "19:50"
+        }
+      ],
+      "lab": [
+        {
+          "slot": "L1",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "L2",
+          "start": "08:51",
+          "end": "09:40"
+        },
+        {
+          "slot": "L3",
+          "start": "09:51",
+          "end": "10:40"
+        },
+        {
+          "slot": "L4",
+          "start": "10:41",
+          "end": "11:30"
+        },
+        {
+          "slot": "L5",
+          "start": "11:40",
+          "end": "12:30"
+        },
+        {
+          "slot": "L6",
+          "start": "12:31",
+          "end": "13:20"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "L31",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "L32",
+          "start": "14:51",
+          "end": "15:40"
+        },
+        {
+          "slot": "L33",
+          "start": "15:51",
+          "end": "16:40"
+        },
+        {
+          "slot": "L34",
+          "start": "16:41",
+          "end": "17:30"
+        },
+        {
+          "slot": "L35",
+          "start": "17:40",
+          "end": "18:30"
+        },
+        {
+          "slot": "L36",
+          "start": "18:31",
+          "end": "19:20"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        }
+      ]
+    },
+    {
+      "day": "TUE",
+      "theory": [
+        {
+          "slot": "B1",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "G1",
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "slot": "E1",
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "slot": "TC1",
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "slot": "TAA1",
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "B2",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "G2",
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "slot": "E2",
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "slot": "TC2",
+          "start": "17:00",
+          "end": "17:50"
+        },
+        {
+          "slot": "TAA2",
+          "start": "18:00",
+          "end": "18:50"
+        },
+        {
+          "slot": null,
+          "start": "18:51",
+          "end": "19:00"
+        },
+        {
+          "slot": "V4",
+          "start": "19:01",
+          "end": "19:50"
+        }
+      ],
+      "lab": [
+        {
+          "slot": "L7",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "L8",
+          "start": "08:51",
+          "end": "09:40"
+        },
+        {
+          "slot": "L9",
+          "start": "09:51",
+          "end": "10:40"
+        },
+        {
+          "slot": "L10",
+          "start": "10:41",
+          "end": "11:30"
+        },
+        {
+          "slot": "L11",
+          "start": "11:40",
+          "end": "12:30"
+        },
+        {
+          "slot": "L12",
+          "start": "12:31",
+          "end": "13:20"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "L37",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "L38",
+          "start": "14:51",
+          "end": "15:40"
+        },
+        {
+          "slot": "L39",
+          "start": "15:51",
+          "end": "16:40"
+        },
+        {
+          "slot": "L40",
+          "start": "16:41",
+          "end": "17:30"
+        },
+        {
+          "slot": "L41",
+          "start": "17:40",
+          "end": "18:30"
+        },
+        {
+          "slot": "L42",
+          "start": "18:31",
+          "end": "19:20"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        }
+      ]
+    },
+    {
+      "day": "WED",
+      "theory": [
+        {
+          "slot": "C1",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "A1",
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "slot": "F1",
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "slot": "V1",
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "slot": "V2",
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "C2",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "A2",
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "slot": "F2",
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "slot": "TD2",
+          "start": "17:00",
+          "end": "17:50"
+        },
+        {
+          "slot": "TBB2",
+          "start": "18:00",
+          "end": "18:50"
+        },
+        {
+          "slot": null,
+          "start": "18:51",
+          "end": "19:00"
+        },
+        {
+          "slot": "V5",
+          "start": "19:01",
+          "end": "19:50"
+        }
+      ],
+      "lab": [
+        {
+          "slot": "L13",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "L14",
+          "start": "08:51",
+          "end": "09:40"
+        },
+        {
+          "slot": "L15",
+          "start": "09:51",
+          "end": "10:40"
+        },
+        {
+          "slot": "L16",
+          "start": "10:41",
+          "end": "11:30"
+        },
+        {
+          "slot": "L17",
+          "start": "11:40",
+          "end": "12:30"
+        },
+        {
+          "slot": "L18",
+          "start": "12:31",
+          "end": "13:20"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "L43",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "L44",
+          "start": "14:51",
+          "end": "15:40"
+        },
+        {
+          "slot": "L45",
+          "start": "15:51",
+          "end": "16:40"
+        },
+        {
+          "slot": "L46",
+          "start": "16:41",
+          "end": "17:30"
+        },
+        {
+          "slot": "L47",
+          "start": "17:40",
+          "end": "18:30"
+        },
+        {
+          "slot": "L48",
+          "start": "18:31",
+          "end": "19:20"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        }
+      ]
+    },
+    {
+      "day": "THU",
+      "theory": [
+        {
+          "slot": "D1",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "B1",
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "slot": "G1",
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "slot": "TE1",
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "slot": "TCC1",
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "D2",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "B2",
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "slot": "G2",
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "slot": "TE2",
+          "start": "17:00",
+          "end": "17:50"
+        },
+        {
+          "slot": "TCC2",
+          "start": "18:00",
+          "end": "18:50"
+        },
+        {
+          "slot": null,
+          "start": "18:51",
+          "end": "19:00"
+        },
+        {
+          "slot": "V6",
+          "start": "19:01",
+          "end": "19:50"
+        }
+      ],
+      "lab": [
+        {
+          "slot": "L19",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "L20",
+          "start": "08:51",
+          "end": "09:40"
+        },
+        {
+          "slot": "L21",
+          "start": "09:51",
+          "end": "10:40"
+        },
+        {
+          "slot": "L22",
+          "start": "10:41",
+          "end": "11:30"
+        },
+        {
+          "slot": "L23",
+          "start": "11:40",
+          "end": "12:30"
+        },
+        {
+          "slot": "L24",
+          "start": "12:31",
+          "end": "13:20"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "L49",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "L50",
+          "start": "14:51",
+          "end": "15:40"
+        },
+        {
+          "slot": "L51",
+          "start": "15:51",
+          "end": "16:40"
+        },
+        {
+          "slot": "L52",
+          "start": "16:41",
+          "end": "17:30"
+        },
+        {
+          "slot": "L53",
+          "start": "17:40",
+          "end": "18:30"
+        },
+        {
+          "slot": "L54",
+          "start": "18:31",
+          "end": "19:20"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        }
+      ]
+    },
+    {
+      "day": "FRI",
+      "theory": [
+        {
+          "slot": "E1",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "C1",
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "slot": "TA1",
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "slot": "TF1",
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "slot": "TD1",
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "E2",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "C2",
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "slot": "TA2",
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "slot": "TF2",
+          "start": "17:00",
+          "end": "17:50"
+        },
+        {
+          "slot": "TDD2",
+          "start": "18:00",
+          "end": "18:50"
+        },
+        {
+          "slot": null,
+          "start": "18:51",
+          "end": "19:00"
+        },
+        {
+          "slot": "V7",
+          "start": "19:01",
+          "end": "19:50"
+        }
+      ],
+      "lab": [
+        {
+          "slot": "L25",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "L26",
+          "start": "08:51",
+          "end": "09:40"
+        },
+        {
+          "slot": "L27",
+          "start": "09:51",
+          "end": "10:40"
+        },
+        {
+          "slot": "L28",
+          "start": "10:41",
+          "end": "11:30"
+        },
+        {
+          "slot": "L29",
+          "start": "11:40",
+          "end": "12:30"
+        },
+        {
+          "slot": "L30",
+          "start": "12:31",
+          "end": "13:20"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "L55",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "L56",
+          "start": "14:51",
+          "end": "15:40"
+        },
+        {
+          "slot": "L57",
+          "start": "15:51",
+          "end": "16:40"
+        },
+        {
+          "slot": "L58",
+          "start": "16:41",
+          "end": "17:30"
+        },
+        {
+          "slot": "L59",
+          "start": "17:40",
+          "end": "18:30"
+        },
+        {
+          "slot": "L60",
+          "start": "18:31",
+          "end": "19:20"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        }
+      ]
+    },
+    {
+      "day": "SAT",
+      "theory": [
+        {
+          "slot": "V8",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "X11",
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "slot": "X12",
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "slot": "Y11",
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "slot": "Y12",
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "X21",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "Z21",
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "slot": "Y21",
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "slot": "W21",
+          "start": "17:00",
+          "end": "17:50"
+        },
+        {
+          "slot": "W22",
+          "start": "18:00",
+          "end": "18:50"
+        },
+        {
+          "slot": null,
+          "start": "18:51",
+          "end": "19:00"
+        },
+        {
+          "slot": "V9",
+          "start": "19:01",
+          "end": "19:50"
+        }
+      ],
+      "lab": [
+        {
+          "slot": "L71",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "L72",
+          "start": "08:51",
+          "end": "09:40"
+        },
+        {
+          "slot": "L73",
+          "start": "09:51",
+          "end": "10:40"
+        },
+        {
+          "slot": "L74",
+          "start": "10:41",
+          "end": "11:30"
+        },
+        {
+          "slot": "L75",
+          "start": "11:40",
+          "end": "12:30"
+        },
+        {
+          "slot": "L76",
+          "start": "12:31",
+          "end": "13:20"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "L77",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "L78",
+          "start": "14:51",
+          "end": "15:40"
+        },
+        {
+          "slot": "L79",
+          "start": "15:51",
+          "end": "16:40"
+        },
+        {
+          "slot": "L80",
+          "start": "16:41",
+          "end": "17:30"
+        },
+        {
+          "slot": "L81",
+          "start": "17:40",
+          "end": "18:30"
+        },
+        {
+          "slot": "L82",
+          "start": "18:31",
+          "end": "19:20"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        }
+      ]
+    },
+    {
+      "day": "SUN",
+      "theory": [
+        {
+          "slot": "V10",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "Y11",
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "slot": "Y12",
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "slot": "X11",
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "slot": "X12",
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "Y21",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "Z21",
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "slot": "X21",
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "slot": "W21",
+          "start": "17:00",
+          "end": "17:50"
+        },
+        {
+          "slot": "W22",
+          "start": "18:00",
+          "end": "18:50"
+        },
+        {
+          "slot": null,
+          "start": "18:51",
+          "end": "19:00"
+        },
+        {
+          "slot": "V11",
+          "start": "19:01",
+          "end": "19:50"
+        }
+      ],
+      "lab": [
+        {
+          "slot": "L83",
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "slot": "L84",
+          "start": "08:51",
+          "end": "09:40"
+        },
+        {
+          "slot": "L85",
+          "start": "09:51",
+          "end": "10:40"
+        },
+        {
+          "slot": "L86",
+          "start": "10:41",
+          "end": "11:30"
+        },
+        {
+          "slot": "L87",
+          "start": "11:40",
+          "end": "12:30"
+        },
+        {
+          "slot": "L88",
+          "start": "12:31",
+          "end": "13:20"
+        },
+        {
+          "slot": null,
+          "start": "Lunch",
+          "end": "Lunch"
+        },
+        {
+          "slot": "L89",
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "slot": "L90",
+          "start": "14:51",
+          "end": "15:40"
+        },
+        {
+          "slot": "L91",
+          "start": "15:51",
+          "end": "16:40"
+        },
+        {
+          "slot": "L92",
+          "start": "16:41",
+          "end": "17:30"
+        },
+        {
+          "slot": "L93",
+          "start": "17:40",
+          "end": "18:30"
+        },
+        {
+          "slot": "L94",
+          "start": "18:31",
+          "end": "19:20"
+        },
+        {
+          "slot": null,
+          "start": "-",
+          "end": "-"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+import {it,expect} from 'vitest';
+import {fixture} from './test-fixture';
+import {catalogFingerprint,restorePlans,scheduleCsv,scheduleIcs} from './storage';
+import {defaultCatalog} from '../data/catalog';
+import {conflicts} from './engine';
+import type {Plan} from './types';
+it('fingerprints change when a section time or professor changes',()=>{const a=fixture(),b=fixture();b.offerings[0].components[0].meetings[0].start++;expect(catalogFingerprint(a)).not.toBe(catalogFingerprint(b));});
+it('restores only compatible plans and rejects altered backups',()=>{const c=fixture();const p:Plan={id:'p',name:'Backup',offeringIds:['o'],semester:c.semester,catalogFingerprint:catalogFingerprint(c),savedAt:'2026-01-01'};expect(restorePlans([p],c)).toEqual([p]);expect(()=>restorePlans([{...p,catalogFingerprint:'old'}],c)).toThrow();expect(()=>restorePlans([{...p,offeringIds:['missing']}],c)).toThrow();});
+it('exports CSV with safe spreadsheet fields',()=>{const c=fixture();c.courses[0].title='=HYPERLINK("x")';expect(scheduleCsv(c,['o'])).toContain("'=HYPERLINK");});
+it('exports the chosen Monday week in India time without guessed recurrence',()=>{const ics=scheduleIcs(fixture(),['o'],'2026-10-26');expect(ics).toContain('DTSTART;TZID=Asia/Kolkata:20261026T080000');expect(ics).not.toContain('RRULE');expect(()=>scheduleIcs(fixture(),['o'],'2026-10-27')).toThrow();expect(()=>scheduleIcs(fixture(),['o'],'2026-02-30')).toThrow();});
+it('exports both components of the paired BAARB101 allocation and detects a lab-time clash',()=>{
+ const paired=defaultCatalog.offerings.find(o=>o.courseId==='ECE-UCC-BAARB101'&&o.components.length===2)!;
+ const csv=scheduleCsv(defaultCatalog,[paired.id]);
+ expect(csv).toContain('"theory","ETH","TAA1"');expect(csv).toContain('"lab","ELA","L31+L32"');
+ expect(csv).toContain('"PRP134"');expect(csv).toContain('"PRP555"');
+ const ics=scheduleIcs(defaultCatalog,[paired.id],'2026-10-26');
+ expect(ics).toContain('DESCRIPTION:MOHD SAQIB | TAA1 / L31+L32 | theory (ETH) TAA1');
+ expect(ics).toContain('DESCRIPTION:MOHD SAQIB | TAA1 / L31+L32 | lab (ELA) L31+L32');
+ expect(ics).toContain('LOCATION:PRP134');expect(ics).toContain('LOCATION:PRP555');
+ const labClash={...paired,id:'lab-clash',courseId:'other',components:[{type:'lab' as const,slots:['L31+L32'],meetings:[{day:0 as const,start:850,end:870,slot:'L31+L32'}],venue:'OTHER'}]};
+ expect(conflicts(paired,labClash)).toBe(true);
+});

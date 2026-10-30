@@ -1,0 +1,5102 @@
+[
+  {
+    "id": "attachment-01-block-001-evidence-1",
+    "facultyName": "AJU D",
+    "rating": 4.0,
+    "sampleSize": null,
+    "text": "• He is very good\n• 4 out of 5. strict for project component especially for the documentation part otherwise he is very good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 1,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-001",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-002-evidence-1",
+    "facultyName": "AKILA VICTOR",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• Akila victor is strict\n• Padhata kaisa h no idea But strict hai\n• 4/5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 1,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-002",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-003-evidence-1",
+    "facultyName": "ANAND M",
+    "rating": 3.0,
+    "sampleSize": 1,
+    "text": "• Best.!\n• Anand M is a brilliant teacher\n• 3/5 (1 review)\n• Good in class but god help you in exams",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 1,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-003",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-004-evidence-1",
+    "facultyName": "ANANDA KUMAR S",
+    "rating": 1.5,
+    "sampleSize": 2,
+    "text": "• Okayish But not strict\n• Someone told me he gives work on research paper stuff (Reply to this comment by someone- \"For j component many faculty gave research paper work..but he will not ask any thing to publish...and iot project too will be little bit complicated\")\n• Worst\n• 1.5/5 (2 reviews)\n• Ok ok. But Avoid if you can!!!",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 1,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-004",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-005-evidence-1",
+    "facultyName": "ANBARASI M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Strict in lab",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 1,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-005",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-006-evidence-1",
+    "facultyName": "ANIL KUMAR K",
+    "rating": 2.0,
+    "sampleSize": 1,
+    "text": "• I had him for my Network Security. Banda accha hai. You can take him. But my experience was not good.\n• 2/5 (1 review)\n• Beware of him.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 1,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-006",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 2; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-007-evidence-1",
+    "facultyName": "ANISHA M. LAL",
+    "rating": 3.5,
+    "sampleSize": 4,
+    "text": "• She is good\n• Good\n• Anisha M is better than Natarajan\n• Good (+5)\n• 3.5/5 (4 reviews)\n• Good teacher.\n• Good for attentive students.\n• Mast Bandi hai😇",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 2,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-007",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-008-evidence-1",
+    "facultyName": "ANNY LEEMA A",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is my proctor. Nature wise she is good. Don’t know about teaching.\n• She's the best\n• She is good at teaching. A very friendly and a chill teacher. U can definitely take her. I learnt DLD from her last semester",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 2,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-008",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-009-evidence-1",
+    "facultyName": "ANTO S",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4/5 (1 review)\n• Very chill in exam and projects",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 2,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-009",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-010-evidence-1",
+    "facultyName": "ANURADHA D",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Anurada D is best, doesn't know much about programming\n• Questions in the exam directly come from her notes. I had her for stats. But yeah probably doesn't know programming🙊😂\n• Not good for cse subjects\n• She teaches very well! DA 30! Lab 100! (Related to stats)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 2,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-010",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 3; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-011-evidence-1",
+    "facultyName": "ANURADHA G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is very strict\n• Bad with respect to both marks n teaching\n• Not recommended",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 3,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-011",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-012-evidence-1",
+    "facultyName": "ANURADHA J",
+    "rating": 3.0,
+    "sampleSize": null,
+    "text": "• 3 out of 5. She is ok",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 3,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-012",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-013-evidence-1",
+    "facultyName": "ARIVOLI A",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• number wo baat deti hai sabko.. I mean jao uske pass and Kam hue to aise hi badha deti hai.. class me abhi lagbhag same hi number hai avg ke paas.. classes 30 min me chhod deti hai.. padhati to bilkul na ke barabar. Project me sabko ek jaise hi diye hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 3,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-013",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-014-evidence-1",
+    "facultyName": "ARUN KUMAR G",
+    "rating": 2.5,
+    "sampleSize": 2,
+    "text": "• He is chill\n• Strict, 2.5/5 (2 reviews)\n• Good and knowledgeable\n• Ok ok",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 3,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-014",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-015-evidence-1",
+    "facultyName": "ARUN KUMAR S",
+    "rating": null,
+    "sampleSize": 2,
+    "text": "• Not recommended (2 reviews)\n• He doesn’t give much marks.My marks was 24,24,43 in cats n fats. Still got A.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 3,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-015",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-016-evidence-1",
+    "facultyName": "ASHWIN GANESAN",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He gives his own exam… decent teacher but very less chances to get him",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 3,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-016",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-017-evidence-1",
+    "facultyName": "BALAKRISHNAN P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Teaches very well but strict in giving marks\n• 🔥🔥",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 3,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-017",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 4; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-018-evidence-1",
+    "facultyName": "BALAMURUGAN R",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4/5 ( 1 review)\n• Sweet teacher. Doesn't bother much",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 4,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-018",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-019-evidence-1",
+    "facultyName": "BALASUBRAMANIAN V",
+    "rating": 4.0,
+    "sampleSize": 2,
+    "text": "• I heard Bala is good\n• 4/5 (2 reviews)\n• Bhut chill h bhai sbme",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 4,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-019",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-020-evidence-1",
+    "facultyName": "BOOMINATHAN P",
+    "rating": 4.0,
+    "sampleSize": 2,
+    "text": "• Bhai DSA mei Boominathan is good. Actually very good!\n• He teaches well\n• Bessstt\n• Besstt😍\n• 4/5 ( 2 reviews)\n• Very chill",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 4,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-020",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-021-evidence-1",
+    "facultyName": "DEBI PRASANNA ACHARJYA",
+    "rating": 1.5,
+    "sampleSize": 2,
+    "text": "• Not recommended\n• He talked about How To Fail students in his introductory class…\n• He wrote good book in TOC\n• Avoid him\n• Negative response\n• Strict (2 reviews)\n• 1.5/5 (2 reviews)\n• Hope you get good enough project for him\n• You will never get an S in his class",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 4,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-021",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 5; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-022-evidence-1",
+    "facultyName": "DEEBAK B D",
+    "rating": 3.5,
+    "sampleSize": 2,
+    "text": "• I had him in PDC. I felt okay. He is very loud and fast. But teaches well.\n• 3.5 out of 5 (2 reviews)\n• Project me locha karega",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 5,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-022",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-023-evidence-1",
+    "facultyName": "DELHI BABU R",
+    "rating": 1.5,
+    "sampleSize": 2,
+    "text": "• Strict ( 2 reviews)\n• 1.5/5 (2 reviews)\n• Uda deta h bhai class me nd exam me\n• He doesn't even read your answer sheets properly.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 5,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-023",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Subjective blacklist label omitted; not an institutional designation."
+    ]
+  },
+  {
+    "id": "attachment-01-block-024-evidence-1",
+    "facultyName": "DHEEBA J",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is very good bro. I got A in HCI just because of her. More importantly I barely ever went for classes😂 She gives you free attendance😅",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 5,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-024",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-025-evidence-1",
+    "facultyName": "GAWAS MAHADEV ANANT",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Gawas Anant is pretty good.\n• Was in gawas's class… good and friendly teacher… looks promising",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 5,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-025",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-026-evidence-1",
+    "facultyName": "GAYATHRI P",
+    "rating": 2.0,
+    "sampleSize": 2,
+    "text": "• Strict, 2/5 (2 reviews)\n• Strictly not recommended\n• Very strict in all the aspects but teaches well",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 5,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-026",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-027-evidence-1",
+    "facultyName": "GEETHA MARY A",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Just OK. Extremely moody.\n• Gives descent marks",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 5,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-027",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 6; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-028-evidence-1",
+    "facultyName": "GOPINATH M.P",
+    "rating": 5.0,
+    "sampleSize": 1,
+    "text": "• Lele\n• He is a very chill teacher but getting S would be difficult\n• Good\n• He's brilliant. Mast teacher ekdum.\n• 5/5 (1 review)\n• Mast hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 6,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-028",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-029-evidence-1",
+    "facultyName": "GOVINDA K",
+    "rating": 3.5,
+    "sampleSize": 2,
+    "text": "• He is very chill. Gives marks also.\n• 3.5/5 (2 reviews)\n• Paper me uda deta hai\n• He is a very nice teacher because he has a lot of knowledge and teaches really well in class",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 6,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-029",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-030-evidence-1",
+    "facultyName": "JAISAKTHI S M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Jaisakthi is okish. She doesn't teach well but gives marks.\n• Okaish\n• You can take her. Just don’t hurt her ego",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 6,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-030",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-031-evidence-1",
+    "facultyName": "JAISANKAR N",
+    "rating": 4.0,
+    "sampleSize": 4,
+    "text": "• 4/5 (4 reviews)\n• Mast Banda hai, knowledgeable but strict in lab. If you have an option to choose him then take him.\n• Great notes\n• He is a cutie❤❤",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 6,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-031",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-032-evidence-1",
+    "facultyName": "JOTHI K R",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He's knowledgeable but lacks in communication skills. But hhe clears your doubts. And he's not strict in class gives attendance even if you come late\n• He's pretty nice he's a new facility joined 2 months back i had his cao class today.. seems knowledgable.. seems chill in class as well and pretty interactive.(cooment from 12-7-2018)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 6,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-032",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 7; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-033-evidence-1",
+    "facultyName": "KALYANARAMAN P",
+    "rating": 3.0,
+    "sampleSize": 2,
+    "text": "• 3/5 (2 reviews)\n• Good\n• Never take, especially for J component",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 7,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-033",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-034-evidence-1",
+    "facultyName": "KANNADASAN R",
+    "rating": 4.5,
+    "sampleSize": 2,
+    "text": "• 4.5/5 (2 reviews)\n• Thik h yaar\n• He is the best faculty in VIT",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 7,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-034",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-035-evidence-1",
+    "facultyName": "KAUSER AHMED P",
+    "rating": 2.0,
+    "sampleSize": 1,
+    "text": "• 2/5 (1 review)\n• Not recommended",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 7,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-035",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-036-evidence-1",
+    "facultyName": "KRISHNAMOORTHY A",
+    "rating": 3.5,
+    "sampleSize": 2,
+    "text": "• God level teacher hai\n• 3.5/5 (2 reviews)\n• Bhut chill h project me sbko 96 milenge\n• Good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 7,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-036",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-037-evidence-1",
+    "facultyName": "KUMAR K",
+    "rating": 5.0,
+    "sampleSize": null,
+    "text": "• Good for web mining\n• Kumar K is very chill. Nice person.\n• 5 out of 5. One of the best faculties in VIT. He is very lenient and always helps his students.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 7,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-037",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-038-evidence-1",
+    "facultyName": "KUMARAVELU R",
+    "rating": 2.5,
+    "sampleSize": 2,
+    "text": "• Tough for project\n• Kumaravelu 👍🏼\n• Strict ( 2reviews)\n• 2.5/5 (2 reviews)\n• Demand quality projects\n• Ok! Avoid if u can",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 8,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-038",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-039-evidence-1",
+    "facultyName": "LAKSHMANAN K",
+    "rating": 3.0,
+    "sampleSize": 1,
+    "text": "• 3/5 ( 1 review)\n• Knowledgeable",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 8,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-039",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-040-evidence-1",
+    "facultyName": "LAVANYA K",
+    "rating": 5.0,
+    "sampleSize": 2,
+    "text": "• 5/5 (2 reviews)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 8,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-040",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-041-evidence-1",
+    "facultyName": "LIJO V.P",
+    "rating": 3.66,
+    "sampleSize": 3,
+    "text": "• 3.66/5 (3 reviews)\n• Chill\n• Doesn’t teach well",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 8,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-041",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-042-evidence-1",
+    "facultyName": "LOKESH KUMAR R",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Gd",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 8,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-042",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-043-evidence-1",
+    "facultyName": "MADHU VISWANATHAM V",
+    "rating": 3.0,
+    "sampleSize": 2,
+    "text": "• 3/5 ( 2 reviews)\n• He is good\n• Teaches well",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 8,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-043",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-044-evidence-1",
+    "facultyName": "MANJULA R",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Strict\n• I think she is Ok. If nothing else left take her.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 9,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-044",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-045-evidence-1",
+    "facultyName": "MANOOV R",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Very chill (for pdc)\n• Too chill🙌🏼",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 9,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-045",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-046-evidence-1",
+    "facultyName": "MARGRET ANOUNCIA S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is strict… and gives a lot of extra assignments\n• She eats 5-% of the marks … But you will pass, as avg of the class goes very low",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 9,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-046",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-047-evidence-1",
+    "facultyName": "MARIMUTHU K",
+    "rating": 4.5,
+    "sampleSize": 2,
+    "text": "• Marimuthu is chilllll\n• Marimuthu best h\n• Lenient, 4.5/5 ( 2 reviews)\n• He’s a really good teacher.\n• Mst h bhai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 9,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-047",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-048-evidence-1",
+    "facultyName": "MEENAKSHI S P",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• Good. I also took her. She is very lenient and gives marks easily if u write something relevant.\n• Padatii bahut hai\n• Is she strict? Answer- That I don’t know… but dimaag khati hai\n• 4/5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 9,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-048",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-049-evidence-1",
+    "facultyName": "MOHANASUNDARAM R",
+    "rating": 3.5,
+    "sampleSize": 2,
+    "text": "• Lenient ( 2 reviews)\n• 3.5/5 ( 2 reviews)\n• Ok ok\n• He was my DLD teacher, was chill with attendance and allowed late in class too. Teaching wise average. He would pass almost everyone though (I think)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 9,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-049",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 10; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-050-evidence-1",
+    "facultyName": "MURALI S",
+    "rating": 4.0,
+    "sampleSize": 3,
+    "text": "• 4/5 ( 3 reviews)\n• Last kuch sem toh acha tha but is sem maar raha hai bachhon ki\n• Knowledgable",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 10,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-050",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-051-evidence-1",
+    "facultyName": "MYTHILI T",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Quiz ka dekhna usske. Udhar number nhi aate hai & for additional she accepts only NPTEL\n• Sahi hai\n• She's my proctor but I don’t know how she is as a teacher. She seems to be strict\n• She knows u. Maybe linient towards u",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 10,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-051",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-052-evidence-1",
+    "facultyName": "NALINI N",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• I heard that she is chill in marks\n• 4/5 (1 review)\n• She is chill. You can take her. Will give good marks in project( in avg prject too)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 10,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-052",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-053-evidence-1",
+    "facultyName": "NARAYANAMOORTHI M",
+    "rating": 4.0,
+    "sampleSize": null,
+    "text": "• 4 out of 5 rating, lenient in attendance and paper correction\n• He is good, ok in teaching",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 10,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-053",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-054-evidence-1",
+    "facultyName": "NARESH K",
+    "rating": 3.5,
+    "sampleSize": 2,
+    "text": "• He is good.\n• 3.5/5 (2 reviews)\n• Good but moody\n• Chill😎",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 10,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-054",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-055-evidence-1",
+    "facultyName": "NATARAJAN P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Teaches okok but Gives lots of marks\n• He tells important topics from which questions come in exams\n• Lele Bahut accha hai\n• Natrajan P is better than Sureshkumar N\n• Natarajan P awesome for image\n• Natarajan is awesome. Like doesn’t teach well, is very slow. But is very lenient and give marks.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 11,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-055",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-056-evidence-1",
+    "facultyName": "NAVAMANI T M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Navamani is good\n• Suna hai sahi he… mene liya",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 11,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-056",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-057-evidence-1",
+    "facultyName": "NAVEEN KUMAR N",
+    "rating": 3.0,
+    "sampleSize": 1,
+    "text": "• He is good\n• 3/5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 11,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-057",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-058-evidence-1",
+    "facultyName": "PADMA PRIYA R",
+    "rating": 2.0,
+    "sampleSize": 1,
+    "text": "• 2/5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 11,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-058",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-059-evidence-1",
+    "facultyName": "PARVEEN SULTANA H",
+    "rating": 1.0,
+    "sampleSize": 1,
+    "text": "• bad\n• Not good\n• Strict, 1/5 (1 review)\n• Bas mt lena , project me maar lega bhai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 11,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-059",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-060-evidence-1",
+    "facultyName": "PRABAKARAN N",
+    "rating": 3.0,
+    "sampleSize": 1,
+    "text": "• Nice teacher bro. But end mei maar lega\n• 3/5 (1 review)\n• Iss sem (Winter sem 2018-19) se toda nautanki kr rha h",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 11,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-060",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-061-evidence-1",
+    "facultyName": "PRABU S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is better than Suresh Kumar for Image processing\n• Good\n• Don’t know about him as a teacher…But He is my proctor… chill banda hai.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 12,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-061",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-062-evidence-1",
+    "facultyName": "PRIYA G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Negative response",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 12,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-062",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-063-evidence-1",
+    "facultyName": "RAHUL RAMAN",
+    "rating": 2.0,
+    "sampleSize": 2,
+    "text": "• Rahul Raman is good.\n• Don’t take Rahul Raman… slow and boring teacher\n• Lele acha hai mene nhi liya hai\n• Rahul raman 👍🏼👍🏼👍🏼👍🏼👍🏼👍🏼🔥🔥\n• 2/5 (2 reviews)\n• Very strict in project and DA",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 12,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-063",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-064-evidence-1",
+    "facultyName": "RAJAKUMAR K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Bestest\n• Badiya\n• Bhai bs le lena mile toh bhut chill h sb me",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 12,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-064",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-065-evidence-1",
+    "facultyName": "RAJKUMAR R",
+    "rating": 1.0,
+    "sampleSize": null,
+    "text": "• 2 reviews- 1/5 and the other is 5/5 (dekh lo apne hisaab se)\n• Review from one of the above reviewer-Bhagwan teacher hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 12,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-065",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Conflicting individual ratings in same block retained separately; total block review count not assigned to either rating."
+    ]
+  },
+  {
+    "id": "attachment-01-block-065-evidence-2",
+    "facultyName": "RAJKUMAR R",
+    "rating": 5.0,
+    "sampleSize": null,
+    "text": "• 2 reviews- 1/5 and the other is 5/5 (dekh lo apne hisaab se)\n• Review from one of the above reviewer-Bhagwan teacher hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 12,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-065",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Conflicting individual ratings in same block retained separately; total block review count not assigned to either rating."
+    ]
+  },
+  {
+    "id": "attachment-01-block-066-evidence-1",
+    "facultyName": "RAJKUMAR S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Wherever you find Rajkumar S just take him\n• Best hai\n• baaap teacher. Lelo , sabse best banda hai VIT mei\n• class ke baad jaake bhi attendance de deta hai XD",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 12,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-066",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 13; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-067-evidence-1",
+    "facultyName": "RAMANATHAN L",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Don’t ever take ramanathan",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 13,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-067",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-068-evidence-1",
+    "facultyName": "RAMANI S",
+    "rating": 5.0,
+    "sampleSize": 1,
+    "text": "• 5/5 ( 1 review)\n• Badiya teacher hai chill hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 13,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-068",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-069-evidence-1",
+    "facultyName": "RAMESH BABU K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Negative response\n• I have heard bad words for him and umadevi ks\n• Avoid if possible\n• Ramesh babu marks and attendance de dega… Project mei chutiyap karaega\n• Strict",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 13,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-069",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-070-evidence-1",
+    "facultyName": "RISHIN HALDAR",
+    "rating": 3.0,
+    "sampleSize": 3,
+    "text": "• He was my teacher in SIN and AI. He is knowledgeable. Teaches well. He leave the class 10 min late. Doesn’t take review 1 and 2, directly takes review3. His quiz questions are tough. I recommend to take him once.\n• 3/5 (3 reviews)\n• Quiz bahut tough deta hai\n• Very strict in project\n• He is a lazy one. But knowledgable",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 13,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-070",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-071-evidence-1",
+    "facultyName": "SAIRABANU J",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Good. Take her\n• sahi hi he…okais",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 13,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-071",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-072-evidence-1",
+    "facultyName": "SALEEM DURAI M.A",
+    "rating": 3.0,
+    "sampleSize": 2,
+    "text": "• Not recommended\n• I have him for a core subject. He is too iritating. I wanted to change him but didn’t find a vacancy in the other class.\n• Makes us write stuff dowm. Likhwa likhwa ke padhate hai. And kisne kya likha uspe bahut time barbad karte hai\n• Saleem durai is strict in project (Other reviewer said- \"noo, bus vo questions bahut puuchta hai…agar classes aoogya to marks dayga\" on this)\n• Ussay practical knowledge nhi hai\n• Salim Durai is chill. Has good knowledge. But he's bad at respecting people. If that’s not a problem fot you, take him. Chances of getting good marks also exist.\n• Good\n• Strict\n• Good\n• He has become too strict. Also doesn’t give marks.\n• 3/5 (2 review)\n• Project me strict h ye",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 14,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-072",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-073-evidence-1",
+    "facultyName": "SANJIBAN SEKHAR ROY",
+    "rating": 3.33,
+    "sampleSize": 3,
+    "text": "• Good. Partial towards Bengalis\n• He is linient\n• He will not give good marks. But he is chill and give you attendance\n• 3.33/5 (3 reviews)\n• Mast hai\n• Chill but moody\n• Partial",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 14,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-073",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-074-evidence-1",
+    "facultyName": "SANTHI H",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Not recommended\n• Better drop the subject🤣🤣\n• Is she good in teaching? Answer- Mediocre. But very very strict. Doesn’t give marks even if u write",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 14,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-074",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Final source sentence ends at \"even if u write\"; continuation absent in PDF.",
+      "Faculty block continues through page 15; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-075-evidence-1",
+    "facultyName": "SANTHI K",
+    "rating": 2.0,
+    "sampleSize": 1,
+    "text": "• Not recommended\n• 2/5 ( 1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 15,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-075",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-076-evidence-1",
+    "facultyName": "SANTHI V",
+    "rating": null,
+    "sampleSize": 2,
+    "text": "• Not recommended (2 reviews)\n• I haven't studied under her. But she's the Dean of scope. I have heard from my friends that she's very strict in marking, attendance. Project mei bhi strict hai.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 15,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-076",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-077-evidence-1",
+    "facultyName": "SATHEESH A",
+    "rating": 3.0,
+    "sampleSize": 2,
+    "text": "• He is good. Lininient in checking\n• 3/5 (2 reviews)\n• Bhut chill h\n• He teaches ok but too strict in paper correction",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 15,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-077",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-078-evidence-1",
+    "facultyName": "SATHIYA KUMAR C",
+    "rating": 3.5,
+    "sampleSize": 2,
+    "text": "• 3.5/5 (2 reviews)\n• Chill in class",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 15,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-078",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-079-evidence-1",
+    "facultyName": "SATHYARAJ R",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is my DBMS faculty this sem and he is toooo bad. Not recommended",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 15,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-079",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-080-evidence-1",
+    "facultyName": "SELVAKUMAR K",
+    "rating": 3.0,
+    "sampleSize": 1,
+    "text": "• 3/5 ( 1review)\n• ok ok",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 15,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-080",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-081-evidence-1",
+    "facultyName": "SENDHIL KUMAR K.S",
+    "rating": 3.0,
+    "sampleSize": 1,
+    "text": "• 3/5 ( 1 review)\n• Not so good but ok",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 16,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-081",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-082-evidence-1",
+    "facultyName": "SENTHILNATHAN",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Irritable, not recommended\n• In general that teacher is very bad. He doesn’t gives marks also.\n• Don’t give marks",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 16,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-082",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-083-evidence-1",
+    "facultyName": "SHAIK NASEERA",
+    "rating": 2.0,
+    "sampleSize": 3,
+    "text": "• Bhai DSA mei Shaik Nseera is good. Actually very good!\n• Don’t take j component under her. She'll give you trouble regarding projects\n• 2/5 (3 reviews)\n• She teaches ok but other things bad\n• Good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 16,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-083",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-084-evidence-1",
+    "facultyName": "SHARMILA BANU K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Sharmila banu… she is really good…\n• I heard she is strict\n• Well she seems strict…but she do give marks… Nd if possiblend in her hands she will give attendance too. Nd she kinda quite awesome when it comes to teaching… as long as u dont talk in her class",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 16,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-084",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-085-evidence-1",
+    "facultyName": "SHASHANK MOULI SATAPATHY",
+    "rating": 4.0,
+    "sampleSize": null,
+    "text": "• 4 out of 5\n• He is a very good faculty. He may seem strict in the first few days, but after that once he knows you he is very helpful and lenient in most of the matters.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 16,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-085",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-086-evidence-1",
+    "facultyName": "SIVA SHANMUGAM G",
+    "rating": 3.0,
+    "sampleSize": 2,
+    "text": "• 3/5 (2 reviews)\n• He is ok\n• Lazy fellow",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 16,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-086",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 17; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-087-evidence-1",
+    "facultyName": "SIVANESAN S",
+    "rating": 4.5,
+    "sampleSize": 2,
+    "text": "• Not recommended\n• 4.5/5 (2 reviews)\n• Good teacher for average student .\n• Chill teacher..",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 17,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-087",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-088-evidence-1",
+    "facultyName": "SRIMATHI C",
+    "rating": 1.0,
+    "sampleSize": 1,
+    "text": "• Not recommended\n• Very bad\n• 1/5 (1 review)\n• Project na ho payega tmse",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 17,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-088",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-089-evidence-1",
+    "facultyName": "SRIVANI A",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Sahi hai kaafi",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 17,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-089",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-090-evidence-1",
+    "facultyName": "SURESHKUMAR N",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• U no need to study in Suresh Kumar N class. He will give liberal marks. (Note- every teacher gave this reviewer full marks)\n• He is sooper chill with marks\n• Good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 17,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-090",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-091-evidence-1",
+    "facultyName": "SWARNALATHA P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Swarnalatha is normally chill. If you don’t need much academic guidance, you can take her. But she creates a fuss in every lab. Nakhre hai uske. And she's a red tag. So pata ke rakhega to fayeda hoga",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 17,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-091",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-092-evidence-1",
+    "facultyName": "THENDRAL P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• I heard bad about him from a lot\n• Bad\n• Strict\n• Gandfad\n• Thendral P teaches good but is liitle strict",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 17,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-092",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 18; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-093-evidence-1",
+    "facultyName": "THENMOZHI T",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Okish",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 18,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-093",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-094-evidence-1",
+    "facultyName": "UMADEVI K S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Umadevi is a very strict teacher. She knows a lot and teaches well but expects the same from her students.\n• she is strict for attendance, marks fairly, teaches mediocre, good chance of getting better grade as she is doesn't marks everyone equally\n• Strict\n• I took her for web security. My only forced choice in my TT\n• Not recommended\n• Not good\n• Bahut strict hai\n• Thik thak\n• Fail karegi kya? Answer- no, but she will trouble a lot in project and in attendance and marks also",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 18,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-094",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-095-evidence-1",
+    "facultyName": "USHUS ELIZEBETH ZACHARIAH",
+    "rating": 3.75,
+    "sampleSize": 4,
+    "text": "• From Ushus and Krishnamurthy, Ushus ko le\n• 3.75/5 (4 reviews)\n• Thik hi h bhai\n• Good. Always smiling😄\n• Good teacher",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 18,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-095",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-096-evidence-1",
+    "facultyName": "VASANTHA W B",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Till now … fine just. Low voice speaker. A bit strict in project. Don’t know about marking system\n• Thik hai but ladke aur ladkiyon ko alag alag baithati hai\n• Narrow minded",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 19,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-096",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-097-evidence-1",
+    "facultyName": "VIJAYA KUMAR K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Aankh band karke lele\n• Jhakkas. Super chill teacher",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 19,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-097",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-098-evidence-1",
+    "facultyName": "VIJAYASHERLY V",
+    "rating": 4.5,
+    "sampleSize": 2,
+    "text": "• Acchi hai maine suna\n• Linent hai\n• Very chill at everything\n• 4.5/5 (2 reviews)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 19,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-098",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-099-evidence-1",
+    "facultyName": "YOKESH BABU S",
+    "rating": 1.5,
+    "sampleSize": 2,
+    "text": "• Strictly not recommended\n• Strict, 1.5/5 (2 reviews)\n• May god pass you\n• Not the one to take",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 19,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-099",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-100-evidence-1",
+    "facultyName": "ARCHANA T",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Ok. Average will be low.\n• Thik hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 19,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-100",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-101-evidence-1",
+    "facultyName": "LYDIA JANE G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Heard she is strict\n• moody.. a bit strict in project… doesn't like sense much\n• Lydia Jane is strict and partial\n• Lay lay (Rely to this comment by other reviewer - \"kabhi mat lena!!\")\n• Bura haal ho jayega",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 19,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-101",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 20; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-102-evidence-1",
+    "facultyName": "Sriram G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Likhoge toh marks dega.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 20,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-102",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-103-evidence-1",
+    "facultyName": "Dhritiman Gupta",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Noooooooooo. I didn't have him but I heard he's a nightmare for absolute grading",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 20,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-103",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-104-evidence-1",
+    "facultyName": "Balaji S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Not good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 20,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-104",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-105-evidence-1",
+    "facultyName": "Coumaran G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Bestest",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 20,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-105",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-106-evidence-1",
+    "facultyName": "JAYALAKSHMI M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Not recommended",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 20,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-106",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-107-evidence-1",
+    "facultyName": "SUDHAKAR R",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Strict hai bhai attendance mei",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 20,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-107",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-108-evidence-1",
+    "facultyName": "CHELLATAMILAN",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is sweet when it comes to lab courses",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 20,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-108",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-109-evidence-1",
+    "facultyName": "ARUNA K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Class average will be very low… Not recommended + teaching is below average",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 20,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-109",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-110-evidence-1",
+    "facultyName": "PRABHAVATHY P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Chilled out.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 20,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-110",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-111-evidence-1",
+    "facultyName": "ALAGIRI I",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Not recommended",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 21,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-111",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-112-evidence-1",
+    "facultyName": "MERCY MATHEW",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Bad\n• You should avoid her if you can\n• Class activities class mei hi kar lena. Zindagi acchi betegi",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 21,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-112",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-113-evidence-1",
+    "facultyName": "KALAIVANI K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Bad\n• Heard that Kalaivani k is not good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 21,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-113",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-114-evidence-1",
+    "facultyName": "BHASKAR SEN GUPTA",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Had his class just now seemed to be a nice guy.(comment from 12-7-2018)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 21,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-114",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-115-evidence-1",
+    "facultyName": "OM P.SUTHAR",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• I was told by someone never to take OM P SUTHAR\n• Not recommended\n• Knowlegable\n• Bhai fail karega. Woh bhi do baar",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 21,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-115",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-116-evidence-1",
+    "facultyName": "KARTHIKA K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Kathika k bahut pyaari hai. Le le",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 21,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-116",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-117-evidence-1",
+    "facultyName": "ARUN KUMAR T",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is very project minded and wants very upto marks answer in paper and a very neat handwriting. He generally take iot and networking subject.If you really want to work hard on a project then only take him otherwise a big No\n• Ex dean I guess of cse, was strict as dean",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 21,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-117",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 22; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-118-evidence-1",
+    "facultyName": "SUBHASHINI R",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 22,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-118",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-119-evidence-1",
+    "facultyName": "MANIMARAN M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Good\n• chill bhi hai aur teaches good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 22,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-119",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-120-evidence-1",
+    "facultyName": "MADHU V",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Very good for ala",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 22,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-120",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-121-evidence-1",
+    "facultyName": "Padmavathy C",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Mast hai… padhana hi chor diya tha humare batch ko 😂. Lele. Mera A aa gaya tha bina zyada padhe",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 22,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-121",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-122-evidence-1",
+    "facultyName": "JAGADEESH KUMAR K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is good. He was my faculty for aod and first semester calculus\n• If you are good at maths and want to start hating the subject then only take him. And if you are not good at it and want someone linient and who teaches slowly then take him.\n• Sweet guy",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 22,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-122",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-123-evidence-1",
+    "facultyName": "SHARIEF BASHA S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Good for aod",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 22,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-123",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-124-evidence-1",
+    "facultyName": "MANJANNA B",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Manjanna is super chill",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 22,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-124",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-125-evidence-1",
+    "facultyName": "BHULAKSHMI BONTHU",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Bhulakshmi doesn’t teach well. But she is sweet.\n• Bhulakshmi kabhi mat lena plzz. Gandi teacher hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 22,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-125",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 23; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-126-evidence-1",
+    "facultyName": "MALASERENE I",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Take her",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 23,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-126",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-127-evidence-1",
+    "facultyName": "ABDUL HAMEED",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is best. Take him for any maths. Super chill",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 23,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-127",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-128-evidence-1",
+    "facultyName": "YAMUNA M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Strictly not recommended\n• she's ok, marks de degi",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 23,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-128",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-129-evidence-1",
+    "facultyName": "Deepak G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Lelo\n• Deepa G is better than Ezhilmaran for discrete",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 23,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-129",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-130-evidence-1",
+    "facultyName": "Navin Kumar",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is good.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 23,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-130",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-131-evidence-1",
+    "facultyName": "KARTHIKEYAN J",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Ok ok\n• Accha banda hai. But agar TARP mei loge toh mostly B aayega.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 23,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-131",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-132-evidence-1",
+    "facultyName": "Alli P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Strictly not recommended\n• I really like her",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 23,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-132",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-133-evidence-1",
+    "facultyName": "ABDUL GAFFAR H",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Mast bandaa hain. Chill reheta hai life mein",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 23,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-133",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-134-evidence-1",
+    "facultyName": "TONY P JOSE",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Tony is good… everyone gets A",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 24,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-134",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-135-evidence-1",
+    "facultyName": "JAYASHREE J",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Take jayashree if you need free marks",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 24,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-135",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-136-evidence-1",
+    "facultyName": "SUBRAMANIAM C.K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• For IIP, Not recommended to take",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 24,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-136",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-137-evidence-1",
+    "facultyName": "SHOBANA V",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Shobana gives marks… I have heard\n• Most chill teacher ever",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 24,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-137",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-138-evidence-1",
+    "facultyName": "GERALDINE BESSIE AMALI D",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• How is she? Answer- A1\n• best best\n• Bhai bahut acchi teacher hai.. Padati bhi hai knowledge bhi hai chill bhi hai\n• Padhati acha hai chilled hai number bhi deti hai. Matlab logic sai hai run nhi kiya to bhi number deti hai(was talking about OOPS subject)\n• She is good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 24,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-138",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-139-evidence-1",
+    "facultyName": "ANTOINETTE DANIEL",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Antonette is better than Malathy",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 24,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-139",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-140-evidence-1",
+    "facultyName": "GEMINI V JOY",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Bad",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 24,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-140",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-141-evidence-1",
+    "facultyName": "JAYAKUMAR S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Bro le le, mast faculty hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 24,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-141",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 25; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-142-evidence-1",
+    "facultyName": "SUDHIPTO BHATTACHARAYA",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is good\n• Marks wise? Answer- Strict a bit",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 25,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-142",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-143-evidence-1",
+    "facultyName": "JASMINE BENAZIR A.",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Can someone tell a good teacher for analog electronics circuits? Answer - Jasmine. Don’t take Sathya or Govardhan",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 25,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-143",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-144-evidence-1",
+    "facultyName": "RAJESH A",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Vinod babu or rajesh a… who's better for network?? Answer- Rajesh A",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 25,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-144",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-145-evidence-1",
+    "facultyName": "CHRISTINA JOSEPHINE MALATHI A",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Is Christina Josephine good for electromagnetic field theory? Answer- Take Lavanya, she doesn’t teach well But proxy, da 30, project 90+",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 25,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-145",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Comparative answer mentions Lavanya; pronoun target ambiguous. Kept under source heading; no inferred reassignment."
+    ]
+  },
+  {
+    "id": "attachment-01-block-146-evidence-1",
+    "facultyName": "SARAVANARAJAN M C",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Best 🔥",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 25,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-146",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-147-evidence-1",
+    "facultyName": "KALPANA PRIYA D",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• achi ha, Notes ache banvati ha",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 25,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-147",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-148-evidence-1",
+    "facultyName": "GITANJALI J",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Best in software",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 25,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-148",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-149-evidence-1",
+    "facultyName": "MOHAN K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Best teacher for OS",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 25,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-149",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-150-evidence-1",
+    "facultyName": "SK. KHADAR BABU",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is good for stats",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-150",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-151-evidence-1",
+    "facultyName": "KAVITHA G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-151",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-152-evidence-1",
+    "facultyName": "CHANDRA MOULISWARAN S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• CM mat lena partiality karta hai aur kabi kabi galat padata hai😏",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-152",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-153-evidence-1",
+    "facultyName": "PADMA R",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Padma r is good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-153",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-154-evidence-1",
+    "facultyName": "ANNAPURNA JONNALAGADDA",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Nhi bhai❌❌❌",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-154",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-155-evidence-1",
+    "facultyName": "USHA RANI N",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Free S grade",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-155",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-156-evidence-1",
+    "facultyName": "VARALAKSHMI M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• strict but teaches well",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-156",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-157-evidence-1",
+    "facultyName": "SWARNA PRIYA R.M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• strict but teaches really good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-157",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-158-evidence-1",
+    "facultyName": "LAKSHMINARAYANA P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Lakshminarayan P is good. He taught good if you study. Else just go and sit. He rarely says anything",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-158",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-159-evidence-1",
+    "facultyName": "PUNDLIK RAMBHAU BHAGAT",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Things come from his material. He maintains proper class average marking not too high not too low. He is approachable too.\n• Study his ppt and you will get A",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 26,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-159",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 27; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-160-evidence-1",
+    "facultyName": "ETHIRAJ RD",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• I took him in IIP. I was a part of group where most of them were his ex students. I got good marks because he was partial. Still you can take him if there is no other option",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 27,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-160",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-161-evidence-1",
+    "facultyName": "RAVI SANKAR J",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 27,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-161",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-162-evidence-1",
+    "facultyName": "DEEPA S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Deepa s is good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 27,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-162",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-163-evidence-1",
+    "facultyName": "ANAND PREM RAJAN",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• I took him in Social Entrepreneurship. He is a crazy guy. Remember whatever he says you have to give him credit whenever you can. He gave full marks to all goups in project. But thoda bakchod hai. But you can take him",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 27,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-163",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-164-evidence-1",
+    "facultyName": "SRINIVASAN P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Mast banda hai. But sabko marks de deta hai. You can go n increase marks after paper correction. Chill teacher hai. Padhata bhi accha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 27,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-164",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-165-evidence-1",
+    "facultyName": "NILAVATHY K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• I took her in Ethics. She was chill. We had to give a presentation, a poster and a quiz(in class, google form). Life was easy under her.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 27,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-165",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-166-evidence-1",
+    "facultyName": "BIJU V",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is a good teacher. You can take him.\n• Additional course mei hack ke 3 marks diye the isne… baaki he is okay",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 27,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-166",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-167-evidence-1",
+    "facultyName": "VIJAYARAJAN V",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is a good yeacher. Taught well. Take him. A little partial towards good n attentive students",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-167",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-168-evidence-1",
+    "facultyName": "MADIAJAGAN M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• I took him in parallel in 2nd year. He was too chill. Knowledgeable. You can take him",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-168",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-169-evidence-1",
+    "facultyName": "ANTOINETTE DANIEL",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is okay. You can take her",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-169",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-170-evidence-1",
+    "facultyName": "VIJAYAN E",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Dsa ka teacher hai ye… chill hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-170",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-171-evidence-1",
+    "facultyName": "THILAGAVATHI M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is very good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-171",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-172-evidence-1",
+    "facultyName": "THIPPA REDDY G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Super duper chill teacher",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-172",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-173-evidence-1",
+    "facultyName": "SHANTHARAJAH S P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Mer proctor hai..agar majboori naa ho to mat lena isko",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-173",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-174-evidence-1",
+    "facultyName": "VANITHA M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Not good\n• Not good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-174",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-175-evidence-1",
+    "facultyName": "DIVYA UDAYAN J",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Ye acchi hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-175",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-176-evidence-1",
+    "facultyName": "AGILANDEESWARI.L",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Not good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 28,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-176",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 29; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-177-evidence-1",
+    "facultyName": "VALARMATHI B",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is very good for machine learning",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 29,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-177",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-178-evidence-1",
+    "facultyName": "NEELU KHARE",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is good for ML",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 29,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-178",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-179-evidence-1",
+    "facultyName": "UMA K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Software testing ki teacher hai theek hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 29,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-179",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-180-evidence-1",
+    "facultyName": "LAKSHMI PRIYA G G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Good for data mining",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 29,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-180",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-181-evidence-1",
+    "facultyName": "AJIT KUMAR SANTRA",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Bhul se bhi mat lena",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 29,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-181",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-182-evidence-1",
+    "facultyName": "ASWANI KUMAR CHERUKURI",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Very good",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 29,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-182",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-183-evidence-1",
+    "facultyName": "JEYANTHI N",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Ye acchi hai but thoda pareshaan karegi",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 29,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-183",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-184-evidence-1",
+    "facultyName": "GUNDALA SWATHI",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Kisi kimat par mat lena",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 29,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-184",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-185-evidence-1",
+    "facultyName": "DAPHNE LOPEZ",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Not recommended",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 29,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-185",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-186-evidence-1",
+    "facultyName": "SOVAN SUNDAR DASGUPTA",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• Lenient, 4 out of 5(1 review)\n• bohot chill hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 30,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-186",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-187-evidence-1",
+    "facultyName": "FATHIMA PATHAM K",
+    "rating": 2.0,
+    "sampleSize": 1,
+    "text": "• 2 out of 5 (1 review)\n• Strict in paper correction",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 30,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-187",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-188-evidence-1",
+    "facultyName": "SENTHILKUMAR P",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5(1 review)\n• Senthilkumar P bhi theek hai… Zyada strict bhi nhi hai… Zyada chill bhi nhi hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 30,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-188",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-189-evidence-1",
+    "facultyName": "SHARU B.K.",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5(1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 30,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-189",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-190-evidence-1",
+    "facultyName": "SENTHIL KUMAR M",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5(1 review)\n• theek hai jaha tak mujhe pata hai… Riviera ka convenor banta hai wo",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 30,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-190",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-191-evidence-1",
+    "facultyName": "SEKARAPANDIAN N",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Strictly not recommended",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 30,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-191",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-192-evidence-1",
+    "facultyName": "MOHAMED IBRAHIM M",
+    "rating": 2.0,
+    "sampleSize": 2,
+    "text": "• 2 out of 5 (2 reviews)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 30,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-192",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-193-evidence-1",
+    "facultyName": "CHINMAYA PRASAD MOHANTY",
+    "rating": 5.0,
+    "sampleSize": 2,
+    "text": "• 5 out of 5 (2 reviews)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 30,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-193",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-194-evidence-1",
+    "facultyName": "MOHAN C.G",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5(1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 30,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-194",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 31; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-195-evidence-1",
+    "facultyName": "PADMANATHAN P",
+    "rating": 5.0,
+    "sampleSize": 1,
+    "text": "• 5 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 31,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-195",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-196-evidence-1",
+    "facultyName": "SATHEESH A",
+    "rating": 4.0,
+    "sampleSize": 2,
+    "text": "• 4 out of 5 (2 reviews)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 31,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-196",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-197-evidence-1",
+    "facultyName": "PRAKASH R",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 31,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-197",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-198-evidence-1",
+    "facultyName": "JAYAPRAKASH NARAYAN M",
+    "rating": 2.5,
+    "sampleSize": 2,
+    "text": "• 2.5 out of 5 (2 reviews)\n• One of the best",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 31,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-198",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-199-evidence-1",
+    "facultyName": "PRAVEEN KUMAR",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 31,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-199",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-200-evidence-1",
+    "facultyName": "VIGNESH M",
+    "rating": 5.0,
+    "sampleSize": 1,
+    "text": "• 5 out of 5 (1 review)\n• Ye sahi hai..",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 31,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-200",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-201-evidence-1",
+    "facultyName": "CHITRA D",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 31,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-201",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-202-evidence-1",
+    "facultyName": "ANAND VEERABADRA PRASAD GURUMOORTHY",
+    "rating": 3.0,
+    "sampleSize": 1,
+    "text": "• Strict, 3 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 31,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-202",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-203-evidence-1",
+    "facultyName": "DEVENDRANATH RAMKUMAR",
+    "rating": 2.0,
+    "sampleSize": 1,
+    "text": "• Strict, 2 out of 5 (1 review)\n• Avoid taking if you can\n• Ye worst hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 31,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-203",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 32; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-204-evidence-1",
+    "facultyName": "MUTHUCHAMY A",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 32,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-204",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-205-evidence-1",
+    "facultyName": "PADMANABHAN K",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5 (1 review)\n• Ye best hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 32,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-205",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-206-evidence-1",
+    "facultyName": "SK ARIFUL RAHAMAN",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Ye bhi accha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 32,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-206",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-207-evidence-1",
+    "facultyName": "RIJESH M",
+    "rating": 3.0,
+    "sampleSize": 2,
+    "text": "• 3 out of 5 (2 reviews)\n• Ye thik hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 32,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-207",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-208-evidence-1",
+    "facultyName": "SREEKANTH M. S",
+    "rating": 5.0,
+    "sampleSize": 1,
+    "text": "• 5 out of 5 (1 review)\n• Ye best hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 32,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-208",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-209-evidence-1",
+    "facultyName": "KARTHIKEYAN S",
+    "rating": 5.0,
+    "sampleSize": 1,
+    "text": "• 5 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 32,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-209",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-210-evidence-1",
+    "facultyName": "BABU C",
+    "rating": 5.0,
+    "sampleSize": 1,
+    "text": "• 5 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 32,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-210",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-211-evidence-1",
+    "facultyName": "JEYAPANDIARAJAN P",
+    "rating": 1.0,
+    "sampleSize": 1,
+    "text": "• Strict, 1 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 32,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-211",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 33; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-212-evidence-1",
+    "facultyName": "SOLAMAN BOBBY S",
+    "rating": 1.0,
+    "sampleSize": 1,
+    "text": "• Strict, 1 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 33,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-212",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-213-evidence-1",
+    "facultyName": "RAJAMURUGAN G",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 33,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-213",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-214-evidence-1",
+    "facultyName": "BHARANIDARAN R",
+    "rating": 3.0,
+    "sampleSize": 1,
+    "text": "• 3 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 33,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-214",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-215-evidence-1",
+    "facultyName": "KRISHNA KISHORE K.V.S",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 33,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-215",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-216-evidence-1",
+    "facultyName": "SRINIVASA GUPTA N",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5 (1 review)\n• Teaches good, strict with attendance",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 33,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-216",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-217-evidence-1",
+    "facultyName": "ANANDAVEL K",
+    "rating": 2.0,
+    "sampleSize": 1,
+    "text": "• Strict, 2 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 33,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-217",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-218-evidence-1",
+    "facultyName": "VINOD KUMAR SHARMA",
+    "rating": 4.0,
+    "sampleSize": 1,
+    "text": "• 4 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 33,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-218",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-219-evidence-1",
+    "facultyName": "JOEL J",
+    "rating": 5.0,
+    "sampleSize": 1,
+    "text": "• 5 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 33,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-219",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-220-evidence-1",
+    "facultyName": "RAHUL SINGH SIKARWAR",
+    "rating": 2.0,
+    "sampleSize": 1,
+    "text": "• Strict, 2 out of 5 (1 review)",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 33,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-220",
+    "kind": "aggregate",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-221-evidence-1",
+    "facultyName": "SIVAPRASAD DARLA",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-221",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-222-evidence-1",
+    "facultyName": "BOOPATHI M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-222",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-223-evidence-1",
+    "facultyName": "JOHN RAJAN A",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-223",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-224-evidence-1",
+    "facultyName": "SRINIVASAN NARAYANAN",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Ek no",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-224",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-225-evidence-1",
+    "facultyName": "JEEVANANTHAM A.K.",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-225",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-226-evidence-1",
+    "facultyName": "RAJESH M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-226",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-227-evidence-1",
+    "facultyName": "RAJU ABRAHAM",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-227",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-228-evidence-1",
+    "facultyName": "PANDIVELAN C",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Sahi hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-228",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-229-evidence-1",
+    "facultyName": "DEVENDIRAN S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-229",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-230-evidence-1",
+    "facultyName": "GEETHA MANIVASAGAM",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acchi hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 34,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-230",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 35; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-231-evidence-1",
+    "facultyName": "THIAGARAJAN S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 35,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-231",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-232-evidence-1",
+    "facultyName": "BENEDICT THOMAS",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 35,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-232",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-233-evidence-1",
+    "facultyName": "SENTHIL KUMAR A",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Aacha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 35,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-233",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-234-evidence-1",
+    "facultyName": "ANTHONY XAVIOR M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Acha hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 35,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-234",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-235-evidence-1",
+    "facultyName": "RAJA ANNAMALAI",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Not recommended",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 35,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-235",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-236-evidence-1",
+    "facultyName": "GOPICHAND G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• I have heard he is very chill about marks and attendance",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 35,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-236",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-237-evidence-1",
+    "facultyName": "BALAKRUSHNA TRIPATHY",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Have heard he is strict but knowledgeable\n• Yeh acche hai\n• SITE Dean. Chill, speaks hindi\n• Very nice faculty.. No problem in attendance. Give away marks easily.. Very chill",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 35,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-237",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-238-evidence-1",
+    "facultyName": "DEBASISH MISHRA",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is good faculty. he teaches well and works really hard for the students. but expects the same from students",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 35,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-238",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-239-evidence-1",
+    "facultyName": "KALAIVANI T",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She is a lenient teacher",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-239",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-240-evidence-1",
+    "facultyName": "SHANTHI V",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Lenient teacher, extremely affable",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-240",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-241-evidence-1",
+    "facultyName": "ANAND PREM RAJAN",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Good faculty",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-241",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-242-evidence-1",
+    "facultyName": "JAYANTHI S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She teaches well",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-242",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-243-evidence-1",
+    "facultyName": "RAMANATHAN K",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Makes concepts strong",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-243",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-244-evidence-1",
+    "facultyName": "SANGEETHA SUBRAMANIAN",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Very cooperative, and excellent teacher",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-244",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-245-evidence-1",
+    "facultyName": "SUBATHRADEVI C",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• She will make the concepts very clear",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-245",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-246-evidence-1",
+    "facultyName": "RASOOL M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Boosts curiosity for the subject",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-246",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-247-evidence-1",
+    "facultyName": "SANJIT KUMAR",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He is an okayish faculty",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-247",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-248-evidence-1",
+    "facultyName": "SIVAKUMAR A",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• In depth knowledge of his subject, and a good teacher",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 36,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-248",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count.",
+      "Faculty block continues through page 37; page is heading start page."
+    ]
+  },
+  {
+    "id": "attachment-01-block-249-evidence-1",
+    "facultyName": "SHANTHI C",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Best teacher for clearing concepts",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 37,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-249",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-250-evidence-1",
+    "facultyName": "RAMESH PATHY M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Extremely friendly, and supportive. Amazing teacher",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 37,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-250",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-251-evidence-1",
+    "facultyName": "ABHISHEK SINHA",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He has strong basics and after studying under him your basics will be strong too",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 37,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-251",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-252-evidence-1",
+    "facultyName": "SRIDHARAN T B",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• He has an in-depth knowledge of the subject. he is a very good faculty",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 37,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-252",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-253-evidence-1",
+    "facultyName": "SIVABALAN S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Very helpful and approachable but cant teach at all.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 37,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-253",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-254-evidence-1",
+    "facultyName": "BAGYAVEERESWARAN V",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• The perfect teacher in every sense.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 37,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-254",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-255-evidence-1",
+    "facultyName": "PONNAMBALAM P",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Teaches well. But isnt approachable. Correction is fair.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 37,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-255",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-256-evidence-1",
+    "facultyName": "MATHEW M. NOEL",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• AMAZING teacher. But a little crazy.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 37,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-256",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-257-evidence-1",
+    "facultyName": "BALAMURUGAN S",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Pretty good teacher in every way",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 37,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-257",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-258-evidence-1",
+    "facultyName": "ABHISHEK G",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Very good teacher but very boring.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 38,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-258",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-259-evidence-1",
+    "facultyName": "BRISILLA R M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Teaches well, fair correction but extremely boring.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 38,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-259",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-260-evidence-1",
+    "facultyName": "SUDHAKAR N",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• teaches very well. But very strict and unapproachable.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 38,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-260",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-261-evidence-1",
+    "facultyName": "MARIMUTHU R",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• not a good teacher, very lazy.\n• Teaching : good\n• Lab : chill\n• Marking : ok ok",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 38,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-261",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-262-evidence-1",
+    "facultyName": "AMUTHA PRABHA N",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Okayish teacher.",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 38,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-262",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-263-evidence-1",
+    "facultyName": "RASHMI RANJAN DAS",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Teaching : good\n• Project: only revie 3 taken (no need of rev1&2)\n• Marking: cat 1&2 strict but fat chill\n• No proxy",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 38,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-263",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-264-evidence-1",
+    "facultyName": "MONICA SUBASHINI M",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Teaching : good\n• Project : no tension if your project is not working she gives you more than 80\n• Marking : above avg",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 38,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-264",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-265-evidence-1",
+    "facultyName": "RAMESH V",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Teaching : not good\n• Marking : chill\n• No problem of attendance and you can talk during the lecture",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 39,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-265",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  },
+  {
+    "id": "attachment-01-block-266-evidence-1",
+    "facultyName": "SWATHI J.N",
+    "rating": null,
+    "sampleSize": null,
+    "text": "• Yeh strict hai",
+    "sourceId": "attachment-01",
+    "sourceName": "3.pdf",
+    "page": 39,
+    "date": null,
+    "extraction": "text",
+    "sourceRow": "block-266",
+    "kind": "qualitative",
+    "sourceClaim": "Page artwork states: Source: WhatsApp Chat.",
+    "context": "Faculty-heading block; bullets have no reliable individual reviewer identities. Explicit ratings use /5 or out of 5.",
+    "warnings": [
+      "Source opinions are unverified; bullet count is not a respondent count."
+    ]
+  }
+]
