@@ -245,11 +245,20 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
   const [selected, setSelected] = useState<string[]>([]);
   const [basket, setBasket] = useState<string[]>(() => initialShortlist(storage));
   const [alternativeCourses, setAlternativeCourses] = useState<string[]>(() => initialAlternativeCourses(storage));
+  const [draggedAlternative, setDraggedAlternative] = useState<string | null>(null);
   function updateAlternatives(ids: string[]) {
     const next = [...new Set(ids)];
     setAlternativeCourses(next);
     try { storage.setItem("ffcs-helper:alternative-courses:v1", JSON.stringify(next)); }
     catch { setMessage("Alternative courses saved for this session only."); }
+  }
+  function moveAlternative(id: string, targetIndex: number) {
+    const from = alternativeCourses.indexOf(id);
+    if (from < 0 || targetIndex < 0 || targetIndex >= alternativeCourses.length || from === targetIndex) return;
+    const next = [...alternativeCourses];
+    next.splice(from, 1);
+    next.splice(targetIndex, 0, id);
+    updateAlternatives(next);
   }
 
   useEffect(() => {
@@ -265,7 +274,10 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
     catch { setMessage("Preferences are active for this session, but browser storage is unavailable. Export a backup to keep them."); }
   }, [prefs]);
   const [allBlockedTimes, setAllBlockedTimes] = useState<BlockedWindow[]>(() => demo ? [] : initialBlockedTimes());
-  const activeCalendar = calendars.find((c) => c.id === activeCalendarId) || calendars[0];
+  const [ffcsMode, setFfcsMode] = useState(false);
+  const [ffcsDrafts, setFfcsDrafts] = useState<Record<string, CalendarChoice>>({});
+  const savedActiveCalendar = calendars.find((c) => c.id === activeCalendarId) || calendars[0];
+  const activeCalendar = ffcsMode ? (ffcsDrafts[savedActiveCalendar.id] || savedActiveCalendar) : savedActiveCalendar;
   const blockedTimes = allBlockedTimes.filter(block => !block.calendarId || block.calendarId === activeCalendar.id);
   const pinnedOfferingIds = (activeCalendar.pinnedOfferingIds || []).filter(id => activeCalendar.offeringIds.includes(id));
   const pinnedOfferings = catalog.offerings.filter(o => pinnedOfferingIds.includes(o.id));
@@ -325,7 +337,6 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
     return () => window.removeEventListener("ffcs-toast", report);
   }, []);
   const [busy, setBusy] = useState(false);
-  const [ffcsMode, setFfcsMode] = useState(false);
   const [registrationComplete, setRegistrationComplete] = useState(false);
   const completionHeadingRef = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
@@ -443,10 +454,8 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
       persistFfcsRejections({ ...rejections, [courseId]: [...new Set([...(rejections[courseId] || []), current.facultyId])] });
       const result = repairFfcs(catalog, activeCalendarOfferings, courseId, ffcsLockedCourses, rejections, prefs, alternativeCourses);
       if (!result.offeringIds) { setMessage(result.message || "No replacement found."); return; }
-      persistCalendars(calendars.map(calendar => calendar.id === activeCalendar.id
-        ? { ...calendar, offeringIds: result.offeringIds! } : calendar));
+      setFfcsDrafts(drafts => ({ ...drafts, [activeCalendar.id]: { ...activeCalendar, offeringIds: result.offeringIds! } }));
       setMessage("");
-      if (result.substitutedCourseId) updateAlternatives(alternativeCourses.filter(id => id !== result.substitutedCourseId));
     } finally {
       setBusy(false);
       setGenerationFeedback("");
@@ -592,7 +601,6 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
     }
     persistCalendars(calendars.map((c) => c.id === activeCalendar.id
       ? { ...c, offeringIds: [...current.map((o) => o.id), offering.id] } : c));
-    if (alternativeCourses.includes(offering.courseId)) updateAlternatives(alternativeCourses.filter(id => id !== offering.courseId));
     setPreviewOfferingId("");
     setMessage(`${catalog.courses.find((c) => c.id === offering.courseId)?.code} added to ${activeCalendar.name}.`);
   }
@@ -801,7 +809,6 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
       ),
     ];
     setBasket(planCourseIds);
-    updateAlternatives(alternativeCourses.filter(id => !planCourseIds.includes(id)));
     setName(plan.name);
     setEditing(plan.id);
     setView("planner");
@@ -993,7 +1000,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                 <footer className="teacher-preferences-footer"><span>Your teacher choices are saved on this device.</span><button type="button" onClick={() => setPreferenceMode(false)}>Done<Check size={17} /></button></footer>
               </section> : <>
               <div className="ffcs-toggle-row">
-                {!preferenceMode && <button type="button" className="ffcs-toggle" role="switch" aria-checked={ffcsMode} onClick={() => {
+                {!preferenceMode && <button type="button" className="ffcs-toggle" role="switch" disabled={busy} aria-checked={ffcsMode} onClick={() => {
                   const enabled = !ffcsMode;
                   if (enabled) {
                     // Priority 1 is the first choice; ties retain calendar order.
@@ -1001,15 +1008,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                       calendar.priority !== undefined && (!best || calendar.priority < best.priority!) ? calendar : best, undefined) || activeCalendar;
                     setActiveCalendarId(target.id);
                     setPreviewOfferingId("");
-                    persistCalendars(calendars.map(calendar => calendar.id === target.id
-                      ? { ...calendar, ffcsOriginalOfferingIds: calendar.ffcsOriginalOfferingIds || [...calendar.offeringIds] }
-                      : calendar));
-                  } else {
-                    persistCalendars(calendars.map(calendar => {
-                      if (calendar.ffcsOriginalOfferingIds === undefined) return calendar;
-                      const { ffcsOriginalOfferingIds: _baseline, ...rest } = calendar;
-                      return rest;
-                    }));
+                    setFfcsDrafts(drafts => ({ ...drafts, [target.id]: drafts[target.id] || { ...target, registeredOfferingIds: [] } }));
                   }
                   setFfcsMode(enabled);
                   setFfcsReturning(!enabled);
@@ -1018,12 +1017,8 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                 {!ffcsMode && <button type="button" className="ffcs-toggle preference-toggle" onClick={() => { setPreferenceMode(true); setPreferenceSearch(""); }}><span>Teacher preferences</span><ArrowUpRight size={17} /></button>}
                 {ffcsMode && <div className="ffcs-mode-tools"><button type="button" className="ffcs-clear-rejections" disabled={busy} onClick={() => {
                   persistFfcsRejections({});
-                  const originalCourseIds = new Set(catalog.offerings.filter(o => (activeCalendar.ffcsOriginalOfferingIds || []).includes(o.id)).map(o => o.courseId));
-                  const substitutedCourses = activeCalendarOfferings.filter(o => !originalCourseIds.has(o.courseId)).map(o => o.courseId);
-                  if (activeCalendar.ffcsOriginalOfferingIds) updateAlternatives([...alternativeCourses, ...substitutedCourses]);
-                  persistCalendars(calendars.map(calendar => calendar.id === activeCalendar.id
-                    ? { ...calendar, offeringIds: calendar.ffcsOriginalOfferingIds || calendar.offeringIds, registeredOfferingIds: [] }
-                    : calendar));
+                  setPreviewOfferingId("");
+                  setFfcsDrafts(drafts => ({ ...drafts, [savedActiveCalendar.id]: { ...savedActiveCalendar, registeredOfferingIds: [] } }));
                   setMessage("Reset complete. Courses were restored, rejections were cleared, and all courses are ready to register again.");
                 }}>Reset</button></div>}
               </div>
@@ -1157,13 +1152,16 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
               </section>}
               </div>}
               {!ffcsMode && <section className="panel alternative-courses" aria-labelledby="alternative-courses-title">
-                <div className="shortlist-head"><h2 id="alternative-courses-title">Alternative classes <span className="shortlist-count">({alternativeCourses.length} selected)</span></h2><p>Used when a course has no available replacement section.</p></div>
-                {alternativeCourses.length ? <div className="shortlist-list">
-                  {alternativeCourses.map(id => {
+                <div className="shortlist-head"><h2 id="alternative-courses-title">Alternative classes <span className="shortlist-count">({alternativeCourses.length} selected)</span></h2><p>Used in priority order when a course has no available replacement section. Drag to reorder.</p></div>
+                {alternativeCourses.length ? <div className="shortlist-list alternative-priority-list">
+                  {alternativeCourses.map((id, index) => {
                     const c = catalog.courses.find(item => item.id === id);
                     if (!c) return null;
-                    return <div className="shortlist-row" key={id}>
+                    return <div className="shortlist-row alternative-priority-row" key={id} draggable onDragStart={e => { setDraggedAlternative(id); e.dataTransfer.effectAllowed = "move"; e.dataTransfer.setData("text/plain", id); }} onDragEnd={() => setDraggedAlternative(null)} onDragOver={e => e.preventDefault()} onDrop={e => { e.preventDefault(); moveAlternative(draggedAlternative || e.dataTransfer.getData("text/plain"), index); setDraggedAlternative(null); }}>
+                      <span className="alternative-rank" aria-label={`Priority ${index + 1}`}>{index + 1}</span>
                       <div className="shortlist-course-identity"><strong>{c.code}</strong><CourseTitle title={displayCourseTitle(c)} /></div>
+                      <button type="button" className="icon-button" aria-label={`Move ${c.code} up`} disabled={index === 0} onClick={() => moveAlternative(id, index - 1)}>↑</button>
+                      <button type="button" className="icon-button" aria-label={`Move ${c.code} down`} disabled={index === alternativeCourses.length - 1} onClick={() => moveAlternative(id, index + 1)}>↓</button>
                       <button type="button" className="icon-button shortlist-remove" aria-label={`Remove ${c.code} from alternative classes`} onClick={() => updateAlternatives(alternativeCourses.filter(courseId => courseId !== id))}><X size={17} /></button>
                     </div>;
                   })}
@@ -1352,11 +1350,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                           <button role="tab" aria-selected={activeCalendar?.id === calendar.id}
                             className="calendar-tab"
                             onClick={() => {
-                              if (ffcsMode && !calendar.ffcsOriginalOfferingIds) {
-                                persistCalendars(calendars.map(item => item.id === calendar.id
-                                  ? { ...item, ffcsOriginalOfferingIds: [...item.offeringIds] }
-                                  : item));
-                              }
+                              if (ffcsMode) setFfcsDrafts(drafts => ({ ...drafts, [calendar.id]: drafts[calendar.id] || { ...calendar, registeredOfferingIds: [] } }));
                               setActiveCalendarId(calendar.id);
                               setPreviewOfferingId("");
                             }}>
@@ -1389,13 +1383,14 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                               ? (activeCalendar.registeredOfferingIds || []).filter(id => id !== offering.id)
                               : [...new Set([...(activeCalendar.registeredOfferingIds || []), offering.id])];
                             const complete = activeCalendar.offeringIds.length > 0 && activeCalendar.offeringIds.every(id => registeredOfferingIds.includes(id));
-                            persistCalendars(calendars.map(calendar => {
-                              const { ffcsOriginalOfferingIds: baseline, ...rest } = calendar;
-                              if (calendar.id === activeCalendar.id) return complete
-                                ? { ...rest, name: "Final Calendar", registeredOfferingIds }
-                                : { ...calendar, registeredOfferingIds };
-                              return complete ? rest : calendar;
-                            }));
+                            if (complete) {
+                              persistCalendars(calendars.map(calendar => calendar.id === activeCalendar.id
+                                ? { ...calendar, offeringIds: [...activeCalendar.offeringIds], pinnedOfferingIds: (calendar.pinnedOfferingIds || []).filter(id => activeCalendar.offeringIds.includes(id)), name: "Final Calendar", registeredOfferingIds, ffcsOriginalOfferingIds: undefined }
+                                : calendar));
+                              setFfcsDrafts(drafts => { const next = { ...drafts }; delete next[activeCalendar.id]; return next; });
+                            } else {
+                              setFfcsDrafts(drafts => ({ ...drafts, [activeCalendar.id]: { ...activeCalendar, registeredOfferingIds } }));
+                            }
                             if (complete) {
                               setFfcsMode(false);
                               setFfcsReturning(false);
@@ -1472,7 +1467,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
               />
             </section>
           )}
-          {view === "plans" && (
+          {!ffcsMode && view === "plans" && (
             <section className="panel content-panel">
               <h2>Keep or export the active calendar</h2>
               <p>{activeCalendar.name} · {activeCalendar.offeringIds.length} classes. Exports and saved plans contain this calendar.</p>
@@ -1662,7 +1657,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
               )}
             </section>
           )}
-          {view === "plans" && (
+          {!ffcsMode && view === "plans" && (
             <section aria-label="Catalog tools">
               <h2 className="subsection-title">Course catalog</h2>
               <DataImport catalog={catalog} apply={applyCatalog} />
@@ -1672,7 +1667,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
             {message && <div className="app-toast" role="status"><span>{message}</span><button type="button" aria-label="Dismiss notification" onClick={() => setMessage("")}><X size={17} /></button></div>}
             {generationFeedback && <div className="app-toast" role="status"><span>{generationFeedback}</span><button type="button" aria-label="Dismiss generation notification" onClick={() => setGenerationFeedback("")}><X size={17} /></button></div>}
           </aside>}
-          {!demo && <TimetableBackup createBackup={createBackup} restore={importBackup} />}
+          {!demo && !ffcsMode && <TimetableBackup createBackup={createBackup} restore={importBackup} />}
           <footer className="main-footer">
             <span>FFCS Helper · Vellore</span>
           </footer>

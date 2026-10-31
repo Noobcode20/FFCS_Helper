@@ -2209,6 +2209,12 @@ th small {
 
 .alternative-courses { margin:0 0 16px; padding:20px; }
 .alternative-courses h2 { margin:0 0 8px; font-size:18px; }
+.alternative-priority-list { grid-template-columns:minmax(0, 1fr); }
+.alternative-priority-row { gap:10px; cursor:grab; }
+.alternative-priority-row:active { cursor:grabbing; }
+.alternative-rank { flex:none; min-width:24px; font-weight:700; text-align:center; }
+.alternative-priority-row .shortlist-course-identity { flex:1; min-width:0; }
+.alternative-priority-row button:disabled { opacity:.35; cursor:default; }
 
 /* Dedicated teacher preference screen. */
 .preferences-screen { background: #f6f7f3; }
