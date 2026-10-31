@@ -23,7 +23,7 @@ export const vtopFaculty = (() => {
   }));
 })();
 const facultyIdByName = new Map(vtopFaculty.map((faculty) => [normalizeFacultyWhitespace(faculty.name), faculty.id]));
-const typeByCode: Record<string, 'theory' | 'lab' | 'tutorial' | 'project'> = { ETH: 'theory', TH: 'theory', ELA: 'lab', LO: 'lab', OC: 'project' };
+const typeByCode: Record<string, 'theory' | 'lab' | 'tutorial' | 'project'> = { ETH: 'theory', TH: 'theory', ELA: 'lab', LO: 'lab', OC: 'project', SS: 'project' };
 // VTOP's generic template was displayed for Fall 2026-27. It establishes the
 // slot clock grid, not Winter registration or Winter-specific availability.
 type TemplateSlot = { slot: string | null; start: string; end: string };
@@ -70,7 +70,7 @@ const markBrowseOnly = (offering: Offering): Offering => {
   const missingTimes = offering.components.some(component => !component.meetings.length || component.slots.some(slot => !component.meetings.some(meeting => meeting.slot === slot)));
   const meetings = offering.components.flatMap(component => component.meetings);
   const overlappingTimes = meetings.some((left, index) => meetings.slice(index + 1).some(right => left.day === right.day && left.start < right.end && right.start < left.end));
-  const unmappedTypes = offering.components.map(component => component.sourceType).filter((type): type is string => !!type && !['ETH', 'ELA', 'TH', 'LO'].includes(type));
+  const unmappedTypes = offering.components.map(component => component.sourceType).filter((type): type is string => !!type && !['ETH', 'ELA', 'TH', 'LO', 'SS'].includes(type));
   if (!missingTimes && !overlappingTimes && !unmappedTypes.length) return offering;
   const blockers = [
     ...(missingTimes ? ['missing-times' as const] : []),

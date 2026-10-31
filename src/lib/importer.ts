@@ -76,7 +76,7 @@ export function validateCatalog(input: unknown): ImportResult {
     o.components.forEach((c: unknown) => {
       if (!isObject(c) || !['theory','lab','tutorial','project'].includes(String(c.type))) { fail(`Offering ${o.id}: invalid component type.`); return; }
       if (c.sourceType !== undefined && !string(c.sourceType)) fail(`Offering ${o.id}: source component type must be a nonempty string.`);
-      if (typeof c.sourceType === 'string' && !['ETH','ELA','TH','LO'].includes(c.sourceType)) observedBlockers.add('unmapped-source-type');
+      if (typeof c.sourceType === 'string' && !['ETH','ELA','TH','LO','SS'].includes(c.sourceType)) observedBlockers.add('unmapped-source-type');
       if (c.venue !== undefined && !string(c.venue)) fail(`Offering ${o.id}: venue must be a string.`);
       if (c.facultyId !== undefined && !facultyIds.has(String(c.facultyId))) fail(`Offering ${o.id}: unknown component faculty.`);
       if (!Array.isArray(c.slots) || !c.slots.length || !c.slots.every(string)) fail(`Offering ${o.id}: component slots required.`);
