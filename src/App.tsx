@@ -173,8 +173,8 @@ export default function App() {
   const [tourStep, setTourStep] = useState(0);
   const finishTour = () => { markOnboardingSeen(); setTourActive(false); setTourStep(0); window.scrollTo(0, 0); };
   return <>
-    {tourActive ? <Onboarding step={tourStep} onStep={setTourStep} onFinish={finishTour} /> :
-      <div className="walkthrough-launch"><button type="button" className="secondary" onClick={() => { setTourStep(0); setTourActive(true); }}>Take a walkthrough</button></div>}
+    {tourActive && <Onboarding step={tourStep} onStep={setTourStep} onFinish={finishTour} />}
+    <div className="walkthrough-launch"><button type="button" className="secondary" onClick={() => { setTourStep(0); setTourActive(true); }}>Help</button></div>
     <PlannerApp key={tourActive ? "practice" : "personal"} demo={tourActive} tourStep={tourStep} />
   </>;
 }
