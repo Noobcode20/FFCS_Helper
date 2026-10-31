@@ -25,7 +25,7 @@ import type { ReviewLibrary } from "./lib/reviews";
 import { CourseTitle } from "./components/CourseTitle";
 import { FacultyReviews } from "./components/FacultyReviews";
 import { allocationSnapshot, facultyAllocations } from "./data/vtop";
-import { nextGenerationCycle } from "./lib/generation-cycle";
+import { calendarGenerationConstraints, nextGenerationCycle } from "./lib/generation-cycle";
 import { repairFfcs } from "./lib/ffcs";
 import { searchCourses } from "./lib/search";
 import {
@@ -270,6 +270,7 @@ export default function App() {
     catch { setMessage("Blocked times are active for this session, but browser storage is unavailable."); }
   }, [allBlockedTimes]);
   const [generationFeedback, setGenerationFeedback] = useState("");
+  const [useCurrentCalendar, setUseCurrentCalendar] = useState(false);
   const generationCycles = useRef(new Map<string, string[][]>());
   const [message, setMessage] = useState(() => {
     try {
@@ -607,7 +608,10 @@ export default function App() {
       setMessage(error);
       return;
     }
-    if (!(shortlistedCourseIds.length || pinnedOfferings.length)) {
+    const useCalendar = fromCalendar || useCurrentCalendar;
+    const constraints = calendarGenerationConstraints(useCalendar, pinnedOfferings, blockedTimes);
+    const generationPins = constraints.pinnedOfferings;
+    if (!(shortlistedCourseIds.length || generationPins.length)) {
       setMessage("Add at least one course to your generation basket.");
       return;
     }
@@ -618,13 +622,14 @@ export default function App() {
       const preferences = { ...prefs, maxResults: Math.min(5, prefs.maxResults) };
       preferences.blockedFaculty = prefs.blockedFaculty || [];
       preferences.preferredFaculty = prefs.preferredFaculty || [];
-      const generationCourses = [...new Set([...shortlistedCourseIds, ...pinnedOfferings.map(o => o.courseId)])];
-      const pinnedChoices = Object.fromEntries(pinnedOfferings.map(o => [o.courseId, [o.id]]));
-      const generationBlocks = fromCalendar ? blockedTimes : allBlockedTimes.filter(block => !block.calendarId);
+      const generationCourses = [...new Set([...shortlistedCourseIds, ...generationPins.map(o => o.courseId)])];
+      const pinnedChoices = constraints.pinnedChoices;
+      const generationBlocks = constraints.blockedTimes;
       // Alternatives and each calendar have independent cursors and constraints.
       const cycleKey = JSON.stringify([
-        fromCalendar ? activeCalendar.id : "alternatives", fingerprint,
-        [...generationCourses].sort(), preferences, pinnedChoices, generationBlocks,
+        fromCalendar ? activeCalendar.id : "alternatives", useCalendar, fingerprint,
+        [...generationCourses].sort(), preferences, pinnedChoices,
+        generationBlocks.map(block => JSON.stringify([[...block.days].sort(), block.start, block.end])).sort(),
       ]);
       const cycle = nextGenerationCycle(generationCycles.current.get(cycleKey) || (fromCalendar && activeCalendar.offeringIds.length ? [activeCalendar.offeringIds] : []), excluded =>
         generateSchedules(catalog, generationCourses,
@@ -645,8 +650,12 @@ export default function App() {
           const generatedNames = calendars.map((calendar) => calendar.name.match(/^Generated (\d+)$/)?.[1]).filter(Boolean).map(Number);
           let nextGeneratedName = Math.max(0, ...generatedNames) + 1;
           const generated = newSchedules.map((schedule) => ({
-            id: crypto.randomUUID(), name: `Generated ${nextGeneratedName++}`, offeringIds: [...schedule.offeringIds], pinnedOfferingIds: [...pinnedOfferingIds],
+            id: crypto.randomUUID(), name: `Generated ${nextGeneratedName++}`, offeringIds: [...schedule.offeringIds], pinnedOfferingIds: generationPins.map(offering => offering.id),
           }));
+          if (useCalendar) {
+            const copiedBlocks = generated.flatMap(calendar => generationBlocks.filter(block => block.calendarId).map(block => ({ ...block, id: crypto.randomUUID(), calendarId: calendar.id })));
+            setAllBlockedTimes(current => [...current, ...copiedBlocks]);
+          }
           const nextCalendars = [...calendars, ...generated];
           persistCalendars(nextCalendars);
           if (generated[0]) setActiveCalendarId(generated[0].id);
@@ -655,10 +664,10 @@ export default function App() {
         requestAnimationFrame(() => document.querySelector(".calendar-switcher")?.scrollIntoView({ behavior: "smooth", block: "start" }));
       }
       setGenerationFeedback(cycledToFirst
-        ? `This generation cycle restarted from its first available schedule. Kept ${pinnedOfferings.length} pinned class${pinnedOfferings.length === 1 ? "" : "es"} fixed.`
+        ? `This generation cycle restarted from its first available schedule. Kept ${generationPins.length} pinned class${generationPins.length === 1 ? "" : "es"} fixed.`
         : newSchedules.length
         ? fromCalendar
-          ? `Updated this calendar with a new schedule. Kept ${pinnedOfferings.length} pinned class${pinnedOfferings.length === 1 ? "" : "es"} fixed.`
+          ? `Updated this calendar with a new schedule. Kept ${generationPins.length} pinned class${generationPins.length === 1 ? "" : "es"} fixed.`
           : `Created ${newSchedules.length} new alternative${newSchedules.length === 1 ? "" : "s"}.`
         : `No schedule could be generated. ${result.message || "Try relaxing blocked times or changing your course shortlist."}`);
       setMessage(cycledToFirst
@@ -936,9 +945,13 @@ export default function App() {
                         </ol>
                       )}
                     </div>
+                    <button type="button" role="switch" aria-checked={useCurrentCalendar} className="secondary wide" disabled={busy} onClick={() => setUseCurrentCalendar(value => !value)}>
+                      Use current calendar state: {useCurrentCalendar ? "On" : "Off"}
+                    </button>
+                    <p className="small muted">{useCurrentCalendar ? "Keep this calendar’s pinned classes and blocked times when creating alternatives." : "Start alternatives from empty: ignore calendar pins and blocked times."}</p>
                     <button
                       className="wide scheduler-generate"
-                      disabled={busy || (!shortlistedCourseIds.length && !pinnedOfferings.length)}
+                      disabled={busy || (!shortlistedCourseIds.length && !(useCurrentCalendar && pinnedOfferings.length))}
                       onClick={() => void generate()}
                     >
                       {busy

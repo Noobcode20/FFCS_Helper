@@ -1,4 +1,14 @@
 import { generateSchedules } from './engine';
+import type { BlockedWindow, Offering } from './types';
+
+export function calendarGenerationConstraints(useCalendar: boolean, pins: Offering[], blocks: BlockedWindow[]) {
+  const pinnedOfferings = useCalendar ? pins : [];
+  return {
+    pinnedOfferings,
+    pinnedChoices: Object.fromEntries(pinnedOfferings.map(offering => [offering.courseId, [offering.id]])),
+    blockedTimes: useCalendar ? blocks : [],
+  };
+}
 
 /** Each caller owns its cursor; only returned schedules advance that cursor. */
 export function nextGenerationCycle(

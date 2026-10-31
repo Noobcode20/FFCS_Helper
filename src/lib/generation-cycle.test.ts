@@ -27,3 +27,21 @@ describe('independent generation cycles', () => {
     expect(nextGenerationCycle(wrapped.history, generate(1)).result.schedules).toEqual(second.result.schedules);
   });
 });
+
+describe('calendar state opt-in', () => {
+  it('holds pins and excludes blocked meetings only when enabled', async () => {
+    const { calendarGenerationConstraints } = await import('./generation-cycle');
+    const data = fixture();
+    const pinned = data.offerings[0];
+    data.offerings.push({ ...pinned, id: 'other', components: [{ type: 'theory', slots: ['B'], meetings: [{ day: 1, start: 480, end: 530, slot: 'B' }] }] });
+    const blocks = [{ id: 'block', days: [0] as [0], start: 480, end: 540 }];
+    const enabled = calendarGenerationConstraints(true, [pinned], blocks);
+    expect(generateSchedules(data, ['c'], defaultPreferences, enabled.pinnedChoices, enabled.blockedTimes).schedules.map(schedule => schedule.offeringIds)).toEqual([['o']]);
+    const blocksOnly = calendarGenerationConstraints(true, [], blocks);
+    expect(generateSchedules(data, ['c'], defaultPreferences, blocksOnly.pinnedChoices, blocksOnly.blockedTimes).schedules.map(schedule => schedule.offeringIds)).toEqual([['other']]);
+    const empty = calendarGenerationConstraints(false, [pinned], blocks);
+    const alternatives = generateSchedules(data, ['c'], defaultPreferences, empty.pinnedChoices, empty.blockedTimes);
+    expect(alternatives.schedules.map(schedule => schedule.offeringIds)).toEqual([['o'], ['other']]);
+    expect(empty.pinnedOfferings).toHaveLength(0);
+  });
+});
