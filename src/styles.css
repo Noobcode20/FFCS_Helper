@@ -2271,3 +2271,56 @@ th small {
 .release-nav { display:flex; flex-wrap:wrap; align-items:center; gap:8px; padding:12px 0; }
 .release-nav a { margin-left:auto; font-size:13px; }
 @media print { .release-nav { display:none; } }
+
+.app-shell[data-walkthrough-step] { padding-bottom: 100dvh; }
+[data-walkthrough-step] .mobile-planner-nav { visibility: hidden; }
+
+/* A floating guide above the planner, with an interactive spotlight. */
+.walkthrough-layer { position: fixed; inset: 0; z-index: 1000; pointer-events: none; }
+.walkthrough-shade { position: absolute; background: rgb(37 43 40 / 65%); pointer-events: auto; }
+.walkthrough-spotlight { position: absolute; left: 0; top: 0; border: 2px solid #e4efdf; border-radius: 10px; box-shadow: 0 0 0 1px #245d4560; pointer-events: none; }
+.walkthrough {
+  position: absolute; left: 0; top: 0; width: min(380px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px); overflow-y: auto; padding: 24px;
+  border: 1px solid #d9e1d5; border-radius: 16px; background: #fffefa; color: #26372f;
+  box-shadow: 0 18px 70px #16251d38, 0 3px 12px #16251d12;
+  pointer-events: auto; transition: transform 320ms cubic-bezier(.22, 1, .36, 1);
+}
+.walkthrough-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.walkthrough-badge { font-size: 11px; font-weight: 650; color: #3c624b; background: #eef3e9; border: 1px solid #dce7d5; padding: 6px 9px; border-radius: 5px; }
+.walkthrough .walkthrough-close { padding: 4px; border: 0; background: transparent; color: #72796f; border-radius: 5px; }
+.walkthrough .walkthrough-close:hover { background: #edf1e8; color: #26372f; }
+.walkthrough-count { display: block; color: #487053; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; margin-bottom: 10px; }
+.walkthrough-count span { color: #93998e; }
+.walkthrough h2 { font-size: 25px; line-height: 1.16; letter-spacing: -.8px; font-weight: 650; margin: 0 0 14px; outline: none; text-wrap: balance; }
+.walkthrough p { font-size: 15px; line-height: 1.65; color: #5b655b; margin: 0; }
+.walkthrough-task { display: flex; align-items: flex-start; gap: 10px; padding: 13px 14px; margin-top: 18px; border-radius: 8px; background: #f0f4eb; }
+.walkthrough-task svg { color: #46644b; flex-shrink: 0; margin-top: 2px; }
+.walkthrough-task p { font-size: 13px; line-height: 1.55; color: #3f5944; font-weight: 500; }
+.walkthrough-progress { display: flex; gap: 4px; margin: 24px 0 18px; }
+.walkthrough-progress span { flex: 1; height: 3px; background: #e6e9e1; border-radius: 3px; }
+.walkthrough-progress .complete { background: #477351; }
+.walkthrough-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.walkthrough-controls > div { display: flex; gap: 8px; }
+.walkthrough-controls button { min-height: 40px; font-size: 13px; border-radius: 7px; }
+.walkthrough-controls .secondary { padding: 10px; border-color: #dce3d5; background: transparent; color: #4d604f; }
+.walkthrough-controls .walkthrough-skip { border: 0; padding: 8px 0; background: transparent; color: #72796f; font-size: 12px; font-weight: 500; }
+.walkthrough-controls .walkthrough-skip:hover { color: #26372f; text-decoration: underline; }
+.walkthrough-copy { animation: walkthrough-enter 220ms ease-out; }
+.walkthrough-mobile-tip { display: none; }
+@media (max-width: 700px) { .walkthrough-mobile-tip { display: inline; } }
+.walkthrough-launch { display: flex; justify-content: flex-end; padding: 12px 24px 0; }
+@keyframes walkthrough-enter { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 600px) {
+  .walkthrough { padding: 20px; border-radius: 14px; }
+  .walkthrough-header { margin-bottom: 16px; }
+  .walkthrough h2 { font-size: 23px; margin-bottom: 10px; }
+  .walkthrough p { font-size: 14px; line-height: 1.55; }
+  .walkthrough-task { margin-top: 14px; padding: 11px 12px; }
+  .walkthrough-task p { font-size: 12px; }
+  .walkthrough-progress { margin-top: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .walkthrough { transition: none; }
+  .walkthrough-copy { animation: none; }
+}

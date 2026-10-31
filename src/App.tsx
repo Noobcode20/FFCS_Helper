@@ -56,6 +56,9 @@ import { loadBlockedWindows, offeringBlockedBy, saveBlockedWindows, formatClock 
 import { Timetable, days, time } from "./components/Timetable";
 import { DataImport } from "./components/DataImport";
 
+import { Onboarding } from "./components/Onboarding";
+import { createDemoStorage, demoCatalog, onboardingSeen, markOnboardingSeen, browserStorage } from "./lib/onboarding";
+
 type View = "planner" | "faculty" | "plans";
 type MobilePlannerSection = "search" | "timetable" | "shortlist";
 type CalendarChoice = { id: string; name: string; offeringIds: string[]; pinnedOfferingIds?: string[]; registeredOfferingIds?: string[]; ffcsOriginalOfferingIds?: string[] };
@@ -63,31 +66,31 @@ const CALENDAR_KEY = "ffcs-helper:calendars:v1";
 const FFCS_REJECTIONS_KEY = "ffcs-helper:ffcs-rejected-faculty:v1";
 const SHORTLIST_KEY = "ffcs-helper:shortlist:v1";
 const ACTIVE_CALENDAR_KEY = "ffcs-helper:active-calendar:v1";
-function initialShortlist(): string[] {
+function initialShortlist(storage: Pick<Storage, "getItem" | "setItem" | "removeItem"> = localStorage): string[] {
   try {
-    const parsed: unknown = JSON.parse(localStorage.getItem(SHORTLIST_KEY) || "null");
+    const parsed: unknown = JSON.parse(storage.getItem(SHORTLIST_KEY) || "null");
     if (Array.isArray(parsed) && parsed.every((id) => typeof id === "string")) return parsed;
   } catch { /* Start with an empty shortlist when storage is unavailable. */ }
   return [];
 }
-function initialAlternativeCourses(): string[] {
+function initialAlternativeCourses(storage: Pick<Storage, "getItem" | "setItem" | "removeItem"> = localStorage): string[] {
   try {
-    const shortlisted = new Set(initialShortlist());
-    const parsed: unknown = JSON.parse(localStorage.getItem("ffcs-helper:alternative-courses:v1") || "null");
+    const shortlisted = new Set(initialShortlist(storage));
+    const parsed: unknown = JSON.parse(storage.getItem("ffcs-helper:alternative-courses:v1") || "null");
     if (Array.isArray(parsed)) return [...new Set(parsed.filter((id): id is string => typeof id === "string" && !shortlisted.has(id)))];
   } catch { /* Start with an empty alternatives list when storage is unavailable. */ }
   return [];
 }
-function initialActiveCalendarId(calendars: CalendarChoice[]): string {
+function initialActiveCalendarId(calendars: CalendarChoice[], storage: Pick<Storage, "getItem"> = localStorage): string {
   try {
-    const id = localStorage.getItem(ACTIVE_CALENDAR_KEY);
+    const id = storage.getItem(ACTIVE_CALENDAR_KEY);
     if (id && calendars.some((calendar) => calendar.id === id)) return id;
   } catch { /* Use the first calendar when storage is unavailable. */ }
   return calendars[0]?.id || "calendar-main";
 }
-function initialCalendars(): CalendarChoice[] {
+function initialCalendars(storage: Pick<Storage, "getItem"> = localStorage): CalendarChoice[] {
   try {
-    const raw = localStorage.getItem(CALENDAR_KEY);
+    const raw = storage.getItem(CALENDAR_KEY);
     const parsed: unknown = raw ? JSON.parse(raw) : null;
     if (Array.isArray(parsed) && parsed.length && parsed.every((x) =>
       x && typeof x.id === "string" && typeof x.name === "string" &&
@@ -127,14 +130,14 @@ function displayComponentType(component: Offering["components"][number]): string
   if (component.sourceType === "ELA" || component.sourceType === "LO" || component.sourceType === "LA") return "Lab";
   return component.sourceType || component.type[0].toUpperCase() + component.type.slice(1);
 }
-function initialCatalog(): Catalog {
+function initialCatalog(storage: Pick<Storage, "getItem" | "setItem" | "removeItem"> = localStorage): Catalog {
   try {
-    const raw = localStorage.getItem("ffcs-helper-catalog");
+    const raw = storage.getItem("ffcs-helper-catalog");
     if (raw) {
       const result = validateCatalog(JSON.parse(raw));
       if (result.catalog && !result.errors.length && result.catalog.semester === defaultCatalog.semester) {
         if (result.catalog.provenance.source === "Current faculty and course allocations") {
-          localStorage.removeItem("ffcs-helper-catalog");
+          storage.removeItem("ffcs-helper-catalog");
         } else {
           return result.catalog;
         }
@@ -166,12 +169,24 @@ const theoryBatchLabels = {
 } as const;
 const nav = [{ id: "planner", title: "Course planner", icon: CalendarBlank }] as const;
 export default function App() {
-  const [catalog, setCatalog] = useState<Catalog>(initialCatalog);
+  const [tourActive, setTourActive] = useState(() => !onboardingSeen());
+  const [tourStep, setTourStep] = useState(0);
+  const finishTour = () => { markOnboardingSeen(); setTourActive(false); setTourStep(0); window.scrollTo(0, 0); };
+  return <>
+    {tourActive ? <Onboarding step={tourStep} onStep={setTourStep} onFinish={finishTour} /> :
+      <div className="walkthrough-launch"><button type="button" className="secondary" onClick={() => { setTourStep(0); setTourActive(true); }}>Take a walkthrough</button></div>}
+    <PlannerApp key={tourActive ? "practice" : "personal"} demo={tourActive} tourStep={tourStep} />
+  </>;
+}
+
+export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tourStep?: number }) {
+  const [storage] = useState(() => demo ? createDemoStorage() : browserStorage());
+  const [catalog, setCatalog] = useState<Catalog>(() => demo ? demoCatalog : initialCatalog(storage));
   const [reviewDataLoaded, setReviewDataLoaded] = useState(false);
   const reviewLibraryRef = useRef<ReviewLibrary | null>(null);
   const reviewLoadPromiseRef = useRef<Promise<void> | null>(null);
   const ensureReviewData = async () => {
-    if (reviewDataLoaded) return;
+    if (demo || reviewDataLoaded) return;
     if (reviewLoadPromiseRef.current) return reviewLoadPromiseRef.current;
     reviewLoadPromiseRef.current = (async () => {
       try {
@@ -199,19 +214,19 @@ export default function App() {
   const [domainFilter, setDomainFilter] = useState("");
   const [branchFilter, setBranchFilter] = useState<"" | "ECE" | "ECM" | "MCA" | "CSE CORE">(() => {
     try {
-      const saved = localStorage.getItem("ffcs-helper:branch");
+      const saved = storage.getItem("ffcs-helper:branch");
       return saved === "ECE" || saved === "ECM" || saved === "MCA" || saved === "CSE CORE" ? saved : "";
     } catch { return ""; }
   });
   useEffect(() => {
     try {
-      if (branchFilter) localStorage.setItem("ffcs-helper:branch", branchFilter);
-      else localStorage.removeItem("ffcs-helper:branch");
+      if (branchFilter) storage.setItem("ffcs-helper:branch", branchFilter);
+      else storage.removeItem("ffcs-helper:branch");
     } catch { /* Keep the selected branch for this session. */ }
   }, [branchFilter]);
   const [previewOfferingId, setPreviewOfferingId] = useState("");
-  const [calendars, setCalendars] = useState<CalendarChoice[]>(initialCalendars);
-  const [activeCalendarId, setActiveCalendarId] = useState(() => initialActiveCalendarId(initialCalendars()));
+  const [calendars, setCalendars] = useState<CalendarChoice[]>(() => initialCalendars(storage));
+  const [activeCalendarId, setActiveCalendarId] = useState(() => initialActiveCalendarId(initialCalendars(storage), storage));
   const [renamingCalendarId, setRenamingCalendarId] = useState("");
   const [calendarNameDraft, setCalendarNameDraft] = useState("");
   const [calendarToDelete, setCalendarToDelete] = useState<CalendarChoice | null>(null);
@@ -220,26 +235,26 @@ export default function App() {
     if (calendarToDelete) calendarDeleteDialogRef.current?.focus();
   }, [calendarToDelete]);
   const [selected, setSelected] = useState<string[]>([]);
-  const [basket, setBasket] = useState<string[]>(initialShortlist);
-  const [alternativeCourses, setAlternativeCourses] = useState<string[]>(initialAlternativeCourses);
+  const [basket, setBasket] = useState<string[]>(() => initialShortlist(storage));
+  const [alternativeCourses, setAlternativeCourses] = useState<string[]>(() => initialAlternativeCourses(storage));
   function updateAlternatives(ids: string[]) {
     const next = [...new Set(ids)];
     setAlternativeCourses(next);
-    try { localStorage.setItem("ffcs-helper:alternative-courses:v1", JSON.stringify(next)); }
+    try { storage.setItem("ffcs-helper:alternative-courses:v1", JSON.stringify(next)); }
     catch { setMessage("Alternative courses saved for this session only."); }
   }
 
   useEffect(() => {
-    try { localStorage.setItem(SHORTLIST_KEY, JSON.stringify(basket)); }
+    try { storage.setItem(SHORTLIST_KEY, JSON.stringify(basket)); }
     catch { setMessage("Shortlist changes are active for this session, but browser storage is unavailable."); }
   }, [basket]);
   useEffect(() => {
-    try { localStorage.setItem(ACTIVE_CALENDAR_KEY, activeCalendarId); } catch { /* Calendar selection remains active for this session. */ }
+    try { storage.setItem(ACTIVE_CALENDAR_KEY, activeCalendarId); } catch { /* Calendar selection remains active for this session. */ }
   }, [activeCalendarId]);
   const [prefs, setPrefs] = useState<Preferences>({ ...defaultPreferences });
-  useEffect(() => { try { const v=JSON.parse(localStorage.getItem('ffcs-helper:faculty-preferences:v1')||'{}'); setPrefs(p=>({...p,preferredFaculty:Array.isArray(v.preferredFaculty)?v.preferredFaculty:[],blockedFaculty:Array.isArray(v.blockedFaculty)?v.blockedFaculty:[],facultyMode:v.facultyMode||'preferred',ratingThreshold:v.ratingThreshold??3})); } catch {} }, []);
-  useEffect(() => { try { localStorage.setItem('ffcs-helper:faculty-preferences:v1',JSON.stringify({preferredFaculty:prefs.preferredFaculty||[],blockedFaculty:prefs.blockedFaculty||[],facultyMode:prefs.facultyMode||'preferred',ratingThreshold:prefs.ratingThreshold??3})); } catch {} }, [prefs]);
-  const [allBlockedTimes, setAllBlockedTimes] = useState<BlockedWindow[]>(initialBlockedTimes);
+  useEffect(() => { try { const v=JSON.parse(storage.getItem('ffcs-helper:faculty-preferences:v1')||'{}'); setPrefs(p=>({...p,preferredFaculty:Array.isArray(v.preferredFaculty)?v.preferredFaculty:[],blockedFaculty:Array.isArray(v.blockedFaculty)?v.blockedFaculty:[],facultyMode:v.facultyMode||'preferred',ratingThreshold:v.ratingThreshold??3})); } catch {} }, []);
+  useEffect(() => { try { storage.setItem('ffcs-helper:faculty-preferences:v1',JSON.stringify({preferredFaculty:prefs.preferredFaculty||[],blockedFaculty:prefs.blockedFaculty||[],facultyMode:prefs.facultyMode||'preferred',ratingThreshold:prefs.ratingThreshold??3})); } catch {} }, [prefs]);
+  const [allBlockedTimes, setAllBlockedTimes] = useState<BlockedWindow[]>(() => demo ? [] : initialBlockedTimes());
   const activeCalendar = calendars.find((c) => c.id === activeCalendarId) || calendars[0];
   const blockedTimes = allBlockedTimes.filter(block => !block.calendarId || block.calendarId === activeCalendar.id);
   const pinnedOfferingIds = (activeCalendar.pinnedOfferingIds || []).filter(id => activeCalendar.offeringIds.includes(id));
@@ -266,7 +281,7 @@ export default function App() {
     return () => observer.disconnect();
   }, [courseId, activeCalendarId, previewOfferingId, blockedTimes.length]);
   useEffect(() => {
-    try { saveBlockedWindows(allBlockedTimes); }
+    try { if (!demo) saveBlockedWindows(allBlockedTimes); }
     catch { setMessage("Blocked times are active for this session, but browser storage is unavailable."); }
   }, [allBlockedTimes]);
   const [generationFeedback, setGenerationFeedback] = useState("");
@@ -274,8 +289,8 @@ export default function App() {
   const generationCycles = useRef(new Map<string, string[][]>());
   const [message, setMessage] = useState(() => {
     try {
-      loadPlans();
-      localStorage.getItem("ffcs-helper-catalog");
+      if (!demo) loadPlans();
+      storage.getItem("ffcs-helper-catalog");
       return "";
     } catch (e) {
       return `Browser storage could not be loaded: ${e instanceof Error ? e.message : "unavailable"}. You can continue for this session and export a backup.`;
@@ -318,11 +333,24 @@ export default function App() {
   const [ffcsDisintegratingCourse, setFfcsDisintegratingCourse] = useState("");
   const [ffcsRejections, setFfcsRejections] = useState<Record<string, string[]>>(() => {
     try {
-      const value: unknown = JSON.parse(localStorage.getItem(FFCS_REJECTIONS_KEY) || "{}");
+      const value: unknown = JSON.parse(storage.getItem(FFCS_REJECTIONS_KEY) || "{}");
       return value && typeof value === "object" && !Array.isArray(value) ? Object.fromEntries(Object.entries(value).filter((entry): entry is [string, string[]] => Array.isArray(entry[1]) && entry[1].every(id => typeof id === "string"))) : {};
     } catch { return {}; }
   });
-  const [plans, setPlans] = useState<Plan[]>(initialPlans);
+  const [plans, setPlans] = useState<Plan[]>(() => demo ? [] : initialPlans());
+  useEffect(() => {
+    if (!demo) return;
+    setView("planner");
+    setRegistrationComplete(false);
+    setPreferenceMode(tourStep === 2);
+    setFfcsMode(tourStep === 9);
+    setDomainFilter("Practice courses");
+    setCourseId(tourStep === 3 ? "demo-4" : "demo-1");
+    setPreviewOfferingId("");
+    setMobilePlannerSection(tourStep === 1 || tourStep === 8 ? "shortlist" : tourStep === 0 || tourStep >= 5 ? "timetable" : "search");
+    if (tourStep === 8) setUseCurrentCalendar(false);
+
+  }, [demo, tourStep]);
   const [name, setName] = useState("");
   const [exportWeek, setExportWeek] = useState("");
   const [editing, setEditing] = useState<string>();
@@ -407,7 +435,6 @@ export default function App() {
     [...new Set([offering.facultyId, ...offering.components.map((c) => c.facultyId).filter((id): id is string => !!id)])]
       .map((facultyId) => ({ offering, facultyId, blocked: offeringBlockedBy(offering, blockedTimes) })),
   ).filter(({ offering, facultyId, blocked }) => {
-    if (blocked) return false;
     const facultyName = catalog.faculty.find((f) => f.id === facultyId)?.name || "";
     return `${offering.section} ${facultyName} ${offering.components.flatMap((c) => c.slots).join(" ")}`
       .toLowerCase().includes(facultySearch.toLowerCase());
@@ -468,7 +495,7 @@ export default function App() {
   function persist(next: Plan[]) {
     setPlans(next);
     try {
-      savePlans(next);
+      if (!demo) savePlans(next);
       setMessage("Plans saved on this device.");
     } catch (e) {
       setMessage(
@@ -478,12 +505,12 @@ export default function App() {
   }
   function persistCalendars(next: CalendarChoice[]) {
     setCalendars(next);
-    try { localStorage.setItem(CALENDAR_KEY, JSON.stringify(next)); }
+    try { storage.setItem(CALENDAR_KEY, JSON.stringify(next)); }
     catch { setMessage("Calendar changes are active for this session, but browser storage is unavailable."); }
   }
   function persistFfcsRejections(next: Record<string, string[]>) {
     setFfcsRejections(next);
-    try { localStorage.setItem(FFCS_REJECTIONS_KEY, JSON.stringify(next)); }
+    try { storage.setItem(FFCS_REJECTIONS_KEY, JSON.stringify(next)); }
     catch { setMessage("This rejection is active for this session, but browser storage is unavailable."); }
   }
   function addToCalendar(offering: Offering) {
@@ -591,7 +618,7 @@ export default function App() {
     setPreviewOfferingId("");
     setEditing(undefined);
     try {
-      localStorage.setItem("ffcs-helper-catalog", JSON.stringify(next));
+      storage.setItem("ffcs-helper-catalog", JSON.stringify(next));
       setMessage("Catalog applied and stored on this device.");
     } catch {
       setMessage(
@@ -752,7 +779,7 @@ export default function App() {
     }
   };
   return (
-    <div className={`app-shell ${ffcsMode && !preferenceMode ? "ffcs-theme" : ""} ${ffcsReturning && !preferenceMode ? "ffcs-returning" : ""} ${preferenceMode ? "preferences-screen" : ""}`}>
+    <div data-walkthrough-step={demo ? tourStep : undefined} className={`app-shell ${ffcsMode && !preferenceMode ? "ffcs-theme" : ""} ${ffcsReturning && !preferenceMode ? "ffcs-returning" : ""} ${preferenceMode ? "preferences-screen" : ""}`}>
       <a href="#main" className="skip-link">
         Skip to content
       </a>
@@ -817,14 +844,14 @@ export default function App() {
                       {filteredPreferenceFaculty.map(({ faculty: f, rating }) => {
                         const selected = (prefs.preferredFaculty || []).includes(f.id);
                         return <label key={f.id}>
-                          <input type="checkbox" checked={selected} onChange={() => setPrefs(p => ({ ...p, preferredFaculty: (p.preferredFaculty || []).includes(f.id) ? (p.preferredFaculty || []).filter(id => id !== f.id) : [...(p.preferredFaculty || []), f.id] }))} />
+                          <input type="checkbox" checked={selected} onChange={() => setPrefs(p => ({ ...p, preferredFaculty: (p.preferredFaculty || []).includes(f.id) ? (p.preferredFaculty || []).filter(id => id !== f.id) : [...(p.preferredFaculty || []), f.id], blockedFaculty: (p.blockedFaculty || []).filter(id => id !== f.id) }))} />
                           <span className="preference-teacher-identity"><span>{f.name}</span><span className="preference-teacher-rating">{rating ? <><strong>{rating.rating!.toFixed(2)}/5</strong><span> · {rating.sampleSize === null ? "Review count unknown" : `${rating.sampleSize} reported review${rating.sampleSize === 1 ? "" : "s"}`}{rating.courseId ? " · This course" : " · Overall"}</span></> : "No rating available"}</span></span><small>{selected ? "Preferred" : "Select teacher"}</small>
                         </label>;
                       })}
                     </div>
                     {!preferenceFaculty.length && <p className="preference-empty">No teachers are listed for this course.</p>}
                     {!!preferenceFaculty.length && !filteredPreferenceFaculty.length && <div className="preference-empty"><p>No teachers match your filters.</p><button type="button" className="secondary" onClick={clearTeacherFilters}>Clear filters</button></div>}
-                    <p className="preference-selection-note">Leave teachers unselected if you have no preference for this course.</p>
+                    <p className="preference-selection-note">Your choice applies to this teacher across all their courses. Leave teachers unselected if you have no preference.</p>
                   </section>
                 </div> : <div className="preference-empty"><Books size={32} /><h2>Add your courses first</h2><p>Shortlist courses in the planner to choose your preferred teachers here.</p><button type="button" onClick={() => setPreferenceMode(false)}>Find courses</button></div>}
                 <footer className="teacher-preferences-footer"><span>Your teacher choices are saved on this device.</span><button type="button" onClick={() => setPreferenceMode(false)}>Done<Check size={17} /></button></footer>
@@ -1085,6 +1112,7 @@ export default function App() {
                           return (
                             <article
                               className={`offering faculty-option ${previewOfferingId === o.id ? "previewing" : ""} ${blocked ? "offering-blocked" : ""} ${isBlocked ? "faculty-blocked" : ""}`}
+                              data-offering-id={o.id}
                               key={`${o.id}-${facultyId}`}
                               onClick={() => setPreviewOfferingId(o.id)}
                             >
