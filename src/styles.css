@@ -2012,7 +2012,12 @@ th small {
 .timeline-grid .meeting-pinned { background: #e9ddfa; border-color: #b99ad9; color: #4f326e; }
 .meeting .meeting-open { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; width: 100%; height: 100%; min-height: 0; padding: 0; border: 0; border-radius: 0; background: transparent; color: inherit; text-align: left; line-height: 1.2; }
 .meeting-open .meeting-time { padding-right: 19px; }
-.meeting .meeting-pin { position: absolute; right: 1px; top: 1px; display: grid; place-items: center; width: 23px; height: 23px; min-height: 0; padding: 0; border: 0; border-radius: 4px; background: #ffffffb0; color: #61487b; }
+.meeting .meeting-pin, .meeting .meeting-remove { position: absolute; top: 1px; display: grid; place-items: center; width: 23px; height: 23px; min-height: 0; padding: 0; border: 0; border-radius: 4px; background: #ffffffb0; color: #61487b; }
+.meeting .meeting-pin { right: 25px; transition: right 180ms ease; }
+.meeting .meeting-pin.meeting-pin-right { right: 1px; }
+.meeting .meeting-remove { right: 1px; }
+.meeting .meeting-remove:hover { background: #fff; color: #a02d32; }
+@media (prefers-reduced-motion: reduce) { .meeting .meeting-pin { transition: none; } }
 .meeting .meeting-pin:hover { background: #fff; color: #3e205f; }
 .meeting button:focus-visible { outline: 2px solid #7148a0; outline-offset: -2px; }
 .block-scope-dialog { max-width: min(460px, calc(100vw - 32px)); padding: 26px; border: 1px solid var(--line); border-radius: 12px; background: #fafbf7; color: var(--ink); }
@@ -2020,7 +2025,7 @@ th small {
 .block-scope-dialog h3 { margin: 0 0 12px; font-size: 20px; }
 .block-scope-dialog p { color: var(--muted); line-height: 1.5; }
 .block-scope-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-@media print { .meeting-pin, .block-scope-dialog { display: none !important; } }
+@media print { .meeting-pin, .meeting-remove, .block-scope-dialog { display: none !important; } }
 
 .meeting .meeting-open { justify-content: flex-start; }
 

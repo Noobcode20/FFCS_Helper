@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { Buildings, PushPin } from "@phosphor-icons/react";
+import { Buildings, PushPin, X } from "@phosphor-icons/react";
 import { CalendarBlock } from "./CalendarBlock";
 import { buildingFromVenue } from "../lib/buildings";
 
@@ -26,6 +26,7 @@ export function Timetable({
   onAddBlock,
   pinnedOfferingIds = [],
   onTogglePin,
+  onRemoveClass,
   onGenerateAround,
   onError,
   generating = false,
@@ -44,6 +45,7 @@ export function Timetable({
   onAddBlock?: (block: BlockedWindow, scope: 'this' | 'all') => void;
   pinnedOfferingIds?: string[];
   onTogglePin?: (offeringId: string) => void;
+  onRemoveClass?: (offeringId: string) => void;
   onGenerateAround?: () => void;
   onError?: (message: string) => void;
   generating?: boolean;
@@ -190,7 +192,8 @@ export function Timetable({
                       <strong>{m.course?.code}</strong>
                       <small>{m.venue || m.type}</small>
                       </button>
-                      {!m.preview && onTogglePin && <button type="button" className="meeting-pin" aria-label={`${pinnedOfferingIds.includes(m.offeringId) ? 'Unpin' : 'Pin'} ${m.course?.code} and all related classes`} aria-pressed={pinnedOfferingIds.includes(m.offeringId)} title={pinnedOfferingIds.includes(m.offeringId) ? 'Unpin all related classes' : 'Pin all related classes'} onClick={() => onTogglePin(m.offeringId)}><PushPin size={14} weight={pinnedOfferingIds.includes(m.offeringId) ? 'fill' : 'regular'} /></button>}
+                      {!m.preview && onTogglePin && <button type="button" className={`meeting-pin ${pinnedOfferingIds.includes(m.offeringId) || !onRemoveClass ? 'meeting-pin-right' : ''}`} aria-label={`${pinnedOfferingIds.includes(m.offeringId) ? 'Unpin' : 'Pin'} ${m.course?.code} and all related classes`} aria-pressed={pinnedOfferingIds.includes(m.offeringId)} title={pinnedOfferingIds.includes(m.offeringId) ? 'Unpin all related classes' : 'Pin all related classes'} onClick={() => onTogglePin(m.offeringId)}><PushPin size={14} weight={pinnedOfferingIds.includes(m.offeringId) ? 'fill' : 'regular'} /></button>}
+                      {!m.preview && onRemoveClass && !pinnedOfferingIds.includes(m.offeringId) && <button type="button" className="meeting-remove" aria-label={`Remove ${m.course?.code} and all related classes from this calendar`} title="Remove all related classes" onClick={() => onRemoveClass(m.offeringId)}><X size={14} /></button>}
                     </div>
                     );
                   })}

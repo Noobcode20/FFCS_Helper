@@ -179,6 +179,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
   const [storage] = useState(() => demo ? createDemoStorage() : browserStorage());
   const [catalog, setCatalog] = useState<Catalog>(() => demo ? demoCatalog : initialCatalog(storage));
   const [reviewDataLoaded, setReviewDataLoaded] = useState(false);
+  const [reviewLoadFailed, setReviewLoadFailed] = useState(false);
   const reviewLibraryRef = useRef<ReviewLibrary | null>(null);
   const reviewLoadPromiseRef = useRef<Promise<void> | null>(null);
   const ensureReviewData = async () => {
@@ -186,11 +187,13 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
     if (reviewLoadPromiseRef.current) return reviewLoadPromiseRef.current;
     reviewLoadPromiseRef.current = (async () => {
       try {
+        setReviewLoadFailed(false);
         const library = await loadReviewLibrary();
         reviewLibraryRef.current = library;
         setCatalog((current) => attachReviewLibrary(current, library));
         setReviewDataLoaded(true);
       } catch {
+        setReviewLoadFailed(true);
         setMessage("Faculty feedback could not be loaded. Check your connection and try again.");
       } finally {
         reviewLoadPromiseRef.current = null;
@@ -270,6 +273,13 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
     const next = pinnedOfferingIds.includes(offeringId) ? pinnedOfferingIds.filter(id => id !== offeringId) : [...pinnedOfferingIds, offeringId];
     persistCalendars(calendars.map(calendar => calendar.id === activeCalendar.id ? { ...calendar, pinnedOfferingIds: next } : calendar));
   }
+  function removeClass(offeringId: string) {
+    persistCalendars(calendars.map(calendar => calendar.id === activeCalendar.id ? {
+      ...calendar,
+      offeringIds: calendar.offeringIds.filter(id => id !== offeringId),
+      pinnedOfferingIds: (calendar.pinnedOfferingIds || []).filter(id => id !== offeringId),
+    } : calendar));
+  }
   useEffect(() => {
     const node = calendarMeasureRef.current;
     if (!node) return;
@@ -317,8 +327,8 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
   }, [registrationComplete]);
   const [preferenceMode, setPreferenceMode] = useState(false);
   useEffect(() => {
-    if (view === "faculty" || preferenceMode) void ensureReviewData();
-  }, [view, preferenceMode]);
+    if (view === "faculty" || preferenceMode || courseId) void ensureReviewData();
+  }, [view, preferenceMode, courseId]);
   const [preferenceCourseId, setPreferenceCourseId] = useState("");
   const [preferenceSearch, setPreferenceSearch] = useState("");
   const [preferenceMinRating, setPreferenceMinRating] = useState(0);
@@ -803,7 +813,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
   }
   function importBackup(backup: AppBackup) {
     persistBackup(backup, storage);
-    setCatalog(backup.catalog);
+    setCatalog(reviewLibraryRef.current ? attachReviewLibrary(backup.catalog, reviewLibraryRef.current) : backup.catalog);
     setCalendars(backup.calendars); setActiveCalendarId(backup.activeCalendarId);
     setPlans(backup.plans); setBasket(backup.shortlist); setAlternativeCourses(backup.alternativeCourses);
     setAllBlockedTimes(backup.blockedTimes); setPrefs(backup.preferences); setBranchFilter(backup.branch);
@@ -1233,16 +1243,16 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                                     {hasVerifiedMeetingTimes && <button className={`faculty-action calendar ${inCalendar?'active':''}`} disabled={clashes.length>0||!isSchedulableOffering(o)} aria-pressed={inCalendar} onClick={(event)=>{event.stopPropagation();addToCalendar(o);}}><CalendarPlus size={19} />{inCalendar?'Added to calendar':'Add to calendar'}</button>}
                                   </div>
                                 </div>
-                                <div className="faculty-score" aria-label={rating ? `${rating.rating!.toFixed(1)} out of 5` : "Rating unavailable"}>
+                                <div className="faculty-score" aria-label={rating ? `${rating.rating!.toFixed(1)} out of 5` : !demo && !reviewDataLoaded && !reviewLoadFailed ? "Loading reviews" : "Rating unavailable"}>
                                   <span className="faculty-stars" aria-hidden="true">{"★".repeat(stars)}{"☆".repeat(5 - stars)}</span>
-                                  <b>{rating ? `${rating.rating!.toFixed(1)}/5` : "No rating"}</b>
+                                  <b>{rating ? `${rating.rating!.toFixed(1)}/5` : !demo && !reviewDataLoaded && !reviewLoadFailed ? "Loading reviews…" : "No rating"}</b>
                                 </div>
                               </div>
                               <div className="faculty-weekly-head"><strong>Class times</strong><span>{facultyComponents.map(c => c.venue).filter(Boolean).filter((v,i,a)=>a.indexOf(v)===i).join(", ") || "Room unavailable"}</span></div>
                               <div className="faculty-component-grid">{facultyComponents.map((c, i) => (
                                 <section className={`faculty-component-card ${c.sourceType === "ELA" || displayComponentType(c).toLowerCase().includes("lab") ? "faculty-component-lab" : ""}`} key={i}>
                                   <header><strong>{displayComponentType(c)}</strong><span>{c.slots.join(" + ") || "Slot unavailable"}</span></header>
-                                  <div className="faculty-meetings">{c.meetings.map((m, j) => <div className="faculty-meeting" key={j}><b>{days[m.day]?.slice(0,3)}</b><strong>{time(m.start)}–{time(m.end)}</strong></div>)}{displayComponentType(c).toLowerCase().includes("lab") && <span className="faculty-lab-venue">{c.venue || "Venue unavailable"}</span>}</div>
+                                  <div className="faculty-meetings">{c.meetings.map((m, j) => <div className="faculty-meeting" key={j}><b>{days[m.day]?.slice(0,3)}</b><strong>{time(m.start)}–{time(m.end)}</strong><span>{m.slot}</span></div>)}{displayComponentType(c).toLowerCase().includes("lab") && <span className="faculty-lab-venue">{c.venue || "Venue unavailable"}</span>}</div>
                                   {!c.meetings.length && <p className="muted small">Meeting times unavailable for this source.</p>}
                                 </section>
                               ))}</div>
@@ -1264,11 +1274,12 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                               )}
                               <details onToggle={(event) => { if (event.currentTarget.open) void ensureReviewData(); }}>
                                 <summary>Faculty reviews<CaretDown size={20} /></summary>
-                                <FacultyReviews
+                                {reviewLoadFailed && <button type="button" onClick={(event) => { event.stopPropagation(); void ensureReviewData(); }}>Retry loading reviews</button>}
+                                {!demo && !reviewDataLoaded ? !reviewLoadFailed && <p className="muted">Loading faculty feedback…</p> : <FacultyReviews
                                   catalog={catalog}
                                   facultyId={facultyId}
                                   courseId={course.id}
-                                />
+                                />}
                               </details>
                             </article>
                           );
@@ -1365,7 +1376,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                     })}
                   </section>}
                   {!hasVerifiedMeetingTimes ? <section ref={calendarMeasureRef} className="panel timetable"><div className="panel-heading"><div><span className="eyebrow">CURRENT ALLOCATIONS</span><h2>Timetable preview</h2></div></div>{previewOffering ? <div className="allocation-preview"><strong>{catalog.courses.find((c) => c.id === previewOffering.courseId)?.code} · {catalog.faculty.find((f) => f.id === previewOffering.facultyId)?.name}</strong>{previewOffering.components.map((component, index) => <span key={index}>{displayComponentType(component)} · Slot {component.slots.join(" + ") || "unavailable"} · Venue {component.venue || "unavailable"}</span>)}<p className="calendar-hint">Weekday and clock times are not included in this allocation data, so this selection cannot be placed on the weekly timetable.</p></div> : <p className="calendar-hint">Select anywhere on a faculty allocation to preview its slot here. Weekday and clock times are not included in this data.</p>}</section> : !ffcsMode && <>
-                  <div ref={calendarMeasureRef}><Timetable colorByBuilding={prefs.colorByBuilding ?? false} onColorByBuildingChange={value => setPrefs(p => ({ ...p, colorByBuilding: value }))} title={activeCalendar.name === "Final Calendar" ? "Final Calendar" : undefined} catalog={catalog} offerings={activeCalendarOfferings} previewOfferingId={previewOfferingId} blockedTimes={blockedTimes} onChangeBlockedTimes={setBlockedTimes} onAddBlock={addTimeBlock} pinnedOfferingIds={pinnedOfferingIds} onTogglePin={togglePin} onSelectClass={openClassSubject} onGenerateAround={() => void generate(true)} onError={setMessage} generating={busy} canGenerate={shortlistedCourseIds.length > 0 || pinnedOfferings.length > 0} /></div>
+                  <div ref={calendarMeasureRef}><Timetable colorByBuilding={prefs.colorByBuilding ?? false} onColorByBuildingChange={value => setPrefs(p => ({ ...p, colorByBuilding: value }))} title={activeCalendar.name === "Final Calendar" ? "Final Calendar" : undefined} catalog={catalog} offerings={activeCalendarOfferings} previewOfferingId={previewOfferingId} blockedTimes={blockedTimes} onChangeBlockedTimes={setBlockedTimes} onAddBlock={addTimeBlock} pinnedOfferingIds={pinnedOfferingIds} onTogglePin={togglePin} onRemoveClass={removeClass} onSelectClass={openClassSubject} onGenerateAround={() => void generate(true)} onError={setMessage} generating={busy} canGenerate={shortlistedCourseIds.length > 0 || pinnedOfferings.length > 0} /></div>
                   </>}
                 </div>
               </div>

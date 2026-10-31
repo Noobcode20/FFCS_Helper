@@ -2,6 +2,7 @@ import { expect, it } from 'vitest';
 import { defaultCatalog } from '../data/catalog';
 import { defaultPreferences, generateSchedules } from './engine';
 import { vtopOfferings } from '../data/vtop';
+import allocationSnapshot from '../../data/vtop-schedules-winter-2026-27.json';
 
 const halfOf = (component: { meetings: { start: number; end: number }[] }) => {
   if (component.meetings.length && component.meetings.every(m => m.start >= 480 && m.start < 840 && m.end <= 840)) return 'morning';
@@ -91,6 +92,23 @@ it('maps Lab Only allocations into exact same-day blocks without collapsing sepa
     if (lo.o.scheduleStatus === 'browse-only') continue;
     expect(lo.c.meetings.flatMap(meeting => meeting.slot.split('+')).sort()).toEqual(lo.o.section.split('+').sort());
   }
+});
+
+it('maps all four ECM Structured and Object-Oriented Programming lab slots to their grid periods', () => {
+  const labs = vtopOfferings.filter(o => o.courseId === 'ECM-PCC-BACSE104').flatMap(o => o.components.filter(c => c.sourceType === 'ELA'));
+  expect(labs.length).toBeGreaterThan(0);
+  const source = allocationSnapshot.courses.find(c => c.account === 'ECM' && c.category === 'PCC' && c.courseCode === 'BACSE104')!;
+  const sourceSlots = source.allocations.filter(a => a.courseType === 'ELA').map(a => a.slotDetail.split('+').sort().join('+'));
+  expect(new Set(labs.map(lab => lab.meetings.flatMap(m => m.slot.split('+')).sort().join('+')))).toEqual(new Set(sourceSlots));
+  for (const lab of labs) {
+    expect(lab.meetings.flatMap(m => m.slot.split('+')).sort()).toEqual(lab.slots.flatMap(s => s.split('+')).sort());
+    expect(lab.meetings.flatMap(m => m.slot.split('+'))).toHaveLength(4);
+  }
+  const jenila = vtopOfferings.find(o => o.courseId === 'ECM-PCC-BACSE104' && o.facultyId === 'vtop-faculty-jenila-vincent-m' && o.components.some(c => c.sourceType === 'ELA'))!;
+  expect(jenila.components.find(c => c.sourceType === 'ELA')!.meetings).toEqual([
+    { day: 0, start: 1060, end: 1160, slot: 'L35+L36' },
+    { day: 4, start: 840, end: 940, slot: 'L55+L56' },
+  ]);
 });
 
 it('uses official lab intervals and source type to distinguish theory clocks', () => {
