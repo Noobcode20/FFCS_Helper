@@ -25,6 +25,7 @@ import type { ReviewLibrary } from "./lib/reviews";
 import { CourseTitle } from "./components/CourseTitle";
 import { FacultyReviews } from "./components/FacultyReviews";
 import { allocationSnapshot, facultyAllocations } from "./data/vtop";
+import { nextGenerationCycle } from "./lib/generation-cycle";
 import { repairFfcs } from "./lib/ffcs";
 import { searchCourses } from "./lib/search";
 import {
@@ -50,7 +51,6 @@ import type {
   Offering,
   Plan,
   Preferences,
-  Schedule,
 } from "./lib/types";
 import { loadBlockedWindows, offeringBlockedBy, saveBlockedWindows, formatClock } from "./lib/blocked";
 import { Timetable, days, time } from "./components/Timetable";
@@ -270,10 +270,7 @@ export default function App() {
     catch { setMessage("Blocked times are active for this session, but browser storage is unavailable."); }
   }, [allBlockedTimes]);
   const [generationFeedback, setGenerationFeedback] = useState("");
-  const [scheduleResult, setScheduleResult] = useState<{
-    key: string;
-    schedules: Schedule[];
-  }>();
+  const generationCycles = useRef(new Map<string, string[][]>());
   const [message, setMessage] = useState(() => {
     try {
       loadPlans();
@@ -337,11 +334,6 @@ export default function App() {
   const sourceDate = catalog.provenance.updatedAt || catalog.provenance.importedAt;
   const sourceIsOld = Date.now() - Date.parse(sourceDate) > 90 * 24 * 60 * 60 * 1000;
   const fingerprint = useMemo(() => catalogFingerprint(catalog), [catalog]);
-  const generationKey = JSON.stringify([fingerprint, basket, prefs, blockedTimes, pinnedOfferingIds]);
-  const schedules =
-    scheduleResult?.key === generationKey ? scheduleResult.schedules : [];
-  const setSchedules = (next: Schedule[]) =>
-    setScheduleResult({ key: generationKey, schedules: next });
   const course = catalog.courses.find((c) => c.id === courseId);
   const previewOffering = catalog.offerings.find((o) => o.id === previewOfferingId);
   const hasVerifiedMeetingTimes = catalog.offerings.some((offering) => offering.components.some((component) => component.meetings.length > 0));
@@ -629,24 +621,20 @@ export default function App() {
       const generationCourses = [...new Set([...shortlistedCourseIds, ...pinnedOfferings.map(o => o.courseId)])];
       const pinnedChoices = Object.fromEntries(pinnedOfferings.map(o => [o.courseId, [o.id]]));
       const generationBlocks = fromCalendar ? blockedTimes : allBlockedTimes.filter(block => !block.calendarId);
-      const result = generateSchedules(catalog, generationCourses, preferences, pinnedChoices, generationBlocks,
-        [...schedules.map(s => s.offeringIds), ...calendars.map(calendar => calendar.offeringIds)], true);
-      const layoutKey = (ids: string[]) => [...ids].sort().join("|");
-      const knownLayouts = new Set([
-        ...schedules.map((schedule) => layoutKey(schedule.offeringIds)),
-        ...calendars.map((calendar) => layoutKey(calendar.offeringIds)),
+      // Alternatives and each calendar have independent cursors and constraints.
+      const cycleKey = JSON.stringify([
+        fromCalendar ? activeCalendar.id : "alternatives", fingerprint,
+        [...generationCourses].sort(), preferences, pinnedChoices, generationBlocks,
       ]);
-      const newSchedules = result.schedules.filter((schedule) => !knownLayouts.has([...schedule.offeringIds].sort().join("|")));
-      setSchedules([...schedules, ...newSchedules]);
-      let schedulesToApply = newSchedules;
-      let cycledToFirst = false;
-      if (fromCalendar && !schedulesToApply.length) {
-        const firstAvailable = generateSchedules(catalog, generationCourses, preferences, pinnedChoices, generationBlocks, [], true);
-        if (firstAvailable.schedules.length) {
-          schedulesToApply = [firstAvailable.schedules[0]];
-          cycledToFirst = true;
-        }
-      }
+      const cycle = nextGenerationCycle(generationCycles.current.get(cycleKey) || (fromCalendar && activeCalendar.offeringIds.length ? [activeCalendar.offeringIds] : []), excluded =>
+        generateSchedules(catalog, generationCourses,
+          { ...preferences, maxResults: fromCalendar ? 1 : preferences.maxResults },
+          pinnedChoices, generationBlocks, excluded, true));
+      generationCycles.current.set(cycleKey, cycle.history);
+      const result = cycle.result;
+      const newSchedules = result.schedules;
+      const schedulesToApply = newSchedules;
+      const cycledToFirst = cycle.restarted;
       if (schedulesToApply.length) {
         if (fromCalendar) {
           const updatedCalendars = calendars.map(calendar => calendar.id === activeCalendar.id
@@ -667,14 +655,14 @@ export default function App() {
         requestAnimationFrame(() => document.querySelector(".calendar-switcher")?.scrollIntoView({ behavior: "smooth", block: "start" }));
       }
       setGenerationFeedback(cycledToFirst
-        ? `No new calendar layout was available, so this calendar returned to the first available schedule. Kept ${pinnedOfferings.length} pinned class${pinnedOfferings.length === 1 ? "" : "es"} fixed.`
+        ? `This generation cycle restarted from its first available schedule. Kept ${pinnedOfferings.length} pinned class${pinnedOfferings.length === 1 ? "" : "es"} fixed.`
         : newSchedules.length
         ? fromCalendar
           ? `Updated this calendar with a new schedule. Kept ${pinnedOfferings.length} pinned class${pinnedOfferings.length === 1 ? "" : "es"} fixed.`
           : `Created ${newSchedules.length} new alternative${newSchedules.length === 1 ? "" : "s"}.`
         : `No schedule could be generated. ${result.message || "Try relaxing blocked times or changing your course shortlist."}`);
       setMessage(cycledToFirst
-        ? `No new alternatives · returned this calendar to the first available schedule. ${result.explored} combinations explored.`
+        ? `Generation cycle restarted. ${result.explored} combinations explored.`
         :
         `${newSchedules.length} alternatives · ${result.explored} combinations explored.${result.truncated ? " Search limit reached; results may be incomplete." : ""} ${result.message || ""}`,
       );
