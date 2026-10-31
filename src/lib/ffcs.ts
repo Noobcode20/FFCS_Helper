@@ -56,7 +56,7 @@ export function repairFfcs(catalog: Catalog, current: Offering[], target: string
   }
   const fallback = search(null);
   if (fallback.offeringIds) {
-    const substitutedCourseId = catalog.offerings.find(o => o.courseId !== target && fallback.offeringIds!.includes(o.id))?.courseId;
+    const substitutedCourseId = catalog.offerings.find(o => !current.some(item => item.courseId === o.courseId) && fallback.offeringIds!.includes(o.id))?.courseId;
     return { ...fallback, substitutedCourseId };
   }
   if (fallback.truncated) return fallback;

@@ -60,7 +60,7 @@ import type {
 import { loadBlockedWindows, offeringBlockedBy, saveBlockedWindows, formatClock } from "./lib/blocked";
 import { Timetable, days, time } from "./components/Timetable";
 import { TimetableBackup } from "./components/TimetableBackup";
-import { loadPreferences, PREFERENCES_KEY, persistBackup, validFfcsPriorities, type AppBackup, type CalendarChoice } from "./lib/backup";
+import { loadPreferences, parseBackup, PREFERENCES_KEY, persistBackup, validFfcsPriorities, type AppBackup, type CalendarChoice } from "./lib/backup";
 import { DataImport } from "./components/DataImport";
 
 import { Onboarding } from "./components/Onboarding";
@@ -810,7 +810,13 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
   async function restore(file?: File) {
     if (!file) return;
     try {
-      const restored = restorePlans(JSON.parse(await file.text()), catalog);
+      const data: unknown = JSON.parse(await file.text());
+      if (data && typeof data === "object" && "format" in data && data.format === "ffcs-helper-backup") {
+        const backup = parseBackup(data);
+        if (window.confirm("This backup will replace all planner data and preferences on this device. Continue?")) importBackup(backup);
+        return;
+      }
+      const restored = restorePlans(data, catalog);
       const merged = new Map(plans.map((p) => [p.id, p]));
       restored.forEach((p) => merged.set(p.id, p));
       persist([...merged.values()]);
@@ -1010,8 +1016,11 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                   if (!enabled) window.setTimeout(() => setFfcsReturning(false), 950);
                 }}><span>FFCS mode</span><span className="ffcs-switch-track" aria-hidden="true"><span className="ffcs-switch-thumb"><Skull size={17} weight="fill" /></span></span></button>}
                 {!ffcsMode && <button type="button" className="ffcs-toggle preference-toggle" onClick={() => { setPreferenceMode(true); setPreferenceSearch(""); }}><span>Teacher preferences</span><ArrowUpRight size={17} /></button>}
-                {ffcsMode && <div className="ffcs-mode-tools"><button type="button" className="ffcs-clear-rejections" onClick={() => {
+                {ffcsMode && <div className="ffcs-mode-tools"><button type="button" className="ffcs-clear-rejections" disabled={busy} onClick={() => {
                   persistFfcsRejections({});
+                  const originalCourseIds = new Set(catalog.offerings.filter(o => (activeCalendar.ffcsOriginalOfferingIds || []).includes(o.id)).map(o => o.courseId));
+                  const substitutedCourses = activeCalendarOfferings.filter(o => !originalCourseIds.has(o.courseId)).map(o => o.courseId);
+                  if (activeCalendar.ffcsOriginalOfferingIds) updateAlternatives([...alternativeCourses, ...substitutedCourses]);
                   persistCalendars(calendars.map(calendar => calendar.id === activeCalendar.id
                     ? { ...calendar, offeringIds: calendar.ffcsOriginalOfferingIds || calendar.offeringIds, registeredOfferingIds: [] }
                     : calendar));
@@ -1481,10 +1490,9 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                 <h2>Saved on this device</h2>
                 <button
                   className="secondary"
-                  disabled={!plans.length}
                   onClick={() =>
                     exportAction(() =>
-                      downloadJson("ffcs-plans-backup.json", { plans }),
+                      downloadJson("ffcs-helper-backup.json", createBackup()),
                     )
                   }
                 >
@@ -1492,16 +1500,15 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                 </button>
               </div>
               <label className="restore-label">
-                Restore a JSON plan backup
+                Restore a JSON backup
                 <input
                   type="file"
                   accept=".json"
-                  onChange={(e) => void restore(e.target.files?.[0])}
+                  onChange={(e) => { void restore(e.target.files?.[0]); e.target.value = ""; }}
                 />
               </label>
               <p className="muted small">
-                Backups must match the active catalog. Select at least two plans
-                below to compare.
+                Full backups include calendars, alternative classes and teacher preferences. Older plan-only backups must match the active catalog. Select at least two plans below to compare.
               </p>
               {!plans.length && (
                 <div className="empty">

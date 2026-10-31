@@ -23,6 +23,8 @@ it('round trips a complete setup and persists settings for a fresh device', () =
   storage.setItem('other-app', 'untouched');
   persistBackup(restored, storage);
   expect(loadPreferences(storage)).toEqual(source.preferences);
+  expect(JSON.parse(storage.getItem('ffcs-helper:alternative-courses:v1')!)).toEqual(source.alternativeCourses);
+  expect(loadPreferences(storage).preferredFaculty).toEqual(source.preferences.preferredFaculty);
   expect(JSON.parse(storage.getItem('ffcs-helper:calendars:v1')!)).toEqual(source.calendars);
   expect(JSON.parse(storage.getItem('ffcs-helper-catalog')!)).toEqual(source.catalog);
   expect(JSON.parse(storage.getItem('ffcs-helper:blocked-times:v1')!)).toEqual(source.blockedTimes);
