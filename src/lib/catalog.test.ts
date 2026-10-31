@@ -26,21 +26,21 @@ describe('current VTOP allocation catalog', () => {
     expect(defaultCatalog.offerings.some(o => o.scheduleStatus === 'browse-only')).toBe(true);
   });
 
-  it('keeps every MCA category and course isolated from other branches', () => {
-    const mca = sourceCapture.accounts.find(account => account.label === 'MCA');
-    expect(mca).toBeDefined();
-    const expected = mca!.categories.flatMap(category => category.courses.map(course => ({
-      id: `MCA-${category.category}-${course.courseId}`,
+  it.each(sourceCapture.accounts.map(account => account.label))('keeps every %s category and course isolated from other branches', (label) => {
+    const source = sourceCapture.accounts.find(account => account.label === label);
+    expect(source).toBeDefined();
+    const expected = source!.categories.flatMap(category => category.courses.map(course => ({
+      id: `${label}-${category.category}-${course.courseId}`,
       category: category.category,
-      account: 'MCA',
+      account: label,
     })));
-    const actual = defaultCatalog.courses.filter(course => course.account === 'MCA');
+    const actual = defaultCatalog.courses.filter(course => course.account === label);
     expect(actual.map(({ id, category, account }) => ({ id, category, account })).sort((a, b) => a.id.localeCompare(b.id)))
       .toEqual(expected.sort((a, b) => a.id.localeCompare(b.id)));
-    expect(new Set(actual.map(course => course.category))).toEqual(new Set(mca!.categories.filter(category => category.courses.length).map(category => category.category)));
+    expect(new Set(actual.map(course => course.category))).toEqual(new Set(source!.categories.filter(category => category.courses.length).map(category => category.category)));
     const ids = new Set(actual.map(course => course.id));
     expect(defaultCatalog.offerings.filter(offering => ids.has(offering.courseId)).length).toBeGreaterThan(0);
-    expect(defaultCatalog.courses.filter(course => course.account !== 'MCA').every(course => !ids.has(course.id))).toBe(true);
+    expect(defaultCatalog.courses.filter(course => course.account !== label).every(course => !ids.has(course.id))).toBe(true);
   });
 
   it('finds current source titles, course codes, and faculty names', () => {

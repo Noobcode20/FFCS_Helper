@@ -197,10 +197,10 @@ export default function App() {
   const [courseSearch, setCourseSearch] = useState("");
   const [activeCourseSuggestion, setActiveCourseSuggestion] = useState(0);
   const [domainFilter, setDomainFilter] = useState("");
-  const [branchFilter, setBranchFilter] = useState<"" | "ECE" | "ECM" | "MCA">(() => {
+  const [branchFilter, setBranchFilter] = useState<"" | "ECE" | "ECM" | "MCA" | "CSE CORE">(() => {
     try {
       const saved = localStorage.getItem("ffcs-helper:branch");
-      return saved === "ECE" || saved === "ECM" || saved === "MCA" ? saved : "";
+      return saved === "ECE" || saved === "ECM" || saved === "MCA" || saved === "CSE CORE" ? saved : "";
     } catch { return ""; }
   });
   useEffect(() => {
@@ -1018,9 +1018,9 @@ export default function App() {
                 </div>
                 <div className="catalog-filter-row">
                   <label className="catalog-filter"><span>Branch</span><select id="branch-filter" aria-label="Branch" value={branchFilter} onChange={(e) => {
-                    setBranchFilter(e.target.value as "" | "ECE" | "ECM" | "MCA");
+                    setBranchFilter(e.target.value as "" | "ECE" | "ECM" | "MCA" | "CSE CORE");
                     setDomainFilter(""); setCourseId(""); setCourseSearch(""); setFacultySearch(""); setPreviewOfferingId("");
-                  }}><option value="">Choose a branch</option><option value="ECE">ECE</option><option value="ECM">ECM</option><option value="MCA">MCA</option></select></label>
+                  }}><option value="">Choose a branch</option><option value="ECE">ECE</option><option value="ECM">ECM</option><option value="MCA">MCA</option>{catalog.courses.some(course => course.account === "CSE CORE") && <option value="CSE CORE">CSE CORE</option>}</select></label>
                   <label className="catalog-filter"><span>Category</span><select aria-label="Curriculum category" value={domainFilter} onChange={(e) => {
                     const value = e.target.value;
                     setDomainFilter(value);

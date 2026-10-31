@@ -5,13 +5,17 @@ const files = {
   ECE: 'data/vtop-faculty-list-ece-winter-2026-27.json',
   ECM: 'data/vtop-faculty-list-ecm-winter-2026-27.json',
 };
-// MCA is added only after its complete live source capture is available.
-const mcaPath = 'data/vtop-faculty-list-mca-winter-2026-27.json';
-try {
-  await access(mcaPath);
-  files.MCA = mcaPath;
-} catch (error) {
-  if (error.code !== 'ENOENT') throw error;
+// Include additional programmes only when their complete source capture exists.
+for (const [label, path] of Object.entries({
+  MCA: 'data/vtop-faculty-list-mca-winter-2026-27.json',
+  'CSE CORE': 'data/vtop-faculty-list-cse-core-winter-2026-27.json',
+})) {
+  try {
+    await access(path);
+    files[label] = path;
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+  }
 }
 const read = async (file) => JSON.parse(await readFile(file, 'utf8'));
 const captures = await Promise.all(Object.entries(files).map(async ([key, path]) => [key, await read(path)]));

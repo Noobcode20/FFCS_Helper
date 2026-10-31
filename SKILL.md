@@ -73,3 +73,5 @@ On 2026-10-30, VTOP returned four separate cells per faculty row; `Course Type` 
 - Course-type semantics: live VTOP explicitly labeled `LO` as **Lab Only**. Preserve raw type in `Component.sourceType`; keep other unverified type meanings (such as `SS`) explicit instead of guessing.
 
 - MCA capture on 2026-10-31: **10 course entries / 58 rows**, using live categories UCC 2/12, OEC 1/10, PFCC 3/20, PFEC 4/16. `PFCC` is Professional Core Courses and `PFEC` is Professional Elective Courses. Source: `data/vtop-faculty-list-mca-winter-2026-27.json`; personal account identifiers omitted.
+
+- CSE CORE capture on 2026-10-31 at 05:12 UTC: **66 course entries / 1,115 rows**, using all live categories NC 0/0, UCC 23/375, PCC 8/588, CON 2/50, OEC 33/102. Source: `data/vtop-faculty-list-cse-core-winter-2026-27.json`. All source row HTML cells independently matched; live BACSE103 comparison matched 94 ordered ETH/ELA rows. CSE CORE is the user-requested account/branch label, not a replacement for source curriculum categories. Personal identifiers omitted.

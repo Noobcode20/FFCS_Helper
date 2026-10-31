@@ -70,3 +70,11 @@ Browser QA verified the four RAVI S cards, separate component rooms, and correct
 The live MCA category selector differs from the undergraduate accounts: **UCC 2 courses / 12 rows; OEC 1 / 10; PFCC (Professional Core Courses) 3 / 20; PFEC (Professional Elective Courses) 4 / 16**. The capture script now reads every nonempty category option directly from the page, retaining the displayed category order and names. No undergraduate-only empty categories are invented for MCA.
 
 All 58 original allocation-row HTML fragments independently parse to the exact captured slot, venue, faculty, and Course Type fields; no identity/token markers occur in those fragments. A live UI spot-check of PAMCA504 confirmed its eight ETH/ELA rows, including separate theory/lab venues. Source ordering, duplicates, row spans, and cell spans are preserved. This allocation snapshot records slot labels only; the existing Fall generic timetable-template provenance limitation still applies to derived calendar times.
+
+## CSE CORE live capture — 2026-10-31
+
+`vtop-faculty-list-cse-core-winter-2026-27.json` was captured at **05:12 UTC** from authenticated VTOP → Academics → Course Registration Allocation after privately verifying the requested account identity and **Winter Semester 2026-27**. The user-selected branch label is **CSE CORE**; VTOP curriculum categories remain separate and retain their exact labels.
+
+The source contains **66 course entries / 1,115 allocation rows**, with zero missing required cells: **NC 0/0; UCC 23/375; PCC 8/588; CON 2/50; OEC 33/102**. Every category displayed by the live selector was captured, including the empty NC category. Course order, duplicate rows, exact faculty text, cell spans, and original allocation-row HTML are preserved.
+
+An independent HTML parser verified all 1,115 row fragments against their four saved slot/venue/faculty/Course Type fields; summary totals match nested records. A fresh live UI comparison of **BACSE103 — Computation Structures** matched all **94 ordered rows**, including separate ETH/ELA entries and venues. No supplied login credentials, student identity, or CSRF markers occur in this source artifact. The existing Fall generic timetable-template provenance limitation still applies to derived calendar times.
