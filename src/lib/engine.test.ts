@@ -22,10 +22,20 @@ describe('actual meeting collisions', () => {
     expect(conflicts(offering('a'), offering('b', 'b', [component(600, 660)]))).toBe(false);
     expect(conflicts(offering('a'), offering('b', 'b', [component(540, 600, 1)]))).toBe(false);
   });
-  it('allows short same-day transitions between distinct meetings', () => {
+  it('requires a ten-minute gap between offerings on the same day', () => {
     const a = offering('a');
-    expect(conflicts(a, offering('b', 'b', [component(605, 665)]))).toBe(false);
-    expect(generateSchedules(catalog([a, offering('b', 'b', [component(605, 665)])]), ['a', 'b'], prefs()).schedules).toHaveLength(1);
+    for (const gap of [0, 5, 9]) {
+      const b = offering('b', 'b', [component(600 + gap, 660 + gap)]);
+      expect(conflicts(a, b)).toBe(false);
+      expect(generateSchedules(catalog([a, b]), ['a', 'b'], prefs()).schedules).toHaveLength(0);
+    }
+    const b = offering('b', 'b', [component(610, 670)]);
+    expect(generateSchedules(catalog([a, b]), ['a', 'b'], prefs()).schedules).toHaveLength(1);
+    expect(generateSchedules(catalog([a, offering('b', 'b', [component(600, 660, 1)])]), ['a', 'b'], prefs()).schedules).toHaveLength(1);
+  });
+  it('allows consecutive slots within a single offering', () => {
+    const lab = offering('lab', 'lab', [component(540, 600, 0, 'L1', 'lab'), component(600, 660, 0, 'L2', 'lab')]);
+    expect(generateSchedules(catalog([lab]), ['lab'], prefs()).schedules).toHaveLength(1);
   });
   it('checks lab and tutorial meetings as well as theory, returning one pair', () => {
     const a = offering('a', 'a', [component(), component(780, 840, 1, 'L1', 'lab')]);
@@ -37,7 +47,7 @@ describe('actual meeting collisions', () => {
 
 describe('schedule generation', () => {
   it('returns multiple alternatives with each course once, independent of input order', () => {
-    const data = catalog([offering('a2', 'a'), offering('b1', 'b', [component(600, 660)]), offering('a1', 'a')]);
+    const data = catalog([offering('a2', 'a'), offering('b1', 'b', [component(610, 670)]), offering('a1', 'a')]);
     const result = generateSchedules(data, ['b', 'a', 'a'], prefs());
     expect(result.schedules.map(s => s.offeringIds)).toEqual([['a1', 'b1'], ['a2', 'b1']]);
     expect(result.message).toContain('Duplicate');
@@ -109,20 +119,19 @@ describe('schedule generation', () => {
   it('ranks free days and gap compactness', () => {
     const data = catalog([offering('day0', 'a'), offering('day1', 'a', [component(540, 600, 1)])]);
     expect(generateSchedules(data, ['a'], prefs({ freeDays: [0] })).schedules[0].offeringIds).toEqual(['day1']);
-    const gaps = catalog([offering('a'), offering('far', 'b', [component(840, 900)]), offering('near', 'b', [component(600, 660)])]);
+    const gaps = catalog([offering('a'), offering('far', 'b', [component(840, 900)]), offering('near', 'b', [component(610, 670)])]);
     const result = generateSchedules(gaps, ['a', 'b'], prefs({ minClassGap: 0 }));
     expect(result.schedules[0].offeringIds).toEqual(['a', 'near']);
-    expect(result.schedules[0].reasons).toContain('0 minutes of gaps between meetings.');
+    expect(result.schedules[0].reasons).toContain('10 minutes of gaps between meetings; compactness preference partly unmet.');
     expect(result.schedules[0].score).toBeGreaterThan(result.schedules[1].score);
   });
   it('treats the requested class gap as a ranking preference, not a feasibility rule', () => {
-    const data = catalog([offering('a'), offering('short-gap', 'b', [component(605, 665)])]);
+    const data = catalog([offering('a'), offering('short-gap', 'b', [component(610, 670)])]);
     const defaultGap = generateSchedules(data, ['a', 'b'], prefs({ compactness: 0 }));
     expect(defaultGap.schedules).toHaveLength(1);
-    expect(defaultGap.schedules[0].reasons).toContain('4 minutes short of your requested between-class gap.');
     const longerGap = generateSchedules(data, ['a', 'b'], prefs({ compactness: 0, minClassGap: 30 }));
     expect(longerGap.schedules).toHaveLength(1);
-    expect(longerGap.schedules[0].reasons).toContain('25 minutes short of your requested between-class gap.');
+    expect(longerGap.schedules[0].reasons).toContain('20 minutes short of your requested between-class gap.');
   });
   it('ranks faculty including component faculty and ignores source ratings for validity and scores', () => {
     const data = catalog([offering('f1-section', 'a'), offering('f2-section', 'a', [component()], 'f2')]);
@@ -144,7 +153,7 @@ describe('schedule generation', () => {
     expect(generateSchedules(data, ['a'], prefs({ maxResults: NaN })).schedules).toHaveLength(2);
   });
   it('bounds search deterministically and reports incomplete ranking', () => {
-    const offerings = Array.from({ length: 8 }, (_, day) => Array.from({ length: 5 }, (_, section) => offering(`${day}-${section}`, `course-${day}`, [component(480 + day * 60, 540 + day * 60)]))).flat();
+    const offerings = Array.from({ length: 8 }, (_, day) => Array.from({ length: 5 }, (_, section) => offering(`${day}-${section}`, `course-${day}`, [component(480 + day * 70, 540 + day * 70)]))).flat();
     const data = catalog(offerings);
     const ids = data.courses.map(c => c.id);
     const result = generateSchedules(data, ids, prefs({ maxResults: 3 }));
@@ -186,8 +195,8 @@ it('offers different calendar layouts rather than duplicate faculty sections', (
 
 it('spreads alternatives across course times instead of changing only the last course', () => {
   const offerings = ['a', 'b', 'c'].flatMap((course, index) => [
-    offering(`${course}1`, course, [component(540 + index * 60, 600 + index * 60)]),
-    offering(`${course}2`, course, [component(840 + index * 60, 900 + index * 60)]),
+    offering(`${course}1`, course, [component(540 + index * 70, 600 + index * 70)]),
+    offering(`${course}2`, course, [component(840 + index * 70, 900 + index * 70)]),
   ]);
   const data = catalog(offerings);
   const result = generateSchedules(data, ['a', 'b', 'c'], prefs({ compactness: 0, minClassGap: 0, maxResults: 3 }), undefined, [], [], true);
@@ -217,7 +226,7 @@ it.each(['morning', 'evening'] as const)('keeps standalone labs in either half f
 
 it('keeps a pinned theory/lab offering together across generated alternatives', () => {
   const pinned = offering('pinned', 'a', [component(540, 600), component(840, 900, 1, 'L1', 'lab')]);
-  const data = catalog([pinned, offering('replacement', 'a'), offering('b1', 'b', [component(600, 660)]), offering('b2', 'b', [component(900, 960)])]);
+  const data = catalog([pinned, offering('replacement', 'a'), offering('b1', 'b', [component(610, 670)]), offering('b2', 'b', [component(900, 960)])]);
   const result = generateSchedules(data, ['a', 'b'], prefs(), { a: [pinned.id] }, [], [], true);
   expect(result.schedules).toHaveLength(2);
   result.schedules.forEach(schedule => {

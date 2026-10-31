@@ -17,12 +17,14 @@ export const time = (minutes: number) =>
   `${String(Math.floor(minutes / 60)).padStart(2, "0")}:${String(minutes % 60).padStart(2, "0")}`;
 export function Timetable({
   title = "Weekly timetable",
+  titleAccessory,
   catalog,
   offerings,
   previewOfferingId = "",
   blockedTimes = [],
   onChangeBlockedTimes,
   onSelectClass,
+  selectedOfferingId = "",
   onAddBlock,
   pinnedOfferingIds = [],
   onTogglePin,
@@ -35,6 +37,7 @@ export function Timetable({
   onColorByBuildingChange,
 }: {
   title?: string;
+  titleAccessory?: React.ReactNode;
   colorByBuilding?: boolean;
   onColorByBuildingChange?: (value: boolean) => void;
   catalog: Catalog;
@@ -51,6 +54,7 @@ export function Timetable({
   generating?: boolean;
   canGenerate?: boolean;
   onSelectClass?: (courseId: string, offeringId: string) => void;
+  selectedOfferingId?: string;
 }) {
   const [localBuildingView, setLocalBuildingView] = useState(false);
   const buildingView = colorByBuilding ?? localBuildingView;
@@ -128,7 +132,7 @@ export function Timetable({
     <section className="panel timetable" aria-labelledby="week-title">
       <div className="panel-heading">
         <div>
-          <h2 id="week-title">{title}</h2>
+          <div className="timetable-title-row"><h2 id="week-title">{title}</h2>{titleAccessory}</div>
         </div>
           <div className="timetable-tags">
             <span className="tag">{meetings.length} class{meetings.length === 1 ? "" : "es"}</span>
@@ -184,7 +188,7 @@ export function Timetable({
                   .map((m) => {
                     const blocked = !!meetingBlockedBy(m, blockedTimes);
                     return (
-                    <div className={`meeting ${m.preview ? "meeting-preview" : ""} ${blocked ? "meeting-blocked" : ""} ${pinnedOfferingIds.includes(m.offeringId) ? "meeting-pinned" : ""}`} key={m.key} role="group" aria-label={`${m.preview ? "Preview: " : ""}${blocked ? "Inside blocked time: " : ""}${m.course?.code} ${m.course?.title}, ${day} ${time(m.start)} to ${time(m.end)}, ${m.type} ${m.slot}, ${m.venue || 'venue unavailable'}. Open subject and faculty`} title={`${m.preview ? "Preview · " : ""}${blocked ? "Inside blocked time · " : ""}${m.course?.title} | ${m.section} | ${m.type} | ${m.venue || 'Venue unavailable'}`} style={{top: (m.start-first)*scale, height: (m.end-m.start)*scale, ...(buildingView && m.venue && buildingNames.includes(buildingFromVenue(m.venue)) ? {backgroundColor: buildingColors[buildingNames.indexOf(buildingFromVenue(m.venue)) % buildingColors.length], color: "#202820"} : {})}}>
+                    <div className={`meeting ${m.preview ? "meeting-preview" : ""} ${blocked ? "meeting-blocked" : ""} ${pinnedOfferingIds.includes(m.offeringId) ? "meeting-pinned" : ""} ${!buildingView && selectedOfferingId && m.offeringId === selectedOfferingId ? "meeting-related-selected" : ""}`} key={m.key} role="group" aria-label={`${m.preview ? "Preview: " : ""}${blocked ? "Inside blocked time: " : ""}${m.course?.code} ${m.course?.title}, ${day} ${time(m.start)} to ${time(m.end)}, ${m.type} ${m.slot}, ${m.venue || 'venue unavailable'}. Open subject and faculty`} title={`${m.preview ? "Preview · " : ""}${blocked ? "Inside blocked time · " : ""}${m.course?.title} | ${m.section} | ${m.type} | ${m.venue || 'Venue unavailable'}`} style={{top: (m.start-first)*scale, height: (m.end-m.start)*scale, ...(buildingView && m.venue && buildingNames.includes(buildingFromVenue(m.venue)) ? {backgroundColor: buildingColors[buildingNames.indexOf(buildingFromVenue(m.venue)) % buildingColors.length], color: "#202820"} : {})}}>
                       <button type="button" className="meeting-open" onClick={() => onSelectClass?.(m.courseId, m.offeringId)} aria-label={`Open ${m.course?.code} subject and faculty`}>
                       <span className="meeting-time">
                         {m.preview ? "Preview · " : ""}{time(m.start)}–{time(m.end)}

@@ -8,6 +8,7 @@ export const defaultPreferences: Preferences = {
 
 // A node is one attempted offering assignment. Search and retained results have
 // independent bounds: maxResults never means that the first results are best.
+const MIN_CLASS_GAP = 10;
 const MAX_EXPLORED = 50_000;
 const MAX_RESULTS = 5;
 const meetings = (offering: Offering): Meeting[] =>
@@ -26,6 +27,12 @@ function componentDayHalf(component: Offering['components'][number]): DayHalf | 
 /** Slot names are metadata; real half-open time intervals determine clashes. */
 export function conflicts(a: Offering, b: Offering): boolean {
   return meetings(a).some(left => meetings(b).some(right => overlaps(left, right)));
+}
+
+// Consecutive slots within one offering can represent a single lab or class.
+function lacksClassGap(a: Offering, b: Offering): boolean {
+  return meetings(a).some(left => meetings(b).some(right =>
+    left.day === right.day && left.start < right.end + MIN_CLASS_GAP && right.start < left.end + MIN_CLASS_GAP));
 }
 
 export function getConflicts(offerings: Offering[]): { a: string; b: string }[] {
@@ -246,7 +253,7 @@ export function generateSchedules(
     for (const offering of choices[depth].offerings) {
       if (explored >= MAX_EXPLORED) { truncated = true; return; }
       explored++;
-      if (selected.some(o => conflicts(o, offering))) continue;
+      if (selected.some(o => lacksClassGap(o, offering))) continue;
       selected.push(offering);
       visit(depth + 1);
       selected.pop();
@@ -307,6 +314,6 @@ export function generateSchedules(
     if (fixed.length) notes.push(`${fixed.length}/${ids.length} courses have only one available time layout in this theory batch: ${fixed.map(choice => catalog.courses.find(c => c.id === choice.id)!.code).join(', ')}. Different faculty at the same times do not create a new calendar layout.`);
     if (schedules.length < limit && schedules.length) notes.push(`Only ${candidates.size} new distinct clash-free layouts are available with these selections.`);
   }
-  if (!schedules.length) notes.push(truncated ? 'No valid schedule found within the search bound.' : 'No clash-free combination exists among the allowed offerings. Soft preferences were not used to exclude schedules.');
+  if (!schedules.length) notes.push(truncated ? 'No valid schedule found within the search bound.' : 'No clash-free combination with a minimum 10-minute gap between classes exists among the allowed offerings. Soft preferences were not used to exclude schedules.');
   return { schedules, truncated, explored, ...(notes.length ? { message: notes.join(' ') } : {}) };
 }

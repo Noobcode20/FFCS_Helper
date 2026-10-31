@@ -6,7 +6,7 @@ import { defaultPreferences } from './engine';
 import { buildingFromVenue } from './buildings';
 
 export const PREFERENCES_KEY = 'ffcs-helper:preferences:v1';
-export type CalendarChoice = { id: string; name: string; offeringIds: string[]; pinnedOfferingIds?: string[]; registeredOfferingIds?: string[]; ffcsOriginalOfferingIds?: string[] };
+export type CalendarChoice = { id: string; name: string; offeringIds: string[]; pinnedOfferingIds?: string[]; registeredOfferingIds?: string[]; ffcsOriginalOfferingIds?: string[]; priority?: 1 | 2 | 3 | 4; ffcsPriorities?: Record<string, 1 | 2 | 3 | 4> };
 export interface AppBackup {
   format: 'ffcs-helper-backup';
   version: 1;
@@ -28,6 +28,8 @@ const object = (v: unknown): v is Record<string, unknown> => !!v && typeof v ===
 const text = (v: unknown): v is string => typeof v === 'string' && v.length > 0 && v.length <= 2000;
 const strings = (v: unknown): v is string[] => Array.isArray(v) && v.length <= 100000 && v.every(text) && new Set(v).size === v.length;
 const number = (v: unknown, min: number, max: number) => typeof v === 'number' && Number.isFinite(v) && v >= min && v <= max;
+export const validFfcsPriorities = (v: unknown): v is Record<string, 1 | 2 | 3 | 4> =>
+  object(v) && Object.entries(v).every(([key, value]) => text(key) && [1, 2, 3, 4].includes(value as number));
 export function validPreferences(v: unknown): v is Preferences {
   return object(v) && (v.colorByBuilding === undefined || typeof v.colorByBuilding === 'boolean') && ['any','morning','evening'].includes(String(v.theoryBatch)) && ['any','morning','afternoon'].includes(String(v.timeOfDay)) &&
     Array.isArray(v.freeDays) && v.freeDays.length <= 7 && v.freeDays.every(d => Number.isInteger(d) && d >= 0 && d <= 6) &&
@@ -53,7 +55,7 @@ export function parseBackup(input: unknown): AppBackup {
   const result = validateCatalog(input.catalog);
   if (!result.catalog || result.errors.length) throw new Error(`Invalid backup catalog: ${result.errors[0]}`);
   const calendars = input.calendars;
-  if (!Array.isArray(calendars) || !calendars.length || calendars.length > 500 || !calendars.every(c => object(c) && text(c.id) && text(c.name) && strings(c.offeringIds) && ['pinnedOfferingIds','registeredOfferingIds','ffcsOriginalOfferingIds'].every(k => c[k] === undefined || strings(c[k])))) throw new Error('Invalid calendars in backup.');
+  if (!Array.isArray(calendars) || !calendars.length || calendars.length > 500 || !calendars.every(c => object(c) && text(c.id) && text(c.name) && strings(c.offeringIds) && ['pinnedOfferingIds','registeredOfferingIds','ffcsOriginalOfferingIds'].every(k => c[k] === undefined || strings(c[k])) && (c.ffcsPriorities === undefined || validFfcsPriorities(c.ffcsPriorities)) && (c.priority === undefined || [1, 2, 3, 4].includes(c.priority as number)))) throw new Error('Invalid calendars in backup.');
   const ids = new Set(calendars.map(c => c.id));
   if (ids.size !== calendars.length || !ids.has(input.activeCalendarId)) throw new Error('Invalid active calendar or duplicate calendar IDs.');
   for (const c of calendars) for (const key of ['pinnedOfferingIds','registeredOfferingIds']) if (c[key]?.some((id: string) => !c.offeringIds.includes(id))) throw new Error('Pinned and registered classes must belong to their calendar.');

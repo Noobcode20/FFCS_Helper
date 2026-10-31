@@ -18,6 +18,10 @@ import {
   CalendarPlus,
   CaretDown,
   Skull,
+  Star,
+  CalendarCheck,
+  Clock,
+  Flag,
 } from "@phosphor-icons/react";
 import { defaultCatalog, loadReviewLibrary } from "./data/catalog";
 import { attachReviewLibrary, normalizeFacultyName, preferredRating } from "./lib/reviews";
@@ -56,7 +60,7 @@ import type {
 import { loadBlockedWindows, offeringBlockedBy, saveBlockedWindows, formatClock } from "./lib/blocked";
 import { Timetable, days, time } from "./components/Timetable";
 import { TimetableBackup } from "./components/TimetableBackup";
-import { loadPreferences, PREFERENCES_KEY, persistBackup, type AppBackup, type CalendarChoice } from "./lib/backup";
+import { loadPreferences, PREFERENCES_KEY, persistBackup, validFfcsPriorities, type AppBackup, type CalendarChoice } from "./lib/backup";
 import { DataImport } from "./components/DataImport";
 
 import { Onboarding } from "./components/Onboarding";
@@ -96,6 +100,8 @@ function initialCalendars(storage: Pick<Storage, "getItem"> = localStorage): Cal
     const parsed: unknown = raw ? JSON.parse(raw) : null;
     if (Array.isArray(parsed) && parsed.length && parsed.every((x) =>
       x && typeof x.id === "string" && typeof x.name === "string" &&
+      (x.ffcsPriorities === undefined || validFfcsPriorities(x.ffcsPriorities)) &&
+      (x.priority === undefined || [1, 2, 3, 4].includes(x.priority)) &&
       (x.registeredOfferingIds === undefined || (Array.isArray(x.registeredOfferingIds) && x.registeredOfferingIds.every((id: unknown) => typeof id === "string"))) &&
       (x.ffcsOriginalOfferingIds === undefined || (Array.isArray(x.ffcsOriginalOfferingIds) && x.ffcsOriginalOfferingIds.every((id: unknown) => typeof id === "string"))) &&
       Array.isArray(x.offeringIds) && x.offeringIds.every((id: unknown) => typeof id === "string") &&
@@ -208,6 +214,9 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
   const calendarMeasureRef = useRef<HTMLDivElement>(null);
   const [calendarPanelHeight, setCalendarPanelHeight] = useState(0);
   const [facultySearch, setFacultySearch] = useState("");
+  const [facultyRatedOnly, setFacultyRatedOnly] = useState(false);
+  const [facultyFitsCalendar, setFacultyFitsCalendar] = useState(false);
+  const [facultySameSlotId, setFacultySameSlotId] = useState("");
   const [courseSearch, setCourseSearch] = useState("");
   const [activeCourseSuggestion, setActiveCourseSuggestion] = useState(0);
   const [domainFilter, setDomainFilter] = useState("");
@@ -445,14 +454,26 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
     }
   }
 
+  useEffect(() => { setFacultySameSlotId(""); }, [courseId]);
+  const sameSlotReference = offerings.find(o => o.id === facultySameSlotId);
+  const slotSignature = (offering: Offering) => JSON.stringify(offering.components
+    .map(component => [component.type, [...component.slots].sort()])
+    .sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b))));
+  const calendarCourseOffering = activeCalendarOfferings.find(o => o.courseId === courseId);
+  const slotReference = calendarCourseOffering || (previewOffering?.courseId === courseId ? previewOffering : undefined);
   const visibleOfferings = offerings.flatMap((offering) =>
     [...new Set([offering.facultyId, ...offering.components.map((c) => c.facultyId).filter((id): id is string => !!id)])]
       .map((facultyId) => ({ offering, facultyId, blocked: offeringBlockedBy(offering, blockedTimes) })),
   ).filter(({ offering, facultyId, blocked }) => {
     const facultyName = catalog.faculty.find((f) => f.id === facultyId)?.name || "";
     return `${offering.section} ${facultyName} ${offering.components.flatMap((c) => c.slots).join(" ")}`
-      .toLowerCase().includes(facultySearch.toLowerCase());
-  }).sort((a, b) => (a.offering.id === previewOfferingId ? -1 : b.offering.id === previewOfferingId ? 1 : 0) || (a.blocked ? 1 : 0) - (b.blocked ? 1 : 0));
+      .toLowerCase().includes(facultySearch.toLowerCase()) &&
+      (!facultyRatedOnly || !!preferredRating(catalog, facultyId, course?.id)) &&
+      (!facultyFitsCalendar || (isSchedulableOffering(offering) &&
+        !pinnedOfferings.some(o => o.courseId === offering.courseId && o.id !== offering.id) &&
+        !activeCalendarOfferings.some(o => o.courseId !== offering.courseId && conflicts(o, offering)))) &&
+      (!facultySameSlotId || (!!sameSlotReference && slotSignature(offering) === slotSignature(sameSlotReference)));
+  }).sort((a, b) => Number(b.offering.id === calendarCourseOffering?.id) - Number(a.offering.id === calendarCourseOffering?.id) || (a.blocked ? 1 : 0) - (b.blocked ? 1 : 0));
   const basketFacultyIds = useMemo(
     () =>
       new Set(
@@ -916,7 +937,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                     requestAnimationFrame(() => document.querySelector(".calendar-switcher")?.scrollIntoView({ block: "start" }));
                   }}><ArrowLeft size={17} /> Back to home</button>
                 </header>
-                <Timetable colorByBuilding={prefs.colorByBuilding ?? false} onColorByBuildingChange={value => setPrefs(p => ({ ...p, colorByBuilding: value }))} title="Final Calendar" catalog={catalog} offerings={activeCalendarOfferings} blockedTimes={blockedTimes} />
+                <Timetable titleAccessory={<label className="calendar-priority" title={`Priority for ${activeCalendar.name}`}><Flag size={15} weight={activeCalendar.priority ? "fill" : "regular"} aria-hidden="true" /><span>Priority</span><select aria-label={`Priority for ${activeCalendar.name}`} value={activeCalendar.priority ?? ""} onChange={e => persistCalendars(calendars.map(item => item.id === activeCalendar.id ? { ...item, priority: e.target.value ? Number(e.target.value) as 1 | 2 | 3 | 4 : undefined } : item))}><option value="">None</option>{[1, 2, 3, 4].map(priority => <option key={priority} value={priority}>{priority}</option>)}</select></label>} colorByBuilding={prefs.colorByBuilding ?? false} onColorByBuildingChange={value => setPrefs(p => ({ ...p, colorByBuilding: value }))} title="Final Calendar" catalog={catalog} offerings={activeCalendarOfferings} blockedTimes={blockedTimes} />
               </section> : preferenceMode ? <section className="teacher-preferences" aria-labelledby="teacher-preferences-title">
                 <header className="teacher-preferences-header">
                   <button type="button" className="secondary preference-back" onClick={() => setPreferenceMode(false)}><ArrowLeft size={17} /> Back to planner</button>
@@ -969,7 +990,12 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                 {!preferenceMode && <button type="button" className="ffcs-toggle" role="switch" aria-checked={ffcsMode} onClick={() => {
                   const enabled = !ffcsMode;
                   if (enabled) {
-                    persistCalendars(calendars.map(calendar => calendar.id === activeCalendar.id
+                    // Priority 1 is the first choice; ties retain calendar order.
+                    const target = calendars.reduce<CalendarChoice | undefined>((best, calendar) =>
+                      calendar.priority !== undefined && (!best || calendar.priority < best.priority!) ? calendar : best, undefined) || activeCalendar;
+                    setActiveCalendarId(target.id);
+                    setPreviewOfferingId("");
+                    persistCalendars(calendars.map(calendar => calendar.id === target.id
                       ? { ...calendar, ffcsOriginalOfferingIds: calendar.ffcsOriginalOfferingIds || [...calendar.offeringIds] }
                       : calendar));
                   } else {
@@ -1205,6 +1231,16 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                           aria-label="Search faculty name"
                         />
                       </label>
+                      <div className="faculty-filter-bar">
+                        <div className="faculty-filter-header"><span><span className="faculty-filter-icon"><SlidersHorizontal size={19} aria-hidden="true" /></span> Filter faculty</span>{(facultyRatedOnly || facultyFitsCalendar || facultySameSlotId) && <button type="button" onClick={() => { setFacultyRatedOnly(false); setFacultyFitsCalendar(false); setFacultySameSlotId(""); }}>Clear all</button>}</div>
+                        <div className="faculty-filters" role="group" aria-label="Filter faculty">
+                          <label><input type="checkbox" checked={facultyRatedOnly} onChange={e => { setFacultyRatedOnly(e.target.checked); if (e.target.checked) void ensureReviewData(); }} /><Star size={16} aria-hidden="true" /><span>Rated</span></label>
+                          <label><input type="checkbox" checked={facultyFitsCalendar} onChange={e => setFacultyFitsCalendar(e.target.checked)} disabled={!hasVerifiedMeetingTimes} /><CalendarCheck size={16} aria-hidden="true" /><span>Fits in calendar</span></label>
+                          <label title={!slotReference && !facultySameSlotId ? "Select an allocation to compare slots" : undefined}><input type="checkbox" checked={!!facultySameSlotId} onChange={e => setFacultySameSlotId(e.target.checked ? slotReference?.id || "" : "")} disabled={!slotReference && !facultySameSlotId} /><Clock size={16} aria-hidden="true" /><span>Same timeslot</span></label>
+                        </div>
+                        {facultySameSlotId ? <p className="faculty-filter-hint">Matching slots of <strong>{catalog.faculty.find(f => f.id === sameSlotReference?.facultyId)?.name || "selected allocation"}</strong></p> : !slotReference && <p className="faculty-filter-hint">Select an allocation to compare timeslots.</p>}
+                      </div>
+                      {facultyRatedOnly && !demo && !reviewDataLoaded && <p className="faculty-filter-hint">{reviewLoadFailed ? "Ratings could not be loaded." : "Loading ratings…"}</p>}
                       <div className="section-heading">
                         <h3>Available faculty</h3>
                         <span>{visibleOfferings.length}</span>
@@ -1286,7 +1322,7 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                         })}
                       {!visibleOfferings.length && (
                         <p className="muted">
-                          No matching sections are recorded in this catalog.
+                          No faculty allocations match your search and filters.
                         </p>
                       )}
                       </div>
@@ -1375,8 +1411,8 @@ export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: 
                       </section>;
                     })}
                   </section>}
-                  {!hasVerifiedMeetingTimes ? <section ref={calendarMeasureRef} className="panel timetable"><div className="panel-heading"><div><span className="eyebrow">CURRENT ALLOCATIONS</span><h2>Timetable preview</h2></div></div>{previewOffering ? <div className="allocation-preview"><strong>{catalog.courses.find((c) => c.id === previewOffering.courseId)?.code} · {catalog.faculty.find((f) => f.id === previewOffering.facultyId)?.name}</strong>{previewOffering.components.map((component, index) => <span key={index}>{displayComponentType(component)} · Slot {component.slots.join(" + ") || "unavailable"} · Venue {component.venue || "unavailable"}</span>)}<p className="calendar-hint">Weekday and clock times are not included in this allocation data, so this selection cannot be placed on the weekly timetable.</p></div> : <p className="calendar-hint">Select anywhere on a faculty allocation to preview its slot here. Weekday and clock times are not included in this data.</p>}</section> : !ffcsMode && <>
-                  <div ref={calendarMeasureRef}><Timetable colorByBuilding={prefs.colorByBuilding ?? false} onColorByBuildingChange={value => setPrefs(p => ({ ...p, colorByBuilding: value }))} title={activeCalendar.name === "Final Calendar" ? "Final Calendar" : undefined} catalog={catalog} offerings={activeCalendarOfferings} previewOfferingId={previewOfferingId} blockedTimes={blockedTimes} onChangeBlockedTimes={setBlockedTimes} onAddBlock={addTimeBlock} pinnedOfferingIds={pinnedOfferingIds} onTogglePin={togglePin} onRemoveClass={removeClass} onSelectClass={openClassSubject} onGenerateAround={() => void generate(true)} onError={setMessage} generating={busy} canGenerate={shortlistedCourseIds.length > 0 || pinnedOfferings.length > 0} /></div>
+                  {!hasVerifiedMeetingTimes ? <section ref={calendarMeasureRef} className="panel timetable"><div className="panel-heading"><div><span className="eyebrow">CURRENT ALLOCATIONS</span><div className="timetable-title-row"><h2>Timetable preview</h2><label className="calendar-priority" title={`Priority for ${activeCalendar.name}`}><Flag size={15} weight={activeCalendar.priority ? "fill" : "regular"} aria-hidden="true" /><span>Priority</span><select aria-label={`Priority for ${activeCalendar.name}`} value={activeCalendar.priority ?? ""} onChange={e => persistCalendars(calendars.map(item => item.id === activeCalendar.id ? { ...item, priority: e.target.value ? Number(e.target.value) as 1 | 2 | 3 | 4 : undefined } : item))}><option value="">None</option>{[1, 2, 3, 4].map(priority => <option key={priority} value={priority}>{priority}</option>)}</select></label></div></div></div>{previewOffering ? <div className="allocation-preview"><strong>{catalog.courses.find((c) => c.id === previewOffering.courseId)?.code} · {catalog.faculty.find((f) => f.id === previewOffering.facultyId)?.name}</strong>{previewOffering.components.map((component, index) => <span key={index}>{displayComponentType(component)} · Slot {component.slots.join(" + ") || "unavailable"} · Venue {component.venue || "unavailable"}</span>)}<p className="calendar-hint">Weekday and clock times are not included in this allocation data, so this selection cannot be placed on the weekly timetable.</p></div> : <p className="calendar-hint">Select anywhere on a faculty allocation to preview its slot here. Weekday and clock times are not included in this data.</p>}</section> : !ffcsMode && <>
+                  <div ref={calendarMeasureRef}><Timetable titleAccessory={<label className="calendar-priority" title={`Priority for ${activeCalendar.name}`}><Flag size={15} weight={activeCalendar.priority ? "fill" : "regular"} aria-hidden="true" /><span>Priority</span><select aria-label={`Priority for ${activeCalendar.name}`} value={activeCalendar.priority ?? ""} onChange={e => persistCalendars(calendars.map(item => item.id === activeCalendar.id ? { ...item, priority: e.target.value ? Number(e.target.value) as 1 | 2 | 3 | 4 : undefined } : item))}><option value="">None</option>{[1, 2, 3, 4].map(priority => <option key={priority} value={priority}>{priority}</option>)}</select></label>} colorByBuilding={prefs.colorByBuilding ?? false} onColorByBuildingChange={value => setPrefs(p => ({ ...p, colorByBuilding: value }))} title={activeCalendar.name === "Final Calendar" ? "Final Calendar" : undefined} catalog={catalog} offerings={activeCalendarOfferings} selectedOfferingId={previewOfferingId} previewOfferingId={previewOfferingId} blockedTimes={blockedTimes} onChangeBlockedTimes={setBlockedTimes} onAddBlock={addTimeBlock} pinnedOfferingIds={pinnedOfferingIds} onTogglePin={togglePin} onRemoveClass={removeClass} onSelectClass={openClassSubject} onGenerateAround={() => void generate(true)} onError={setMessage} generating={busy} canGenerate={shortlistedCourseIds.length > 0 || pinnedOfferings.length > 0} /></div>
                   </>}
                 </div>
               </div>
