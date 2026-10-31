@@ -769,31 +769,6 @@ export default function App() {
           </section>
         </div>}
         <main id="main">
-          {!preferenceMode && <nav className="release-nav" aria-label="Main navigation">
-            {([['planner', 'Course planner'], ['faculty', 'Faculty directory'], ['plans', 'Saved plans & data']] as const).map(([id, title]) => <button key={id} type="button" className={view === id ? '' : 'secondary'} aria-current={view === id ? 'page' : undefined} onClick={() => setView(id)}>{title}</button>)}
-            <a href="./PRIVACY.md" target="_blank" rel="noreferrer">Privacy</a>
-          </nav>}
-          {!preferenceMode && !registrationComplete && <div className="page-heading">
-            <div>
-              <h1>
-                {view === "planner"
-                  ? hasVerifiedMeetingTimes ? "Course planner" : "Browse current course allocations."
-                  : view === "faculty"
-                    ? "Know who’s teaching."
-                      : "Your plans and course data."}
-              </h1>
-              <p>
-                {view === "planner"
-                  ? hasVerifiedMeetingTimes ? "" : "Search by course or faculty, then compare the current allocations."
-                  : view === "faculty"
-                    ? "Browse current faculty allocations and available student feedback."
-                    : view === "plans"
-                      ? "Save and compare timetables, or import a semester catalog."
-                      : ""}
-              </p>
-            </div>
-          </div>}
-          {!preferenceMode && view !== "faculty" && catalog.warnings?.length && <p className="warning timing-warning" role="note">{catalog.warnings.join(" ")}</p>}
           {view === "planner" && (
             <div className={`planner-view mobile-section-${mobilePlannerSection} ${ffcsMode ? "ffcs-mode" : ""} ${preferenceMode ? "preference-mode" : ""}`}>
               {registrationComplete ? <section className="registration-complete" aria-labelledby="registration-complete-title">
@@ -1511,7 +1486,6 @@ export default function App() {
           </aside>}
           <footer className="main-footer">
             <span>FFCS Helper · Vellore</span>
-            <span>Planning only. Confirm registration details in VTOP.</span>
           </footer>
         </main>
       </div>

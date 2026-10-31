@@ -1865,7 +1865,6 @@ th small {
 }
 .catalog-caveats { margin: -10px 0 16px; padding: 0 16px; border: 1px solid var(--line); border-radius: 7px; background: #fff; }
 .catalog-caveats summary { padding: 10px 0; }
-.timing-warning { margin-bottom: 20px; }
 .import-columns { display: block; overflow-wrap: anywhere; background: var(--soft); padding: 14px; line-height: 1.8; font-size: 12px; }
 /* Let the mobile grid shrink below the navigation's intrinsic width. */
 @media (max-width: 950px) {
