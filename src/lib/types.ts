@@ -10,7 +10,7 @@ export interface Review { id: string; facultyId: string; courseId?: string; rati
 
 export interface Catalog { version: 1; campus: 'Vellore'; semester: string; provenance: Provenance; warnings?: string[]; courses: Course[]; faculty: Faculty[]; offerings: Offering[]; reviews: Review[]; }
 export interface BlockedWindow { calendarId?: string; id: string; days: Day[]; start: number; end: number; }
-export interface Preferences { theoryBatch: 'any' | 'morning' | 'evening'; timeOfDay: 'any' | 'morning' | 'afternoon'; freeDays: number[]; compactness: number; minClassGap?: number; facultyOrder: string[]; maxResults: number; ratingThreshold?: number; facultyMode?: 'preferred'|'rated'; preferredFaculty?: string[]; blockedFaculty?: string[]; }
+export interface Preferences { colorByBuilding?: boolean; theoryBatch: 'any' | 'morning' | 'evening'; timeOfDay: 'any' | 'morning' | 'afternoon'; freeDays: number[]; compactness: number; minClassGap?: number; facultyOrder: string[]; maxResults: number; ratingThreshold?: number; facultyMode?: 'preferred'|'rated'; preferredFaculty?: string[]; blockedFaculty?: string[]; preferredBuildings?: string[]; }
 export interface Schedule { offeringIds: string[]; score: number; reasons: string[]; }
 export interface Plan { id: string; name: string; offeringIds: string[]; savedAt: string; semester: string; catalogFingerprint: string; }
 export interface ImportResult { catalog?: Catalog; errors: string[]; warnings: string[]; }

@@ -28,6 +28,7 @@ import { allocationSnapshot, facultyAllocations } from "./data/vtop";
 import { calendarGenerationConstraints, nextGenerationCycle } from "./lib/generation-cycle";
 import { repairFfcs } from "./lib/ffcs";
 import { searchCourses } from "./lib/search";
+import { buildingFromVenue } from "./lib/buildings";
 import {
   conflicts,
   isSchedulableOffering,
@@ -54,6 +55,8 @@ import type {
 } from "./lib/types";
 import { loadBlockedWindows, offeringBlockedBy, saveBlockedWindows, formatClock } from "./lib/blocked";
 import { Timetable, days, time } from "./components/Timetable";
+import { TimetableBackup } from "./components/TimetableBackup";
+import { loadPreferences, PREFERENCES_KEY, persistBackup, type AppBackup, type CalendarChoice } from "./lib/backup";
 import { DataImport } from "./components/DataImport";
 
 import { Onboarding } from "./components/Onboarding";
@@ -61,7 +64,6 @@ import { createDemoStorage, demoCatalog, onboardingSeen, markOnboardingSeen, bro
 
 type View = "planner" | "faculty" | "plans";
 type MobilePlannerSection = "search" | "timetable" | "shortlist";
-type CalendarChoice = { id: string; name: string; offeringIds: string[]; pinnedOfferingIds?: string[]; registeredOfferingIds?: string[]; ffcsOriginalOfferingIds?: string[] };
 const CALENDAR_KEY = "ffcs-helper:calendars:v1";
 const FFCS_REJECTIONS_KEY = "ffcs-helper:ffcs-rejected-faculty:v1";
 const SHORTLIST_KEY = "ffcs-helper:shortlist:v1";
@@ -135,13 +137,7 @@ function initialCatalog(storage: Pick<Storage, "getItem" | "setItem" | "removeIt
     const raw = storage.getItem("ffcs-helper-catalog");
     if (raw) {
       const result = validateCatalog(JSON.parse(raw));
-      if (result.catalog && !result.errors.length && result.catalog.semester === defaultCatalog.semester) {
-        if (result.catalog.provenance.source === "Current faculty and course allocations") {
-          storage.removeItem("ffcs-helper-catalog");
-        } else {
-          return result.catalog;
-        }
-      }
+      if (result.catalog && !result.errors.length) return result.catalog;
     }
   } catch {
     /* Default catalog remains available when browser storage is blocked. */
@@ -175,11 +171,11 @@ export default function App() {
   return <>
     {tourActive && <Onboarding step={tourStep} onStep={setTourStep} onFinish={finishTour} />}
     <div className="walkthrough-launch"><button type="button" className="secondary" onClick={() => { setTourStep(0); setTourActive(true); }}>Help</button></div>
-    <PlannerApp key={tourActive ? "practice" : "personal"} demo={tourActive} tourStep={tourStep} />
+    <PlannerApp key={tourActive ? "practice" : "personal"} demo={tourActive} tourStep={tourStep} onTourStep={setTourStep} />
   </>;
 }
 
-export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tourStep?: number }) {
+export function PlannerApp({ demo = false, tourStep = 0, onTourStep }: { demo?: boolean; tourStep?: number; onTourStep?: (step: number) => void }) {
   const [storage] = useState(() => demo ? createDemoStorage() : browserStorage());
   const [catalog, setCatalog] = useState<Catalog>(() => demo ? demoCatalog : initialCatalog(storage));
   const [reviewDataLoaded, setReviewDataLoaded] = useState(false);
@@ -251,9 +247,11 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
   useEffect(() => {
     try { storage.setItem(ACTIVE_CALENDAR_KEY, activeCalendarId); } catch { /* Calendar selection remains active for this session. */ }
   }, [activeCalendarId]);
-  const [prefs, setPrefs] = useState<Preferences>({ ...defaultPreferences });
-  useEffect(() => { try { const v=JSON.parse(storage.getItem('ffcs-helper:faculty-preferences:v1')||'{}'); setPrefs(p=>({...p,preferredFaculty:Array.isArray(v.preferredFaculty)?v.preferredFaculty:[],blockedFaculty:Array.isArray(v.blockedFaculty)?v.blockedFaculty:[],facultyMode:v.facultyMode||'preferred',ratingThreshold:v.ratingThreshold??3})); } catch {} }, []);
-  useEffect(() => { try { storage.setItem('ffcs-helper:faculty-preferences:v1',JSON.stringify({preferredFaculty:prefs.preferredFaculty||[],blockedFaculty:prefs.blockedFaculty||[],facultyMode:prefs.facultyMode||'preferred',ratingThreshold:prefs.ratingThreshold??3})); } catch {} }, [prefs]);
+  const [prefs, setPrefs] = useState<Preferences>(() => loadPreferences(storage));
+  useEffect(() => {
+    try { storage.setItem(PREFERENCES_KEY, JSON.stringify(prefs)); }
+    catch { setMessage("Preferences are active for this session, but browser storage is unavailable. Export a backup to keep them."); }
+  }, [prefs]);
   const [allBlockedTimes, setAllBlockedTimes] = useState<BlockedWindow[]>(() => demo ? [] : initialBlockedTimes());
   const activeCalendar = calendars.find((c) => c.id === activeCalendarId) || calendars[0];
   const blockedTimes = allBlockedTimes.filter(block => !block.calendarId || block.calendarId === activeCalendar.id);
@@ -265,6 +263,7 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
     setAllBlockedTimes(combined);
   }
   function addTimeBlock(block: BlockedWindow, scope: 'this' | 'all') {
+    if (demo && tourStep === 12) onTourStep?.(13);
     setBlockedTimes([...blockedTimes, { ...block, ...(scope === 'this' ? { calendarId: activeCalendar.id } : {}) }]);
   }
   function togglePin(offeringId: string) {
@@ -285,7 +284,12 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
     catch { setMessage("Blocked times are active for this session, but browser storage is unavailable."); }
   }, [allBlockedTimes]);
   const [generationFeedback, setGenerationFeedback] = useState("");
-  const [useCurrentCalendar, setUseCurrentCalendar] = useState(false);
+  const [useCurrentCalendar, setUseCurrentCalendar] = useState(() => {
+    try { return storage.getItem('ffcs-helper:use-current-calendar:v1') === 'true'; } catch { return false; }
+  });
+  useEffect(() => {
+    try { storage.setItem('ffcs-helper:use-current-calendar:v1', JSON.stringify(useCurrentCalendar)); } catch { /* Keep session value. */ }
+  }, [useCurrentCalendar]);
   const generationCycles = useRef(new Map<string, string[][]>());
   const [message, setMessage] = useState(() => {
     try {
@@ -342,13 +346,13 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
     if (!demo) return;
     setView("planner");
     setRegistrationComplete(false);
-    setPreferenceMode(tourStep === 2);
-    setFfcsMode(tourStep === 9);
-    setDomainFilter("Practice courses");
-    setCourseId(tourStep === 3 ? "demo-4" : "demo-1");
-    setPreviewOfferingId("");
-    setMobilePlannerSection(tourStep === 1 || tourStep === 8 ? "shortlist" : tourStep === 0 || tourStep >= 5 ? "timetable" : "search");
-    if (tourStep === 8) setUseCurrentCalendar(false);
+    setPreferenceMode(tourStep >= 17 && tourStep <= 19);
+    if (tourStep < 22) setFfcsMode(false);
+    if (tourStep > 0) setBranchFilter("ECE");
+    if (tourStep > 1) setDomainFilter("Practice courses");
+    if (tourStep >= 4 && tourStep <= 8) setCourseId("demo-4");
+    if (tourStep === 20) setCourseId("demo-5");
+    setMobilePlannerSection(tourStep === 5 ? "shortlist" : tourStep >= 7 && tourStep <= 15 ? "timetable" : "search");
 
   }, [demo, tourStep]);
   const [name, setName] = useState("");
@@ -453,6 +457,20 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
       ),
     [catalog, basket],
   );
+  useEffect(() => {
+    if (!demo || !onTourStep) return;
+    const done = tourStep === 0 ? branchFilter === "ECE" :
+      tourStep === 1 ? domainFilter === "Practice courses" :
+      tourStep === 2 ? courseId === "demo-4" :
+      tourStep === 4 ? basket.includes("demo-4") :
+      tourStep === 6 ? previewOfferingId === "demo-4-b" :
+      tourStep === 8 ? activeCalendar.offeringIds.includes("demo-4-b") :
+      tourStep === 9 ? pinnedOfferingIds.length > 0 :
+      tourStep === 16 ? preferenceMode :
+      tourStep === 20 ? alternativeCourses.includes("demo-5") :
+      tourStep === 21 ? ffcsMode : false;
+    if (done) onTourStep(tourStep + 1);
+  }, [demo, tourStep, onTourStep, branchFilter, domainFilter, courseId, basket, previewOfferingId, activeCalendar, pinnedOfferingIds.length, preferenceMode, alternativeCourses, ffcsMode]);
   const preferenceCourseIds = [...new Set([...shortlistedCourseIds, ...activeCalendarOfferings.map(o => o.courseId), ...alternativeCourses])];
   const preferenceCourse = catalog.courses.find(c => c.id === preferenceCourseId && preferenceCourseIds.includes(c.id)) || catalog.courses.find(c => preferenceCourseIds.includes(c.id));
   const preferenceFacultyIds = new Set(catalog.offerings.filter(o => o.courseId === preferenceCourse?.id).flatMap(o => [o.facultyId, ...o.components.flatMap(c => c.facultyId ? [c.facultyId] : [])]));
@@ -629,7 +647,7 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
   }
   async function generate(fromCalendar = false) {
     if (busy) return;
-    if (!fromCalendar && hasAccountData && !branchFilter) {
+    if (hasAccountData && !branchFilter) {
       const error = "Select a branch before generating a timetable.";
       setGenerationFeedback(error);
       setMessage(error);
@@ -646,7 +664,7 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
     setGenerationFeedback("Finding clash-free calendar layouts…");
     await new Promise((resolve) => setTimeout(resolve, 30));
     try {
-      const preferences = { ...prefs, maxResults: Math.min(5, prefs.maxResults) };
+      const preferences = { ...prefs, maxResults: fromCalendar ? 1 : Math.min(5, prefs.maxResults) };
       preferences.blockedFaculty = prefs.blockedFaculty || [];
       preferences.preferredFaculty = prefs.preferredFaculty || [];
       const generationCourses = [...new Set([...shortlistedCourseIds, ...generationPins.map(o => o.courseId)])];
@@ -660,7 +678,7 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
       ]);
       const cycle = nextGenerationCycle(generationCycles.current.get(cycleKey) || (fromCalendar && activeCalendar.offeringIds.length ? [activeCalendar.offeringIds] : []), excluded =>
         generateSchedules(catalog, generationCourses,
-          { ...preferences, maxResults: fromCalendar ? 1 : preferences.maxResults },
+          preferences,
           pinnedChoices, generationBlocks, excluded, true));
       generationCycles.current.set(cycleKey, cycle.history);
       const result = cycle.result;
@@ -669,10 +687,9 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
       const cycledToFirst = cycle.restarted;
       if (schedulesToApply.length) {
         if (fromCalendar) {
-          const updatedCalendars = calendars.map(calendar => calendar.id === activeCalendar.id
+          persistCalendars(calendars.map(calendar => calendar.id === activeCalendar.id
             ? { ...calendar, offeringIds: [...schedulesToApply[0].offeringIds], pinnedOfferingIds: [...pinnedOfferingIds] }
-            : calendar);
-          persistCalendars(updatedCalendars);
+            : calendar));
         } else {
           const generatedNames = calendars.map((calendar) => calendar.name.match(/^Generated (\d+)$/)?.[1]).filter(Boolean).map(Number);
           let nextGeneratedName = Math.max(0, ...generatedNames) + 1;
@@ -688,19 +705,20 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
           if (generated[0]) setActiveCalendarId(generated[0].id);
         }
         setPreviewOfferingId("");
-        requestAnimationFrame(() => document.querySelector(".calendar-switcher")?.scrollIntoView({ behavior: "smooth", block: "start" }));
+        if (!demo) requestAnimationFrame(() => document.querySelector(".calendar-switcher")?.scrollIntoView({ behavior: "smooth", block: "start" }));
       }
+      if (demo && (tourStep === 10 || tourStep === 14)) onTourStep?.(tourStep + 1);
       setGenerationFeedback(cycledToFirst
         ? `This generation cycle restarted from its first available schedule. Kept ${generationPins.length} pinned class${generationPins.length === 1 ? "" : "es"} fixed.`
         : newSchedules.length
         ? fromCalendar
-          ? `Updated this calendar with a new schedule. Kept ${generationPins.length} pinned class${generationPins.length === 1 ? "" : "es"} fixed.`
+          ? `Updated this calendar. Kept ${generationPins.length} pinned class${generationPins.length === 1 ? "" : "es"} fixed.`
           : `Created ${newSchedules.length} new alternative${newSchedules.length === 1 ? "" : "s"}.`
         : `No schedule could be generated. ${result.message || "Try relaxing blocked times or changing your course shortlist."}`);
       setMessage(cycledToFirst
         ? `Generation cycle restarted. ${result.explored} combinations explored.`
         :
-        `${newSchedules.length} alternatives · ${result.explored} combinations explored.${result.truncated ? " Search limit reached; results may be incomplete." : ""} ${result.message || ""}`,
+        `${fromCalendar ? (newSchedules.length ? "Calendar updated" : "No schedule generated") : `${newSchedules.length} alternatives`} · ${result.explored} combinations explored.${result.truncated ? " Search limit reached; results may be incomplete." : ""} ${result.message || ""}`,
       );
     } catch (e) {
       setGenerationFeedback(e instanceof Error ? e.message : "Generation failed.");
@@ -778,6 +796,87 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
       setMessage(e instanceof Error ? e.message : "Export failed.");
     }
   };
+  function createBackup(): AppBackup {
+    return structuredClone({ format: 'ffcs-helper-backup', version: 1, exportedAt: new Date().toISOString(),
+      catalog, calendars, activeCalendarId, plans, shortlist: basket, alternativeCourses,
+      blockedTimes: allBlockedTimes, preferences: prefs, branch: branchFilter, ffcsRejections, useCurrentCalendar });
+  }
+  function importBackup(backup: AppBackup) {
+    persistBackup(backup, storage);
+    setCatalog(backup.catalog);
+    setCalendars(backup.calendars); setActiveCalendarId(backup.activeCalendarId);
+    setPlans(backup.plans); setBasket(backup.shortlist); setAlternativeCourses(backup.alternativeCourses);
+    setAllBlockedTimes(backup.blockedTimes); setPrefs(backup.preferences); setBranchFilter(backup.branch);
+    setFfcsRejections(backup.ffcsRejections); setUseCurrentCalendar(backup.useCurrentCalendar);
+    setSelected([]); setCourseId(""); setPreviewOfferingId(""); setCourseSearch(""); setFacultySearch("");
+    setDomainFilter(""); setEditing(undefined); setCompare([]); setName("");
+    setFfcsMode(false); setRegistrationComplete(false); setPreferenceMode(false);
+    setGenerationFeedback(""); generationCycles.current.clear(); setView("planner");
+    setRenamingCalendarId(""); setCalendarToDelete(null);
+    setMessage("All timetables and preferences imported and saved on this device.");
+  }
+  const tourSnapshots = useRef(new Map<number, {
+    branch: typeof branchFilter; domain: string; course: string; preview: string;
+    calendars: CalendarChoice[]; activeCalendarId: string; basket: string[]; alternatives: string[];
+    blocks: BlockedWindow[]; preferences: Preferences; ffcs: boolean; preferenceMode: boolean;
+    cycles: Map<string, string[][]>; feedback: string;
+  }>());
+  useEffect(() => {
+    if (!demo || tourSnapshots.current.has(tourStep)) return;
+    tourSnapshots.current.set(tourStep, {
+      branch: branchFilter, domain: domainFilter, course: courseId, preview: previewOfferingId,
+      calendars: structuredClone(calendars), activeCalendarId, basket: [...basket], alternatives: [...alternativeCourses],
+      blocks: structuredClone(allBlockedTimes), preferences: structuredClone(prefs), ffcs: ffcsMode, preferenceMode,
+      cycles: structuredClone(generationCycles.current), feedback: generationFeedback,
+    });
+  });
+  useEffect(() => {
+    if (!demo || !onTourStep) return;
+    const back = () => {
+      const previous = tourStep - 1;
+      const snapshot = tourSnapshots.current.get(previous);
+      if (!snapshot) return;
+      setBranchFilter(snapshot.branch); setDomainFilter(snapshot.domain); setCourseId(snapshot.course);
+      setPreviewOfferingId(snapshot.preview); persistCalendars(snapshot.calendars); setActiveCalendarId(snapshot.activeCalendarId);
+      setBasket(snapshot.basket); updateAlternatives(snapshot.alternatives); setAllBlockedTimes(snapshot.blocks);
+      setPrefs(snapshot.preferences); setFfcsMode(snapshot.ffcs); setPreferenceMode(snapshot.preferenceMode);
+      generationCycles.current = structuredClone(snapshot.cycles); setGenerationFeedback(snapshot.feedback);
+      for (const key of tourSnapshots.current.keys()) if (key >= previous) tourSnapshots.current.delete(key);
+      onTourStep(previous);
+    };
+    window.addEventListener('walkthrough-back', back);
+    return () => window.removeEventListener('walkthrough-back', back);
+  });
+  useEffect(() => {
+    if (!demo || !onTourStep) return;
+    const next = () => {
+      switch (tourStep) {
+        case 0: setBranchFilter("ECE"); break;
+        case 1: setDomainFilter("Practice courses"); break;
+        case 2: chooseCourse("demo-4"); break;
+        case 4: setBasket(items => items.includes("demo-4") ? items : [...items, "demo-4"]); break;
+        case 6: setPreviewOfferingId("demo-4-b"); break;
+        case 8: {
+          const offering = catalog.offerings.find(item => item.id === "demo-4-b");
+          if (offering) addToCalendar(offering);
+          break;
+        }
+        case 9: {
+          const offering = activeCalendarOfferings[0];
+          if (offering && !pinnedOfferingIds.includes(offering.id)) togglePin(offering.id);
+          break;
+        }
+        case 10: case 14: void generate(true); break;
+        case 12: addTimeBlock({ id: crypto.randomUUID(), days: [0], start: 1260, end: 1320 }, 'this'); break;
+        case 16: setPreferenceMode(true); break;
+        case 20: updateAlternatives([...alternativeCourses, "demo-5"]); break;
+        case 21: setFfcsMode(true); break;
+        default: onTourStep(tourStep + 1);
+      }
+    };
+    window.addEventListener('walkthrough-next', next);
+    return () => window.removeEventListener('walkthrough-next', next);
+  });
   return (
     <div data-walkthrough-step={demo ? tourStep : undefined} className={`app-shell ${ffcsMode && !preferenceMode ? "ffcs-theme" : ""} ${ffcsReturning && !preferenceMode ? "ffcs-returning" : ""} ${preferenceMode ? "preferences-screen" : ""}`}>
       <a href="#main" className="skip-link">
@@ -807,7 +906,7 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
                     requestAnimationFrame(() => document.querySelector(".calendar-switcher")?.scrollIntoView({ block: "start" }));
                   }}><ArrowLeft size={17} /> Back to home</button>
                 </header>
-                <Timetable title="Final Calendar" catalog={catalog} offerings={activeCalendarOfferings} blockedTimes={blockedTimes} />
+                <Timetable colorByBuilding={prefs.colorByBuilding ?? false} onColorByBuildingChange={value => setPrefs(p => ({ ...p, colorByBuilding: value }))} title="Final Calendar" catalog={catalog} offerings={activeCalendarOfferings} blockedTimes={blockedTimes} />
               </section> : preferenceMode ? <section className="teacher-preferences" aria-labelledby="teacher-preferences-title">
                 <header className="teacher-preferences-header">
                   <button type="button" className="secondary preference-back" onClick={() => setPreferenceMode(false)}><ArrowLeft size={17} /> Back to planner</button>
@@ -908,6 +1007,11 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
                     </div>
                     <div className="scheduler-options">
                       <div className="scheduler-options-heading"><SlidersHorizontal size={17} /><span>Ranking preferences</span><span className="optional-label">Optional</span></div>
+                      <fieldset className="building-preferences">
+                        <legend>Preferred buildings</legend>
+                        <p className="small muted">Prioritize schedules with classes in your selected buildings.</p>
+                        <div className="building-options">{[...new Set(catalog.offerings.flatMap(o => o.components.map(c => buildingFromVenue(c.venue))).filter(Boolean))].sort().map(building => <label key={building}><input type="checkbox" checked={(prefs.preferredBuildings || []).includes(building)} onChange={() => setPrefs(p => ({ ...p, preferredBuildings: (p.preferredBuildings || []).includes(building) ? (p.preferredBuildings || []).filter(b => b !== building) : [...(p.preferredBuildings || []), building] }))} /> {building}</label>)}</div>
+                      </fieldset>
                       <label className="scheduler-batch-field">Theory batch
                         <select value={prefs.theoryBatch} onChange={(e) => setPrefs({ ...prefs, theoryBatch: e.target.value as Preferences["theoryBatch"] })}>
                           <option value="any">{theoryBatchLabels.any}</option><option value="morning">{theoryBatchLabels.morning}</option><option value="evening">{theoryBatchLabels.evening}</option>
@@ -1047,7 +1151,7 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
                   <label className="catalog-filter"><span>Branch</span><select id="branch-filter" aria-label="Branch" value={branchFilter} onChange={(e) => {
                     setBranchFilter(e.target.value as "" | "ECE" | "ECM" | "MCA" | "CSE CORE");
                     setDomainFilter(""); setCourseId(""); setCourseSearch(""); setFacultySearch(""); setPreviewOfferingId("");
-                  }}><option value="">Choose a branch</option><option value="ECE">ECE</option><option value="ECM">ECM</option><option value="MCA">MCA</option>{catalog.courses.some(course => course.account === "CSE CORE") && <option value="CSE CORE">CSE CORE</option>}</select></label>
+                  }}><option value="">Choose a branch</option><option value="ECE">ECE</option>{!demo && <><option value="ECM">ECM</option><option value="MCA">MCA</option>{catalog.courses.some(course => course.account === "CSE CORE") && <option value="CSE CORE">CSE CORE</option>}</>}</select></label>
                   <label className="catalog-filter"><span>Category</span><select aria-label="Curriculum category" value={domainFilter} onChange={(e) => {
                     const value = e.target.value;
                     setDomainFilter(value);
@@ -1062,6 +1166,7 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
                   }}>
                     <option value="">Choose a course</option>
                     {subjectCourses
+                      .filter(c => !demo || c.id === (tourStep >= 20 ? "demo-5" : "demo-4"))
                       .sort((a, b) => a.code.localeCompare(b.code)).map((c) => <option key={c.id} value={c.id}>{c.code} · {displayCourseTitle(c)}</option>)}
                   </select></label>
                 </div>
@@ -1260,7 +1365,7 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
                     })}
                   </section>}
                   {!hasVerifiedMeetingTimes ? <section ref={calendarMeasureRef} className="panel timetable"><div className="panel-heading"><div><span className="eyebrow">CURRENT ALLOCATIONS</span><h2>Timetable preview</h2></div></div>{previewOffering ? <div className="allocation-preview"><strong>{catalog.courses.find((c) => c.id === previewOffering.courseId)?.code} · {catalog.faculty.find((f) => f.id === previewOffering.facultyId)?.name}</strong>{previewOffering.components.map((component, index) => <span key={index}>{displayComponentType(component)} · Slot {component.slots.join(" + ") || "unavailable"} · Venue {component.venue || "unavailable"}</span>)}<p className="calendar-hint">Weekday and clock times are not included in this allocation data, so this selection cannot be placed on the weekly timetable.</p></div> : <p className="calendar-hint">Select anywhere on a faculty allocation to preview its slot here. Weekday and clock times are not included in this data.</p>}</section> : !ffcsMode && <>
-                  <div ref={calendarMeasureRef}><Timetable title={activeCalendar.name === "Final Calendar" ? "Final Calendar" : undefined} catalog={catalog} offerings={activeCalendarOfferings} previewOfferingId={previewOfferingId} blockedTimes={blockedTimes} onChangeBlockedTimes={setBlockedTimes} onAddBlock={addTimeBlock} pinnedOfferingIds={pinnedOfferingIds} onTogglePin={togglePin} onSelectClass={openClassSubject} onGenerateAround={() => void generate(true)} onError={setMessage} generating={busy} canGenerate={shortlistedCourseIds.length > 0 || pinnedOfferings.length > 0} /></div>
+                  <div ref={calendarMeasureRef}><Timetable colorByBuilding={prefs.colorByBuilding ?? false} onColorByBuildingChange={value => setPrefs(p => ({ ...p, colorByBuilding: value }))} title={activeCalendar.name === "Final Calendar" ? "Final Calendar" : undefined} catalog={catalog} offerings={activeCalendarOfferings} previewOfferingId={previewOfferingId} blockedTimes={blockedTimes} onChangeBlockedTimes={setBlockedTimes} onAddBlock={addTimeBlock} pinnedOfferingIds={pinnedOfferingIds} onTogglePin={togglePin} onSelectClass={openClassSubject} onGenerateAround={() => void generate(true)} onError={setMessage} generating={busy} canGenerate={shortlistedCourseIds.length > 0 || pinnedOfferings.length > 0} /></div>
                   </>}
                 </div>
               </div>
@@ -1513,6 +1618,7 @@ export function PlannerApp({ demo = false, tourStep = 0 }: { demo?: boolean; tou
             {message && <div className="app-toast" role="status"><span>{message}</span><button type="button" aria-label="Dismiss notification" onClick={() => setMessage("")}><X size={17} /></button></div>}
             {generationFeedback && <div className="app-toast" role="status"><span>{generationFeedback}</span><button type="button" aria-label="Dismiss generation notification" onClick={() => setGenerationFeedback("")}><X size={17} /></button></div>}
           </aside>}
+          {!demo && <TimetableBackup createBackup={createBackup} restore={importBackup} />}
           <footer className="main-footer">
             <span>FFCS Helper · Vellore</span>
           </footer>

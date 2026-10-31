@@ -1,5 +1,6 @@
 import type { BlockedWindow, Catalog, Meeting, Offering, Preferences, Schedule } from './types';
 import { offeringBlockedBy } from './blocked.ts';
+import { buildingFromVenue } from './buildings';
 
 export const defaultPreferences: Preferences = {
   theoryBatch: 'any', timeOfDay: 'any', freeDays: [], compactness: 1, minClassGap: 9, facultyOrder: [], maxResults: 3,
@@ -136,6 +137,13 @@ function rank(offerings: Offering[], preferences: Preferences, blockedTimes: Blo
   const facultyIds = offerings.flatMap(o => [o.facultyId, ...o.components.map(c => c.facultyId).filter((id): id is string => !!id)]);
   if (preferred.size) score += 100 * facultyIds.filter(id => preferred.has(id)).length / facultyIds.length;
   score -= 100 * facultyIds.filter(id => blocked.has(id)).length / facultyIds.length;
+  const buildings = new Set((preferences.preferredBuildings ?? []).map(value => buildingFromVenue(value)).filter(Boolean));
+  if (buildings.size) {
+    const venues = offerings.flatMap(o => o.components.map(c => c.venue).filter((v): v is string => !!v));
+    const matched = venues.filter(v => buildings.has(buildingFromVenue(v))).length;
+    score += 100 * matched / Math.max(1, venues.length);
+    reasons.push(`${matched}/${venues.length} rooms are in preferred buildings.`);
+  }
   return { offeringIds: offerings.map(o => o.id), score, reasons };
 }
 

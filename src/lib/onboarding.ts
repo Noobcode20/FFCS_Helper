@@ -20,7 +20,7 @@ export function createDemoStorage(): Pick<Storage, 'getItem' | 'setItem' | 'remo
   const values = new Map<string, string>([
     ['ffcs-helper:calendars:v1', JSON.stringify([{ id: 'demo-calendar', name: 'Practice timetable', offeringIds: ['demo-1-a', 'demo-2-a'], pinnedOfferingIds: [] }])],
     ['ffcs-helper:shortlist:v1', JSON.stringify(['demo-1', 'demo-2', 'demo-3'])],
-    ['ffcs-helper:alternative-courses:v1', JSON.stringify(['demo-4'])],
+    ['ffcs-helper:alternative-courses:v1', JSON.stringify([])],
   ]);
   return { getItem: key => values.get(key) ?? null, setItem: (key, value) => { values.set(key, value); }, removeItem: key => { values.delete(key); } };
 }
@@ -28,9 +28,9 @@ export function createDemoStorage(): Pick<Storage, 'getItem' | 'setItem' | 'remo
 export const demoCatalog: Catalog = {
   version: 1, campus: 'Vellore', semester: 'Practice only · fictional data',
   provenance: { source: 'Fictional walkthrough examples', importedAt: '2026-10-31', status: 'imported' },
-  courses: ['Programming basics', 'Engineering mathematics', 'Digital systems', 'Creative thinking'].map((title, index) => ({ id: `demo-${index + 1}`, code: `DEMO${101 + index}`, title, credits: 3, category: 'Practice courses' })),
+  courses: ['Programming basics', 'Engineering mathematics', 'Digital systems', 'Creative thinking', 'Design thinking'].map((title, index) => ({ id: `demo-${index + 1}`, code: `DEMO${101 + index}`, title, credits: 3, category: 'Practice courses' })),
   faculty: [{ id: 'demo-f1', name: 'Sample teacher A' }, { id: 'demo-f2', name: 'Sample teacher B' }],
-  offerings: Array.from({ length: 4 }, (_, index) => ['a', 'b'].map((section, choice) => ({
+  offerings: Array.from({ length: 5 }, (_, index) => ['a', 'b'].map((section, choice) => ({
     id: `demo-${index + 1}-${section}`, courseId: `demo-${index + 1}`, facultyId: `demo-f${choice + 1}`, section: `Practice ${section.toUpperCase()}`,
     components: [{ type: 'theory' as const, sourceType: 'TH', slots: [`${String.fromCharCode(65 + index)}${choice + 1}`], venue: 'Sample classroom', meetings: [index % 5, (index + 2) % 5].map(day => ({ day: day as Day, start: 480 + index * 60 + choice * 360, end: 530 + index * 60 + choice * 360, slot: `${String.fromCharCode(65 + index)}${choice + 1}` })) }],
   }))).flat(), reviews: [],

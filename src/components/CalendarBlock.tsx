@@ -18,6 +18,7 @@ export function CalendarBlock({ block, day, scale, origin = 0, onCommit, onDelet
     cancelAnimationFrame(a.frame);
     a.element.style.transform = '';
     a.element.style.height = `${(block.end - block.start) * scale}px`;
+    a.element.style.width = '';
     a.element.classList.remove('dragging');
     active.current = null;
   };
@@ -51,8 +52,10 @@ export function CalendarBlock({ block, day, scale, origin = 0, onCommit, onDelet
         targetDay = nearest as Day;
       } else if (mode === 'start') start = clamp(snap(block.start + delta), 0, block.end - STEP);
       else end = clamp(snap(block.end + delta), block.start + STEP, 1440);
-      a.next = { ...block, start, end, days: [targetDay] };
-      const dx = mode === 'move' ? columns[targetDay].getBoundingClientRect().left - columns[day].getBoundingClientRect().left : 0;
+      const selectedDays = mode === 'move' && targetDay !== day ? Array.from({length: Math.abs(targetDay-day)+1}, (_, i) => (Math.min(day,targetDay)+i) as Day) : [day];
+      a.next = { ...block, start, end, days: selectedDays };
+      const dx = mode === 'move' ? columns[Math.min(day,targetDay)].getBoundingClientRect().left - columns[day].getBoundingClientRect().left : 0;
+      if (mode === 'move') element.style.width = `${columns[Math.max(day,targetDay)].getBoundingClientRect().right - columns[Math.min(day,targetDay)].getBoundingClientRect().left}px`;
       element.style.transform = `translate3d(${dx}px, ${(start - block.start) * scale}px, 0)`;
       element.style.height = `${(end - start) * scale}px`;
       const label = element.querySelector('small');
@@ -72,7 +75,7 @@ export function CalendarBlock({ block, day, scale, origin = 0, onCommit, onDelet
     const label = a.element.querySelector('small');
     if (label) label.textContent = `${time(cancel ? block.start : next.start)}–${time(cancel ? block.end : next.end)}`;
   };
-  return <div className="blocked-slot direct-block" style={{top: (block.start - origin) * scale, height: (block.end - block.start) * scale}} onPointerDown={begin} onPointerMove={event => { const a = active.current; if (a?.pointer === event.pointerId) { a.x = event.clientX; a.y = event.clientY; } }} onPointerUp={() => finish()} onPointerCancel={() => finish(true)} onLostPointerCapture={() => finish(true)}>
+  return <div className="blocked-slot direct-block" style={{top: (block.start - origin) * scale, height: (block.end - block.start) * scale, touchAction: 'none'}} onPointerDown={begin} onPointerMove={event => { const a = active.current; if (a?.pointer === event.pointerId) { a.x = event.clientX; a.y = event.clientY; } }} onPointerUp={event => { if (active.current?.pointer === event.pointerId) { active.current.x = event.clientX; active.current.y = event.clientY; finish(); } }} onPointerCancel={() => finish(true)} onLostPointerCapture={() => finish(true)}>
     <div className="block-resize block-resize-top" data-edge="start" role="slider" tabIndex={0} aria-label="Block start time" aria-valuemin={0} aria-valuemax={block.end - STEP} aria-valuenow={block.start} aria-valuetext={time(block.start)} onKeyDown={event => { if (['ArrowUp','ArrowDown'].includes(event.key)) { event.preventDefault(); onCommit({...block, start:clamp(block.start + (event.key === 'ArrowUp' ? -STEP : STEP), 0, block.end - STEP)}, day); } }} />
     <div className="block-center" tabIndex={0} role="button" aria-label={`Move blocked time, ${time(block.start)} to ${time(block.end)}. Use arrow keys to move; Delete to remove.`} onKeyDown={event => {
       if (event.key === 'Delete' || event.key === 'Backspace') { event.preventDefault(); onDelete(); }

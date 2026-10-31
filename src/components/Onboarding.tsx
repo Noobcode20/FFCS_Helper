@@ -4,16 +4,32 @@ import { ArrowLeft, ArrowRight, Check, CursorClick, X } from '@phosphor-icons/re
 import { positionWalkthrough } from '../lib/walkthrough-layout';
 
 export const tourSteps = [
-  { title: 'A little practice first', target: '.timetable', text: 'This is your sample timetable. Try things out here before building your own.', task: 'All sample data disappears when you finish or skip.' },
-  { title: 'Start with your shortlist', target: '#shortlist', text: 'Add the courses you want to study. The generator finds a section for each one.', task: 'Tap a course to see its teachers, or × to remove it.' },
-  { title: 'Choose your teachers', target: '.preference-faculty-list', text: 'Pick one or more teachers you prefer. Leave everyone unselected if you have no preference.', task: 'Try selecting a sample teacher.' },
-  { title: 'Have a backup ready', target: '.alternative-courses', text: 'Alternative courses are your backups. FFCS mode can use one if no replacement section is available.', task: 'Creative thinking is your sample backup course.' },
-  { title: 'Choose a section', target: '.faculty-option[data-offering-id="demo-1-b"]', text: 'Tap a teacher to preview their class times. Choose Add to calendar to use that section.', task: 'Try Add to calendar. Clashing sections are checked for you.' },
-  { title: 'Make time for yourself', target: '.timetable', text: 'Use + Time block to keep time free. Apply it to this timetable or all timetables.', task: 'Add a block, then drag or resize it on the calendar.' },
-  { title: 'Keep a class you like', target: '.meeting:has(.meeting-pin)', text: 'Tap the pin to keep this exact section and its related classes when generating around your calendar.', task: 'Try the pin in the corner of this class.' },
-  { title: 'Build around this calendar', target: '.calendar-generate-button', text: 'Find another schedule while keeping pinned classes and blocked times. Unpinned sections can change.', task: 'Try Generate around this calendar.' },
-  { title: 'Or start fresh', target: '.scheduler-panel', text: 'Keep Use current calendar state off, then Generate alternatives. This ignores calendar pins and time blocks.', task: 'Choose your ranking preferences, then generate a new timetable.' },
-  { title: 'Ready for FFCS day', target: '.ffcs-course-list', text: 'After registering in VTOP, check the course to keep it fixed. Use × to reject a teacher and find a replacement.', task: 'Try it here. Finish clears the demo; registration itself happens in VTOP.' },
+  { title: 'Choose your branch', target: '#branch-filter', text: 'Start with the branch whose courses you want to browse.', task: 'Choose ECE from the branch menu.' },
+  { title: 'Choose a category', target: '[aria-label="Curriculum category"]', text: 'Categories narrow the course list.', task: 'Choose Practice courses.' },
+  { title: 'Choose a course', target: '[aria-label="Course"]', text: 'Choose a course to see its available faculty.', task: 'Choose Creative thinking.' },
+  { title: 'Available faculty', target: '.course-detail', text: 'These are the teachers and sections available for the selected course. Each card shows its class details.', task: 'Select Next to explore the course actions.' },
+  { title: 'Add to your shortlist', target: '.course-selection-actions .shortlist-course-button:first-child', text: 'Shortlist adds a course to your planned courses. Alternative saves a backup for replacements. The practice shortlist already contains several courses.', task: 'Select Shortlist to add Creative thinking.' },
+  { title: 'Your shortlist', target: '#shortlist', text: 'Creative thinking now appears alongside your other shortlisted courses.', task: 'Select Next to continue.' },
+  { title: 'Preview faculty', target: '.faculty-option[data-offering-id="demo-4-b"] .faculty-preview', text: 'Preview a teacher’s class times on the timetable.', task: 'Select Sample teacher B.' },
+  { title: 'Your faculty preview', target: '.timetable', text: 'The highlighted classes show where this teacher’s section would appear on your calendar.', task: 'Select Next to add this section.' },
+  { title: 'Select a section', target: '.faculty-option[data-offering-id="demo-4-b"] .faculty-action.calendar', text: 'Add the section you want to your timetable.', task: 'Select Add to calendar.' },
+  { title: 'Pin a course', target: '.meeting:has(.meeting-pin)', text: 'A pinned section stays fixed when you generate around the timetable.', task: 'Select the pin on a class.' },
+  { title: 'Generate around your timetable', target: '.calendar-generate-button', text: 'Generation keeps pinned classes and respects blocked times.', task: 'Select Generate around this calendar.' },
+  { title: 'Your generated timetable', target: '.timetable', text: 'Review the timetable and generation feedback after the search.', task: 'Select Next to continue.' },
+  { title: 'Add a time block', target: '.timetable', text: 'Time blocks reserve time you want to keep free.', task: 'Select + Time block, place it on the timetable, and save it.' },
+  { title: 'Adjust your time blocks', target: '.timetable', text: 'Drag a block to move it, use its edges to resize it, or use its delete control to remove it. Select + Time block again to add more blocks.', task: 'Select Next to generate with your block.' },
+  { title: 'Generate with your time block', target: '.calendar-generate-button', text: 'The saved block reserves this time when the planner searches for a schedule.', task: 'Select Generate around this calendar again.' },
+  { title: 'See the result', target: '.timetable', text: 'Review the generated timetable and the feedback. Available schedules avoid the time block while keeping pinned classes fixed.', task: 'Select Next to continue.' },
+  { title: 'Preferred teachers', target: '.preference-toggle', text: 'Teacher preferences guide timetable generation and replacements.', task: 'Select Teacher preferences.' },
+  { title: 'Choose a course', target: '.preference-course-nav', text: 'Your shortlisted and timetable courses appear here. Select a course to see its teachers.', task: 'Select Next to see teacher controls.' },
+  { title: 'Find a teacher', target: '.preference-filters', text: 'Search, filter by rating, or sort the teachers for the selected course.', task: 'Select Next to see how preferences work.' },
+  { title: 'Set your preferences', target: '.preference-faculty-list', text: 'Select teachers you prefer; your choices are saved automatically and guide generation and replacements.', task: 'Select Next to return to the planner.' },
+  { title: 'Add an alternative course', target: '.course-selection-actions .shortlist-course-button:nth-child(2)', text: 'Alternative courses can be used when a replacement section is unavailable.', task: 'Select Alternative to add Design thinking.' },
+  { title: 'Go to FFCS mode', target: '.ffcs-toggle:not(.preference-toggle)', text: 'Use FFCS mode to track registrations and find replacements.', task: 'Turn on FFCS mode.' },
+  { title: 'Your FFCS courses', target: '.ffcs-course-list', text: 'Each row shows a course, its faculty and slot for registration.', task: 'Select Next to see how to mark registration.' },
+  { title: 'Mark a course registered', target: '.ffcs-check', text: 'After registering in VTOP, use the check to keep that course fixed.', task: 'Select Next to see replacements.' },
+  { title: 'Find a replacement', target: '.ffcs-replace', text: 'Use the cross to reject an unavailable teacher and find a replacement. Registered courses remain fixed.', task: 'Select Next to finish.' },
+  { title: 'FFCS mode is ready', target: '.ffcs-course-list', text: 'Your timetable courses appear here for registration tracking and replacements.', task: 'Select Finish tour to return to your planner.' },
 ];
 
 type Layout = ReturnType<typeof positionWalkthrough>;
@@ -43,9 +59,12 @@ export function Onboarding({ step, onStep, onFinish }: { step: number; onStep: (
     scrollTimer = window.setTimeout(() => {
       const target = document.querySelector(current.target);
       if (target) {
-        target.scrollIntoView({ block: 'start', behavior: 'instant' });
         const rect = target.getBoundingClientRect();
-        window.scrollBy({ top: rect.top - 36, behavior: 'instant' });
+        const safeBottom = layout?.side === 'bottom' ? Math.max(120, innerHeight - (card.current?.offsetHeight ?? 0) - 40) : innerHeight - 40;
+        if (rect.top < 32 || rect.top > safeBottom - 48) {
+          const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          window.scrollBy({ top: rect.top - Math.min(100, safeBottom / 3), behavior: reduceMotion ? 'instant' : 'smooth' });
+        }
       }
       schedule();
     }, 120);
@@ -106,11 +125,11 @@ export function Onboarding({ step, onStep, onFinish }: { step: number; onStep: (
       <div className="walkthrough-copy" key={step}>
         <span className="walkthrough-count">STEP {String(step + 1).padStart(2, '0')} <span>/ {String(tourSteps.length).padStart(2, '0')}</span></span>
         <h2 id="walkthrough-title" ref={heading} tabIndex={-1}>{current.title}</h2>
-        <p id="walkthrough-description">{current.text}{step === 0 && <span className="walkthrough-mobile-tip"> On your phone, use Find courses, Timetable, and Shortlist to switch between planner sections after the tour.</span>}</p>
+        <p id="walkthrough-description">{current.text}{step === 0 && <span className="walkthrough-mobile-tip"> On your phone, scroll through the planner sections after the tour.</span>}</p>
         <div className="walkthrough-task"><CursorClick size={19} /><p>{current.task}</p></div>
       </div>
       <div className="walkthrough-progress" aria-label={`Step ${step + 1} of ${tourSteps.length}`}>{tourSteps.map((_, index) => <span key={index} className={index <= step ? 'complete' : ''} />)}</div>
-      <footer className="walkthrough-controls"><button type="button" className="walkthrough-skip" onClick={onFinish}>Skip tour</button><div><button type="button" className="secondary" aria-label="Previous step" disabled={step === 0} onClick={() => onStep(step - 1)}><ArrowLeft size={17} /></button><button type="button" onClick={() => step === tourSteps.length - 1 ? onFinish() : onStep(step + 1)}>{step === tourSteps.length - 1 ? 'Finish tour' : 'Next'}{step === tourSteps.length - 1 ? <Check size={17} /> : <ArrowRight size={17} />}</button></div></footer>
+      <footer className="walkthrough-controls"><button type="button" className="walkthrough-skip" onClick={onFinish}>Skip tour</button><div><button type="button" className="secondary" aria-label="Previous step" disabled={step === 0} onClick={() => window.dispatchEvent(new Event('walkthrough-back'))}><ArrowLeft size={17} /></button><button type="button" onClick={() => step === tourSteps.length - 1 ? onFinish() : window.dispatchEvent(new Event('walkthrough-next'))}>{step === tourSteps.length - 1 ? 'Finish tour' : 'Next'}{step === tourSteps.length - 1 ? <Check size={17} /> : <ArrowRight size={17} />}</button></div></footer>
     </section>
   </div>, document.body);
 }

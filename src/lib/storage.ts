@@ -6,7 +6,7 @@ export function catalogFingerprint(catalog:Catalog):string {
   const data=JSON.stringify([catalog.campus,catalog.semester,catalog.courses.map(c=>[c.id,c.code,c.credits]),catalog.faculty.filter(f=>!f.reviewOnly).map(f=>[f.id,f.name]),catalog.offerings]);
   let hash=2166136261;for(let i=0;i<data.length;i++){hash^=data.charCodeAt(i);hash=Math.imul(hash,16777619);}return `v1-${(hash>>>0).toString(16)}`;
 }
-function planShape(input:unknown):input is Plan {
+export function planShape(input:unknown):input is Plan {
   if(!input||typeof input!=='object')return false;
   const p=input as Plan;
   return typeof p.id==='string'&&p.id.length>0&&typeof p.name==='string'&&p.name.trim().length>0&&p.name.length<=200&&typeof p.semester==='string'&&typeof p.catalogFingerprint==='string'&&typeof p.savedAt==='string'&&!Number.isNaN(Date.parse(p.savedAt))&&Array.isArray(p.offeringIds)&&p.offeringIds.length<=100&&p.offeringIds.every(id=>typeof id==='string')&&new Set(p.offeringIds).size===p.offeringIds.length;

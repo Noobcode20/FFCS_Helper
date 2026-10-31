@@ -16,6 +16,14 @@ Enter a source and semester before CSV/XLSX upload. These imports are marked `im
 
 Review JSON records require a source, date, rating 1–5, sample size and valid faculty/course references. Individual review records normally have sampleSize 1. A provider's aggregate is one record with its actual sampleSize, and must not be duplicated alongside its underlying individual reviews. Imported reviews are user supplied; no claim of authenticity or moderation is made. Native public review submission is intentionally unavailable until authentication, moderation and abuse controls exist.
 
-Plan backup JSON is an array of saved plans (or `{ "plans": [...] }`). Restore requires the same catalog fingerprint and semester, rejects unknown offerings, repeated courses and timetable clashes. A backup does not include the catalog: export both. Saved plans and imported data live in this browser. Clearing browser data removes them; export backups for portability. No cloud sync or VTOP integration is used.
+## Move to another device
+
+Open **Import / export timetable** at the bottom of the planner and choose **Export timetable backup**. Transfer the JSON file to your other device, open the same menu, and choose **Import timetable backup**. Review the summary, then choose **Replace device data and import**. If the practice walkthrough is open, skip it first.
+
+The full backup (`format: "ffcs-helper-backup"`, `version: 1`) includes the catalog and reviews currently loaded in the app, all calendars and their pins, registered classes and FFCS original selections, the active calendar, saved plans, shortlist, alternatives, global and calendar-specific blocked times, branch, teacher/building choices, all ranking settings, building colors, FFCS rejections, and the use-current-calendar setting. It works even without saved plans. Import replaces this device's planner data and applies it immediately; settings also survive reloads. Export the destination's current setup first if you want to keep it. Invalid or unsupported files are rejected before any data changes. Only FFCS Helper storage is changed. Maximum full-backup file size: 100 MB; your browser must have room to store the imported data.
+
+## Legacy saved-plan backups
+
+Plan backup JSON is an array of saved plans (or `{ "plans": [...] }`). Restore requires the same catalog fingerprint and semester, rejects unknown offerings, repeated courses and timetable clashes. These legacy plan-only backups do not include the catalog: export both, or use the full timetable backup above. Saved plans and imported data live in this browser. Clearing browser data removes them; export backups for portability. No cloud sync or VTOP integration is used.
 
 CSV timetable export is a readable report, not the catalog import format. ICS export contains one explicit Monday–Sunday week in Asia/Kolkata; no semester duration is guessed. Use the browser print dialog to save the weekly timetable as PDF.
