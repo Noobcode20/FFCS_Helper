@@ -1,10 +1,18 @@
 import { createHash } from 'node:crypto';
-import { readFile, writeFile } from 'node:fs/promises';
+import { access, readFile, writeFile } from 'node:fs/promises';
 
 const files = {
   ECE: 'data/vtop-faculty-list-ece-winter-2026-27.json',
   ECM: 'data/vtop-faculty-list-ecm-winter-2026-27.json',
 };
+// MCA is added only after its complete live source capture is available.
+const mcaPath = 'data/vtop-faculty-list-mca-winter-2026-27.json';
+try {
+  await access(mcaPath);
+  files.MCA = mcaPath;
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error;
+}
 const read = async (file) => JSON.parse(await readFile(file, 'utf8'));
 const captures = await Promise.all(Object.entries(files).map(async ([key, path]) => [key, await read(path)]));
 const accounts = Object.fromEntries(captures);
@@ -61,7 +69,7 @@ const csv = [
 ].map((line) => line.map(csvCell).join(',')).join('\n') + '\n';
 // Planner-facing shape: one record per account/category/course, with every
 // allocation row retained in source order. Course identity includes account
-// and category so duplicate codes from the two accounts/categories stay apart.
+// and category so duplicate codes from different accounts/categories stay apart.
 const groupedCourses = new Map();
 for (const [label, data] of captures) for (const category of data.categories) for (const sourceCourse of category.courses) {
   const key = JSON.stringify([label, category.category, sourceCourse.courseId]);
@@ -112,12 +120,13 @@ console.log(JSON.stringify({summaries,totalRows:rows.length,checkOnly,missingReq
 
 function buildOverlap(entries) {
   const byKey = new Map();
+  const labels = entries.map(([label]) => label);
   for (const [label,data] of entries) for (const category of data.categories) for (const course of category.courses) {
     const key=`${category.category}|${course.courseId}`;
-    const item=byKey.get(key)??{category:category.category,courseId:course.courseId,ECE:[],ECM:[]};
+    const item=byKey.get(key)??{category:category.category,courseId:course.courseId,...Object.fromEntries(labels.map(label => [label, []]))};
     item[label].push(course.courseName); byKey.set(key,item);
   }
-  const shared=[...byKey.values()].filter(x=>x.ECE.length&&x.ECM.length);
+  const shared=[...byKey.values()].filter(x=>labels.filter(label=>x[label].length).length>1);
   const distinctCodes=new Map();
   for(const x of byKey.values()){const cats=distinctCodes.get(x.courseId)??new Set();cats.add(x.category);distinctCodes.set(x.courseId,cats);}
   return {sharedCategoryCoursePairs:shared.length,sharedCategoryCourseEntries:shared.map(({category,courseId})=>({category,courseId})),codesInDifferentCategories:[...distinctCodes].filter(([,cats])=>cats.size>1).map(([courseId,cats])=>({courseId,categories:[...cats].sort()}))};

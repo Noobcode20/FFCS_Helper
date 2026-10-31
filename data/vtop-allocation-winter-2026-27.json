@@ -4,7 +4,7 @@
   "semester": "Winter Semester 2026-27",
   "source": "VTOP > Academics > Course Registration Allocation",
   "sourceUrl": "https://vtop.vit.ac.in/vtop/content",
-  "compiledAt": "2026-10-30T14:14:26Z",
+  "compiledAt": "2026-10-31T04:52:13.151Z",
   "slotTimingStatus": "Exact VTOP slot labels retained; weekday and clock-time meanings are not encoded here.",
   "accounts": [
     {
@@ -21250,6 +21250,1256 @@
           ]
         }
       ]
+    },
+    {
+      "label": "MCA",
+      "capturedAt": "2026-10-31T04:52:13.151Z",
+      "categories": [
+        {
+          "category": "UCC",
+          "categoryName": "UCC - University Core Courses",
+          "courses": [
+            {
+              "courseId": "PAMCA699",
+              "courseName": "PAMCA699 - Internship II/ Dissertation II",
+              "allocations": [
+                {
+                  "slotDetail": "NIL",
+                  "venue": "NIL",
+                  "faculty": "PLACEMENT AND TRAINING",
+                  "courseType": "PJT",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>NIL</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>NIL</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PLACEMENT AND TRAINING</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PJT</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "NIL",
+                  "venue": "NIL",
+                  "faculty": "ACADEMICS",
+                  "courseType": "PJT",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>NIL</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>NIL</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ACADEMICS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PJT</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            },
+            {
+              "courseId": "PASTS602",
+              "courseName": "PASTS602 - Competitive Coding II",
+              "allocations": [
+                {
+                  "slotDetail": "G1+TG1",
+                  "venue": "PRP532",
+                  "faculty": "SIXPHRASE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G1+TG1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PRP532</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SIXPHRASE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "SJT112",
+                  "faculty": "TIME (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT112</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TIME (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G1+TG1",
+                  "venue": "SJTG08",
+                  "faculty": "ETHNUS (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 3,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G1+TG1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG08</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETHNUS (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G1+TG1",
+                  "venue": "SJTG14",
+                  "faculty": "FACE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 4,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G1+TG1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG14</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>FACE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "SJTG08",
+                  "faculty": "ETHNUS (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 5,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG08</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETHNUS (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "SJTG14",
+                  "faculty": "FACE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 6,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG14</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>FACE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "PRP734",
+                  "faculty": "FACE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 7,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PRP734</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>FACE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G1+TG1",
+                  "venue": "PRP529",
+                  "faculty": "FACE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 8,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G1+TG1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PRP529</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>FACE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "SJT109",
+                  "faculty": "SIXPHRASE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 9,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT109</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SIXPHRASE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G1+TG1",
+                  "venue": "PRP734",
+                  "faculty": "TIME (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 10,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G1+TG1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PRP734</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TIME (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "OEC",
+          "categoryName": "OEC - Open Elective Courses",
+          "courses": [
+            {
+              "courseId": "PASTS501",
+              "courseName": "PASTS501 - Qualitative and Quantitative Skills Practice I",
+              "allocations": [
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "PRP529",
+                  "faculty": "ETHNUS (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PRP529</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETHNUS (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "PRP530",
+                  "faculty": "ETHNUS (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PRP530</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETHNUS (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G1+TG1",
+                  "venue": "SJTG16",
+                  "faculty": "ETHNUS (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 3,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G1+TG1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG16</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETHNUS (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G1+TG1",
+                  "venue": "SJTG24",
+                  "faculty": "FACE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 4,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G1+TG1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG24</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>FACE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "SJTG16",
+                  "faculty": "ETHNUS (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 5,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG16</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETHNUS (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "SJTG24",
+                  "faculty": "FACE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 6,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG24</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>FACE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "PRP531",
+                  "faculty": "FACE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 7,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PRP531</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>FACE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G1+TG1",
+                  "venue": "PRP530",
+                  "faculty": "FACE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 8,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G1+TG1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>PRP530</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>FACE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G2+TG2",
+                  "venue": "SJT113",
+                  "faculty": "FACE (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 9,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G2+TG2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT113</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>FACE (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "G1+TG1",
+                  "venue": "SJT109",
+                  "faculty": "ETHNUS (APT)",
+                  "courseType": "SS",
+                  "sourceRowIndex": 10,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>G1+TG1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT109</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETHNUS (APT)</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SS</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "PFCC",
+          "categoryName": "PFCC - Professional Core Courses",
+          "courses": [
+            {
+              "courseId": "PAMCA504",
+              "courseName": "PAMCA504 - Machine Learning",
+              "allocations": [
+                {
+                  "slotDetail": "D1+TD1",
+                  "venue": "SJT803",
+                  "faculty": "DHARMENDRA SINGH RAJPUT",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>D1+TD1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT803</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>DHARMENDRA SINGH RAJPUT</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "D2+TD2",
+                  "venue": "SJT802",
+                  "faculty": "DHARMENDRA SINGH RAJPUT",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>D2+TD2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT802</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>DHARMENDRA SINGH RAJPUT</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L59+L60",
+                  "venue": "SJTG18",
+                  "faculty": "DHARMENDRA SINGH RAJPUT",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 3,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L59+L60</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG18</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>DHARMENDRA SINGH RAJPUT</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L23+L24",
+                  "venue": "SJT218",
+                  "faculty": "DHARMENDRA SINGH RAJPUT",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 4,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L23+L24</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT218</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>DHARMENDRA SINGH RAJPUT</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "D1+TD1",
+                  "venue": "SJT807",
+                  "faculty": "SUGANYA A",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 5,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>D1+TD1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT807</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SUGANYA A</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "D2+TD2",
+                  "venue": "SJT803",
+                  "faculty": "SUGANYA A",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 6,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>D2+TD2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT803</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SUGANYA A</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L43+L44",
+                  "venue": "SJTG20",
+                  "faculty": "SUGANYA A",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 7,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L43+L44</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG20</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SUGANYA A</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L11+L12",
+                  "venue": "SJTG18",
+                  "faculty": "SUGANYA A",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 8,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L11+L12</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG18</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SUGANYA A</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            },
+            {
+              "courseId": "PAMCA505",
+              "courseName": "PAMCA505 - Software Engineering",
+              "allocations": [
+                {
+                  "slotDetail": "A1+TA1+TAA1",
+                  "venue": "SJT215",
+                  "faculty": "SUMATHY S",
+                  "courseType": "TH",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>A1+TA1+TAA1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT215</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SUMATHY S</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "A2+TA2+TAA2",
+                  "venue": "SJT215",
+                  "faculty": "SUMATHY S",
+                  "courseType": "TH",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>A2+TA2+TAA2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT215</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SUMATHY S</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "A1+TA1+TAA1",
+                  "venue": "SJT802",
+                  "faculty": "KARTHIKEYAN J",
+                  "courseType": "TH",
+                  "sourceRowIndex": 3,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>A1+TA1+TAA1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT802</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>KARTHIKEYAN J</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "A2+TA2+TAA2",
+                  "venue": "SJT801",
+                  "faculty": "KARTHIKEYAN J",
+                  "courseType": "TH",
+                  "sourceRowIndex": 4,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>A2+TA2+TAA2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT801</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>KARTHIKEYAN J</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            },
+            {
+              "courseId": "PAMCA506",
+              "courseName": "PAMCA506 - Full Stack Web Development",
+              "allocations": [
+                {
+                  "slotDetail": "E1+TE1",
+                  "venue": "SJT803",
+                  "faculty": "BALA GANESH N",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>E1+TE1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT803</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>BALA GANESH N</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "E2+TE2",
+                  "venue": "SJT802",
+                  "faculty": "BALA GANESH N",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>E2+TE2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT802</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>BALA GANESH N</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L57+L58",
+                  "venue": "SJTG17",
+                  "faculty": "BALA GANESH N",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 3,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L57+L58</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG17</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>BALA GANESH N</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L3+L4",
+                  "venue": "SJTG17",
+                  "faculty": "BALA GANESH N",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 4,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L3+L4</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG17</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>BALA GANESH N</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "E1+TE1",
+                  "venue": "SJT102",
+                  "faculty": "VANITHA M",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 5,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>E1+TE1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT102</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>VANITHA M</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "E2+TE2",
+                  "venue": "SJT102",
+                  "faculty": "VANITHA M",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 6,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>E2+TE2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT102</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>VANITHA M</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L49+L50",
+                  "venue": "SJT120",
+                  "faculty": "VANITHA M",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 7,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L49+L50</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT120</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>VANITHA M</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L29+L30",
+                  "venue": "SJTG19",
+                  "faculty": "VANITHA M",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 8,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L29+L30</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG19</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>VANITHA M</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "PFEC",
+          "categoryName": "PFEC - Professional Elective Courses",
+          "courses": [
+            {
+              "courseId": "PAMCA602",
+              "courseName": "PAMCA602 - Python for Data Science",
+              "allocations": [
+                {
+                  "slotDetail": "B2+TB2",
+                  "venue": "SJT801",
+                  "faculty": "KAVITHA B.R",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>B2+TB2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT801</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>KAVITHA B.R</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L47+L48",
+                  "venue": "SJTG17",
+                  "faculty": "KAVITHA B.R",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L47+L48</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG17</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>KAVITHA B.R</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L29+L30",
+                  "venue": "SJTG17",
+                  "faculty": "KAVITHA B.R",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 3,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L29+L30</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG17</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>KAVITHA B.R</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "B1+TB1",
+                  "venue": "SJT801",
+                  "faculty": "KAVITHA B.R",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 4,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>B1+TB1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT801</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>KAVITHA B.R</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            },
+            {
+              "courseId": "PAMCA605",
+              "courseName": "PAMCA605 - Deep Learning",
+              "allocations": [
+                {
+                  "slotDetail": "F1+TF1",
+                  "venue": "SJT127",
+                  "faculty": "MALASERENE I",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>F1+TF1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT127</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>MALASERENE I</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "F2+TF2",
+                  "venue": "SJT127",
+                  "faculty": "MALASERENE I",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>F2+TF2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT127</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>MALASERENE I</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L41+L42",
+                  "venue": "SJT122",
+                  "faculty": "MALASERENE I",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 3,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L41+L42</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT122</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>MALASERENE I</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L9+L10",
+                  "venue": "SJT120",
+                  "faculty": "MALASERENE I",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 4,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L9+L10</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT120</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>MALASERENE I</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            },
+            {
+              "courseId": "PAMCA606",
+              "courseName": "PAMCA606 - Generative AI",
+              "allocations": [
+                {
+                  "slotDetail": "B2+TB2",
+                  "venue": "SJT204",
+                  "faculty": "NIVEDITA S",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>B2+TB2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT204</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>NIVEDITA S</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L45+L46",
+                  "venue": "SJT218",
+                  "faculty": "NIVEDITA S",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L45+L46</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT218</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>NIVEDITA S</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "L15+L16",
+                  "venue": "SJT218",
+                  "faculty": "NIVEDITA S",
+                  "courseType": "ELA",
+                  "sourceRowIndex": 3,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>L15+L16</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT218</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>NIVEDITA S</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ELA</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "B1+TB1",
+                  "venue": "SJT202",
+                  "faculty": "NIVEDITA S",
+                  "courseType": "ETH",
+                  "sourceRowIndex": 4,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>B1+TB1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJT202</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>NIVEDITA S</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>ETH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            },
+            {
+              "courseId": "PAMCA608",
+              "courseName": "PAMCA608 - System Design",
+              "allocations": [
+                {
+                  "slotDetail": "C2+TC2+TCC2",
+                  "venue": "SJTG08",
+                  "faculty": "JAGANNATHAN J",
+                  "courseType": "TH",
+                  "sourceRowIndex": 1,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>C2+TC2+TCC2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG08</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>JAGANNATHAN J</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "C2+TC2+TCC2",
+                  "venue": "SJTG14",
+                  "faculty": "SOORAJ T R",
+                  "courseType": "TH",
+                  "sourceRowIndex": 2,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>C2+TC2+TCC2</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG14</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SOORAJ T R</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "C1+TC1+TCC1",
+                  "venue": "SJTG24",
+                  "faculty": "DAPHNE LOPEZ",
+                  "courseType": "TH",
+                  "sourceRowIndex": 3,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>C1+TC1+TCC1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG24</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>DAPHNE LOPEZ</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                },
+                {
+                  "slotDetail": "C1+TC1+TCC1",
+                  "venue": "SJTG08",
+                  "faculty": "SENTHIL MURUGAN  B",
+                  "courseType": "TH",
+                  "sourceRowIndex": 4,
+                  "sourceCellRowspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceCellColspans": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "sourceRowHtml": "<tr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>C1+TC1+TCC1</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SJTG08</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>SENTHIL MURUGAN  B</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<td style=\"white-space: nowrap; border: 1px solid #3c8dbc; text-align: left;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span>TH</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t\t</tr>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "summary": {
@@ -21307,10 +22557,33 @@
             "facultyRows": 132
           }
         }
+      },
+      "MCA": {
+        "courseEntries": 10,
+        "facultyRows": 58,
+        "distinctFacultyNames": 19,
+        "categories": {
+          "UCC": {
+            "courses": 2,
+            "facultyRows": 12
+          },
+          "OEC": {
+            "courses": 1,
+            "facultyRows": 10
+          },
+          "PFCC": {
+            "courses": 3,
+            "facultyRows": 20
+          },
+          "PFEC": {
+            "courses": 4,
+            "facultyRows": 16
+          }
+        }
       }
     },
-    "totalCourseEntries": 149,
-    "totalFacultyRows": 1014
+    "totalCourseEntries": 159,
+    "totalFacultyRows": 1072
   },
   "overlap": {
     "sharedCategoryCoursePairs": 58,

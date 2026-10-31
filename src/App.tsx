@@ -197,10 +197,10 @@ export default function App() {
   const [courseSearch, setCourseSearch] = useState("");
   const [activeCourseSuggestion, setActiveCourseSuggestion] = useState(0);
   const [domainFilter, setDomainFilter] = useState("");
-  const [branchFilter, setBranchFilter] = useState<"" | "ECE" | "ECM">(() => {
+  const [branchFilter, setBranchFilter] = useState<"" | "ECE" | "ECM" | "MCA">(() => {
     try {
       const saved = localStorage.getItem("ffcs-helper:branch");
-      return saved === "ECE" || saved === "ECM" ? saved : "";
+      return saved === "ECE" || saved === "ECM" || saved === "MCA" ? saved : "";
     } catch { return ""; }
   });
   useEffect(() => {
@@ -341,7 +341,7 @@ export default function App() {
   useEffect(() => {
     if (!hasVerifiedMeetingTimes && mobilePlannerSection !== "search") setMobilePlannerSection("search");
   }, [hasVerifiedMeetingTimes, mobilePlannerSection]);
-  // VTOP account labels provide the ECE/ECM split; do not infer it from course codes.
+  // VTOP account labels provide the branch split; do not infer it from course codes.
   const hasAccountData = catalog.courses.some((item) => !!item.account);
   const branchCourses = hasAccountData
     ? branchFilter ? catalog.courses.filter((item) => item.account === branchFilter) : []
@@ -1018,9 +1018,9 @@ export default function App() {
                 </div>
                 <div className="catalog-filter-row">
                   <label className="catalog-filter"><span>Branch</span><select id="branch-filter" aria-label="Branch" value={branchFilter} onChange={(e) => {
-                    setBranchFilter(e.target.value as "" | "ECE" | "ECM");
+                    setBranchFilter(e.target.value as "" | "ECE" | "ECM" | "MCA");
                     setDomainFilter(""); setCourseId(""); setCourseSearch(""); setFacultySearch(""); setPreviewOfferingId("");
-                  }}><option value="">Choose a branch</option><option value="ECE">ECE</option><option value="ECM">ECM</option></select></label>
+                  }}><option value="">Choose a branch</option><option value="ECE">ECE</option><option value="ECM">ECM</option><option value="MCA">MCA</option></select></label>
                   <label className="catalog-filter"><span>Category</span><select aria-label="Curriculum category" value={domainFilter} onChange={(e) => {
                     const value = e.target.value;
                     setDomainFilter(value);

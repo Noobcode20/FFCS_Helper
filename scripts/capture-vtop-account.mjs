@@ -14,16 +14,20 @@ const config = globalThis.VTOP_CAPTURE_CONFIG;
 if (!config?.taskSpaceId || !config?.account?.label || !config?.account?.expectedStudentId || !config?.outputPath) {
   throw new Error('Set globalThis.VTOP_CAPTURE_CONFIG with taskSpaceId, account identity, and absolute outputPath.');
 }
-const categoryOrder = ['NC', 'UCC', 'PCC', 'CON', 'OEC'];
-const categoryNames = {
-  NC: 'NC - Non Credit Course',
-  UCC: 'UCC - University Core Courses',
-  PCC: 'PCC - Programme Core Courses',
-  CON: 'CON - Concentration',
-  OEC: 'OEC - Open Elective Courses',
-};
 const task = await globalThis.taskSpace(config.taskSpaceId);
 const page = task.page(config.pageLabel || 'p1');
+// Programmes expose different curriculum categories; capture the live selector.
+const categoryOptions = await page.evaluate(() => {
+  const select = document.querySelector('select[name="curriculumCategory"]');
+  if (!select) throw new Error('Course Registration Allocation page is not open.');
+  return [...select.options].filter(option => option.value).map(option => ({
+    category: option.value, categoryName: option.textContent.trim(),
+  }));
+});
+if (!categoryOptions.length) throw new Error('No curriculum categories are displayed.');
+const categoryOrder = categoryOptions.map(option => option.category);
+const categoryNames = Object.fromEntries(categoryOptions.map(option => [option.category, option.categoryName]));
+
 const categories = [];
 const verified = { studentId: null, semester: null, sourceUrl: null };
 

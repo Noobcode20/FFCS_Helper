@@ -62,3 +62,11 @@ The refreshed data was checked independently: all 1,014 saved allocation-row HTM
 Theory/lab combinations now obey the user’s opposite-half rule for every batch preference. Each lab alternative is a separate card containing its shared theory and that one lab. For RAVI S / BAECE102, E1+TE1 pairs with L35+L36 or L49+L50, and E2+TE2 with L5+L6 or L27+L28. Raw allocations remain separate and unchanged. Associations not resolved by the source faculty and unique opposite-half theory stay flagged; missing times, conflicting times, and unmapped course-type semantics remain visible but cannot enter a complete timetable.
 
 Browser QA verified the four RAVI S cards, separate component rooms, and correct theory/lab calendar preview blocks. The final regression suite passes 78 tests and the production build succeeds (with Vite’s existing bundle-size warning).
+
+## MCA live capture — 2026-10-31
+
+`vtop-faculty-list-mca-winter-2026-27.json` was captured at **04:52 UTC** from authenticated VTOP → Academics → Course Registration Allocation after confirming the requested saved account identity privately and **Winter Semester 2026-27**. It contains **10 course entries / 58 allocation rows**, with zero empty required cells. Personal account identifiers and credentials are omitted.
+
+The live MCA category selector differs from the undergraduate accounts: **UCC 2 courses / 12 rows; OEC 1 / 10; PFCC (Professional Core Courses) 3 / 20; PFEC (Professional Elective Courses) 4 / 16**. The capture script now reads every nonempty category option directly from the page, retaining the displayed category order and names. No undergraduate-only empty categories are invented for MCA.
+
+All 58 original allocation-row HTML fragments independently parse to the exact captured slot, venue, faculty, and Course Type fields; no identity/token markers occur in those fragments. A live UI spot-check of PAMCA504 confirmed its eight ETH/ELA rows, including separate theory/lab venues. Source ordering, duplicates, row spans, and cell spans are preserved. This allocation snapshot records slot labels only; the existing Fall generic timetable-template provenance limitation still applies to derived calendar times.

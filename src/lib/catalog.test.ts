@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { defaultCatalog } from '../data/catalog';
+import sourceCapture from '../../data/vtop-allocation-winter-2026-27.json';
 import { vtopOfferings } from '../data/vtop';
 import { validateCatalog } from './importer';
 import { searchCourses } from './search';
@@ -9,7 +10,7 @@ describe('current VTOP allocation catalog', () => {
   it('validates the account-scoped snapshot and reports browse-only timing honestly', () => {
     const result = validateCatalog(defaultCatalog);
     expect(result.errors).toEqual([]);
-    expect(defaultCatalog.courses).toHaveLength(149);
+    expect(defaultCatalog.courses).toHaveLength(sourceCapture.summary.totalCourseEntries);
     expect(defaultCatalog.offerings).toEqual(vtopOfferings);
     expect(defaultCatalog.offerings.length).toBeGreaterThan(700);
     expect(defaultCatalog.provenance.status).toBe('imported');
@@ -23,6 +24,23 @@ describe('current VTOP allocation catalog', () => {
     expect(result.warnings.some(w => w.includes('browse-only'))).toBe(true);
     expect(result.warnings.some(w => w.includes('generic slot template') && w.includes('Fall Semester 2026-27') && w.includes('does not verify Winter'))).toBe(true);
     expect(defaultCatalog.offerings.some(o => o.scheduleStatus === 'browse-only')).toBe(true);
+  });
+
+  it('keeps every MCA category and course isolated from other branches', () => {
+    const mca = sourceCapture.accounts.find(account => account.label === 'MCA');
+    expect(mca).toBeDefined();
+    const expected = mca!.categories.flatMap(category => category.courses.map(course => ({
+      id: `MCA-${category.category}-${course.courseId}`,
+      category: category.category,
+      account: 'MCA',
+    })));
+    const actual = defaultCatalog.courses.filter(course => course.account === 'MCA');
+    expect(actual.map(({ id, category, account }) => ({ id, category, account })).sort((a, b) => a.id.localeCompare(b.id)))
+      .toEqual(expected.sort((a, b) => a.id.localeCompare(b.id)));
+    expect(new Set(actual.map(course => course.category))).toEqual(new Set(mca!.categories.filter(category => category.courses.length).map(category => category.category)));
+    const ids = new Set(actual.map(course => course.id));
+    expect(defaultCatalog.offerings.filter(offering => ids.has(offering.courseId)).length).toBeGreaterThan(0);
+    expect(defaultCatalog.courses.filter(course => course.account !== 'MCA').every(course => !ids.has(course.id))).toBe(true);
   });
 
   it('finds current source titles, course codes, and faculty names', () => {
